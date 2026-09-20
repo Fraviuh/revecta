@@ -480,13 +480,13 @@ function S7() {
             </div>
             <div>
               <div style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 700, fontSize: "0.88rem", color: "#fff", marginBottom: "0.4rem" }}>{s.title}</div>
-              <p style={{ margin: 0, fontSize: "0.78rem", color: "rgba(255,255,255,0.4)", lineHeight: 1.6 }}>{s.desc}</p>
+              <p style={{ margin: 0, fontSize: "0.78rem", color: s.num === "01" ? "#ffffff" : "rgba(255,255,255,0.4)", lineHeight: 1.6 }}>{s.desc}</p>
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: "0.4rem", marginTop: "auto" }}>
               {s.metrics.map((m) => (
                 <div key={m.label} style={{ display: "flex", justifyContent: "space-between", fontSize: "0.75rem", padding: "0.35rem 0", borderBottom: "1px solid rgba(255,255,255,0.04)" }}>
-                  <span style={{ color: "rgba(255,255,255,0.4)" }}>{m.label}</span>
-                  <span style={{ color: s.color, fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 600 }}>{m.value}</span>
+                  <span style={{ color: s.num === "01" ? "#ffffff" : "rgba(255,255,255,0.4)" }}>{m.label}</span>
+                  <span style={{ color: s.num === "01" ? "#ffffff" : s.color, fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 600 }}>{m.value}</span>
                 </div>
               ))}
             </div>
