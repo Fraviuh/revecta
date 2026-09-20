@@ -706,7 +706,7 @@ function S11() {
     },
     {
       horizon: "Longo Prazo", period: "18 Meses+ — Evolução Macro", color: PURPLE,
-      items: ["V2G massificado com injeção na rede e arbitragem de preços", "Mercado de Crédito de Carbono Pessoal (Tokenização)", "Plataforma energética pan-ibérica com SPV ativa"],
+      items: ["Expansão de parceiros e compatibilidade tecnológica", "Operacionalização do V2G em ambientes controlados", "Valorização verificável das emissões evitadas", "Lançamento progressivo do Mercado de Créditos de Carbono"],
     },
   ];
 
