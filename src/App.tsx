@@ -698,7 +698,7 @@ function S11() {
   const phases = [
     {
       horizon: "MVP", period: "Próximos 6 Meses", color: BLUE,
-      items: ["Integração de carregamentos e faturação transparente", "Automação do reembolso de carregamento domiciliário B2B", "Interface do condutor com histórico e custos em tempo real"],
+      items: ["Constituição da empresa e desenvolvimento do MVP", "Integração de dados de utilização, carregamento e custos", "Onboarding, reembolsos e recomendações inteligentes", "Pilotos com PMEs e avaliação dos resultados"],
     },
     {
       horizon: "Médio Prazo", period: "6 a 18 Meses — Capacidades Avançadas", color: TEAL,
