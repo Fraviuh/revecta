@@ -289,6 +289,15 @@ function S4() {
         </h2>
       </div>
 
+      <Card accent={BLUE} style={{ width: "100%", boxSizing: "border-box", padding: "1rem 1.25rem" }}>
+        <div style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 700, fontSize: "0.82rem", color: BLUE, marginBottom: "0.25rem" }}>
+          O MVP: Simplificar a Mobilidade Elétrica
+        </div>
+        <p style={{ margin: 0, fontSize: "0.78rem", color: "#ffffff", lineHeight: 1.6 }}>
+          A ReVecta unifica numa única plataforma a experiência do condutor e da empresa.
+        </p>
+      </Card>
+
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem" }}>
         {/* B2C */}
         <Card accent={BLUE} style={{ padding: "1.4rem", display: "flex", flexDirection: "column", gap: "1.1rem" }}>
