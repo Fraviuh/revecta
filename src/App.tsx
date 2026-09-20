@@ -290,10 +290,10 @@ function S4() {
       </div>
 
       <Card accent={BLUE} style={{ width: "100%", boxSizing: "border-box", padding: "1rem 1.25rem", textAlign: "center" }}>
-        <div style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 700, fontSize: "0.78rem", color: BLUE, marginBottom: "0.25rem" }}>
+        <div style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 700, fontSize: "1.05rem", color: BLUE, marginBottom: "0.25rem" }}>
           O MVP
         </div>
-        <p style={{ margin: 0, fontSize: "0.74rem", color: "#ffffff", lineHeight: 1.6 }}>
+        <p style={{ margin: 0, fontSize: "0.9rem", color: "#ffffff", lineHeight: 1.6 }}>
           A ReVecta unifica numa única plataforma a experiência do condutor e da empresa.
         </p>
       </Card>
@@ -301,22 +301,22 @@ function S4() {
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem" }}>
         {/* B2C */}
         <Card accent={BLUE} style={{ padding: "1rem", display: "flex", flexDirection: "column", gap: "0.75rem" }}>
-          <div style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 700, fontSize: "0.78rem", color: BLUE, textTransform: "uppercase", letterSpacing: "0.08em" }}>B2C — Condutor</div>
+          <div style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 700, fontSize: "1.05rem", color: BLUE, textTransform: "uppercase", letterSpacing: "0.08em" }}>B2C — Condutor</div>
           {b2c.map((f) => (
             <div key={f.title} style={{ display: "flex", flexDirection: "column", gap: "0.3rem", paddingBottom: "0.65rem", borderBottom: "1px solid rgba(255,255,255,0.08)" }}>
-              <div style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 400, fontSize: "0.8rem", color: "#ffffff" }}>{f.title}</div>
-              <p style={{ margin: 0, fontSize: "0.74rem", color: "#ffffff", lineHeight: 1.65 }}>{f.desc}</p>
+              <div style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 400, fontSize: "1.05rem", color: "#ffffff" }}>{f.title}</div>
+              <p style={{ margin: 0, fontSize: "0.9rem", color: "#ffffff", lineHeight: 1.65 }}>{f.desc}</p>
             </div>
           ))}
         </Card>
 
         {/* B2B */}
         <Card accent={TEAL} style={{ padding: "1rem", display: "flex", flexDirection: "column", gap: "0.75rem" }}>
-          <div style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 700, fontSize: "0.78rem", color: TEAL, textTransform: "uppercase", letterSpacing: "0.08em" }}>B2B — Gestor de Frota</div>
+          <div style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 700, fontSize: "1.05rem", color: TEAL, textTransform: "uppercase", letterSpacing: "0.08em" }}>B2B — Gestor de Frota</div>
           {b2b.map((f) => (
             <div key={f.title} style={{ display: "flex", flexDirection: "column", gap: "0.3rem", paddingBottom: "0.65rem", borderBottom: "1px solid rgba(255,255,255,0.08)" }}>
-              <div style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 400, fontSize: "0.8rem", color: "#ffffff" }}>{f.title}</div>
-              <p style={{ margin: 0, fontSize: "0.74rem", color: "#ffffff", lineHeight: 1.65 }}>{f.desc}</p>
+              <div style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 400, fontSize: "1.05rem", color: "#ffffff" }}>{f.title}</div>
+              <p style={{ margin: 0, fontSize: "0.9rem", color: "#ffffff", lineHeight: 1.65 }}>{f.desc}</p>
             </div>
           ))}
         </Card>
