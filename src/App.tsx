@@ -325,7 +325,7 @@ function S4() {
       {/* Bottom — Visão de Futuro */}
       <Card style={{ padding: "0.85rem 1.25rem", display: "flex", alignItems: "center", gap: "1rem", border: "1px solid rgba(167,139,250,0.25)", background: "rgba(167,139,250,0.06)" }}>
         <div>
-          <div style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 700, fontSize: "0.78rem", color: PURPLE, marginBottom: "0.5rem" }}>Visão de Escalabilidade</div>
+          <div style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 700, fontSize: "0.85rem", color: PURPLE, marginBottom: "0.5rem" }}>Visão de Escalabilidade</div>
           <p style={{ margin: 0, fontSize: "0.74rem", color: "#fff", lineHeight: 1.65 }}>
             A arquitetura da plataforma ficará preparada para integrar <strong style={{ color: PURPLE, fontWeight: 700 }}>Smart Charging e Vehicle-to-Grid</strong>, permitindo rentabilizar a energia armazenada nos veículos durante os períodos que se encontram estacionados. Em paralelo, um <strong style={{ color: PURPLE, fontWeight: 700 }}>Mercado de Créditos de Carbono</strong> permitirá também valorizar os quilómetros percorridos com energia sustentável.
           </p>
