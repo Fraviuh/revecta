@@ -270,14 +270,14 @@ function MockupGestor() {
 
 function S4() {
   const b2c = [
-    { title: "Clareza sobre autonomia, carregamentos e custos reais de utilização", desc: "" },
-    { title: "Apoio à escolha do veículo ou modo de transporte mais adequado a cada deslocação", desc: "" },
-    { title: "Onboarding, literacia e orientação para uma condução elétrica mais eficiente", desc: "" },
+    { title: "Clareza sobre autonomia, carregamentos e custos reais de utilização.", desc: "" },
+    { title: "Apoio à escolha do veículo ou modo de transporte mais adequado a cada deslocação.", desc: "" },
+    { title: "Onboarding, literacia e orientação para uma condução elétrica mais eficiente.", desc: "" },
   ];
   const b2b = [
-    { title: "Gestão centralizada da frota e da respectiva operação", desc: "" },
-    { title: "Automatização de reembolsos, controlo de custos e acompanhamento da manutenção", desc: "" },
-    { title: "Monitorização do desempenho operacional e do impacto ambiental", desc: "" },
+    { title: "Gestão centralizada da frota e da respectiva operação.", desc: "" },
+    { title: "Automatização de reembolsos, controlo de custos e acompanhamento da manutenção.", desc: "" },
+    { title: "Monitorização do desempenho operacional e do impacto ambiental.", desc: "" },
   ];
 
   return (
