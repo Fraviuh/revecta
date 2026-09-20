@@ -574,7 +574,7 @@ function S9() {
   const channels = [
     {
       icon: "🏛️", color: BLUE, title: "Apoio Institucional",
-      desc: "Criação de uma Special Purpose Vehicle (SPV) energética para atuar como Agregador Independente junto da ERSE/OMIE, garantindo conformidade regulatória e acesso ao mercado de flexibilidade energética.",
+      desc: "Criação de uma SPV energética como Agregador Independente (ERSE/OMIE), garantindo conformidade e acesso ao mercado energético.",
     },
     {
       icon: "🔌", color: TEAL, title: "Hardware / Modelos FaaS",
