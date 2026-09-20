@@ -578,7 +578,7 @@ function S9() {
     },
     {
       icon: "🔌", color: TEAL, title: "Hardware / Modelos FaaS",
-      desc: "Parceria com fabricantes de carregadores residenciais (Wallbox) para pacotes combinados integrados no crédito automóvel (Fleet-as-a-Service).",
+      desc: "Cooperação estratégica com fabricantes de Wallbox e desenvolvedores de soluções tecnológicas.",
     },
     {
       icon: "🇵🇹", color: PURPLE, title: "Integração Governamental",
