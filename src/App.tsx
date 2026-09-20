@@ -291,7 +291,7 @@ function S4() {
 
       <Card accent={BLUE} style={{ width: "100%", boxSizing: "border-box", padding: "1rem 1.25rem" }}>
         <div style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 700, fontSize: "0.78rem", color: BLUE, marginBottom: "0.25rem" }}>
-          O MVP: Simplificar a Mobilidade Elétrica
+          O MVP
         </div>
         <p style={{ margin: 0, fontSize: "0.74rem", color: "#ffffff", lineHeight: 1.6 }}>
           A ReVecta unifica numa única plataforma a experiência do condutor e da empresa.
