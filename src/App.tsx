@@ -270,14 +270,14 @@ function MockupGestor() {
 
 function S4() {
   const b2c = [
-    { title: "Telemetria Transparente", desc: "Fim da ansiedade. Autonomia real e custos detalhados ao quilómetro (€/km real), eliminando a opacidade da rede pública." },
-    { title: "Driver Score", desc: "Avaliação de eficiência em tempo real para educar o condutor, combater o défice de literacia e incentivar a poupança." },
-    { title: "Assistente Pessoal IA", desc: "Antecipação de rotas e planeamento dos carregamentos mais eficientes e económicos." },
+    { title: "Clareza sobre autonomia, carregamentos e custos reais de utilização", desc: "" },
+    { title: "Apoio à escolha do veículo ou modo de transporte mais adequado a cada deslocação", desc: "" },
+    { title: "Onboarding, literacia e orientação para uma condução elétrica mais eficiente", desc: "" },
   ];
   const b2b = [
-    { title: "Automação de Reembolsos B2B", desc: "Centralização de faturas e processamento automático de reembolsos de carregamentos domésticos. Fim da carga administrativa." },
-    { title: "Controlo Total de Frota e TCO", desc: "Dashboard integrado com custos mensais, veículos em trânsito e gestão centralizada num único software." },
-    { title: "Relatórios ESG Integrados", desc: "Monitorização de CO₂ evitado e dados para auditoria de sustentabilidade num só clique." },
+    { title: "Gestão centralizada da frota e da respectiva operação", desc: "" },
+    { title: "Automatização de reembolsos, controlo de custos e acompanhamento da manutenção", desc: "" },
+    { title: "Monitorização do desempenho operacional e do impacto ambiental", desc: "" },
   ];
 
   return (
