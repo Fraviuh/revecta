@@ -383,7 +383,7 @@ function S5() {
 
 function S6() {
   return (
-    <div style={{ width: "100%", maxWidth: "920px", display: "flex", flexDirection: "column", gap: "2rem" }}>
+    <div style={{ width: "100%", maxWidth: "920px", display: "flex", flexDirection: "column", gap: "2rem", color: "#ffffff" }}>
       <div style={{ textAlign: "center" }}>
         <Badge color={BLUE}>06 — Validação de Conceito & Tecnologia</Badge>
         <h2 style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 800, fontSize: "clamp(1.8rem,4vw,2.8rem)", color: "#fff", margin: "0.75rem 0 0.5rem", letterSpacing: "-0.02em" }}>
