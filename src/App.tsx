@@ -464,7 +464,7 @@ function S7() {
   return (
     <div style={{ width: "100%", maxWidth: "960px", display: "flex", flexDirection: "column", gap: "2rem" }}>
       <div style={{ textAlign: "center" }}>
-        <Badge color={BLUE}>07 — Modelo de Negócio</Badge>
+        <Badge color={BLUE}>06 — Modelo de Negócio</Badge>
         <h2 style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 800, fontSize: "clamp(1.8rem,4vw,2.8rem)", color: "#fff", margin: "0.75rem 0 0.5rem", letterSpacing: "-0.02em" }}>
           Receitas{" "}
           <span style={{ color: BLUE }}>Diversificadas e Escaláveis</span>
@@ -523,7 +523,7 @@ function S8() {
   return (
     <div style={{ width: "100%", maxWidth: "960px", display: "flex", flexDirection: "column", gap: "2rem" }}>
       <div style={{ textAlign: "center" }}>
-        <Badge color={TEAL}>08 — Paisagem Competitiva</Badge>
+        <Badge color={TEAL}>07 — Paisagem Competitiva</Badge>
         <h2 style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 800, fontSize: "clamp(1.8rem,4vw,2.8rem)", color: "#fff", margin: "0.75rem 0 0.5rem", letterSpacing: "-0.02em" }}>
           Benchmark:{" "}
           <span style={{ color: TEAL }}>A Nossa Vantagem Única</span>
@@ -593,7 +593,7 @@ function S9() {
   return (
     <div style={{ width: "100%", maxWidth: "920px", display: "flex", flexDirection: "column", gap: "2rem" }}>
       <div style={{ textAlign: "center" }}>
-        <Badge color={BLUE}>09 — Estratégia Go-To-Market</Badge>
+        <Badge color={BLUE}>08 — Estratégia Go-To-Market</Badge>
         <h2 style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 800, fontSize: "clamp(1.8rem,4vw,2.8rem)", color: "#fff", margin: "0.75rem 0 0.5rem", letterSpacing: "-0.02em" }}>
           Estratégia GTM e{" "}
           <span style={{ color: BLUE }}>Parcerias Estratégicas</span>
@@ -626,7 +626,7 @@ function S10() {
   return (
     <div style={{ width: "100%", maxWidth: "900px", display: "flex", flexDirection: "column", gap: "1.5rem" }}>
       <div style={{ textAlign: "center" }}>
-        <Badge color={TEAL}>10 — Equipa</Badge>
+        <Badge color={TEAL}>09 — Equipa</Badge>
         <h2 style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 800, fontSize: "clamp(1.4rem,3vw,2.2rem)", color: "#fff", margin: "0.5rem 0 0", letterSpacing: "-0.02em" }}>
           Da Academia à Realidade: <span style={{ color: TEAL }}>Quem Somos</span>
         </h2>
@@ -713,7 +713,7 @@ function S11() {
   return (
     <div style={{ width: "100%", maxWidth: "960px", display: "flex", flexDirection: "column", gap: "2rem" }}>
       <div style={{ textAlign: "center" }}>
-        <Badge color={PURPLE}>11 — Cronograma de Desenvolvimento</Badge>
+        <Badge color={PURPLE}>10 — Cronograma de Desenvolvimento</Badge>
         <h2 style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 800, fontSize: "clamp(1.8rem,4vw,2.8rem)", color: "#fff", margin: "0.75rem 0 0.5rem", letterSpacing: "-0.02em" }}>
           Roadmap de{" "}
           <span style={{ color: PURPLE }}>Implementação e Visão</span>
