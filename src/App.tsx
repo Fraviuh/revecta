@@ -281,7 +281,7 @@ function S4() {
   ];
 
   return (
-    <div style={{ width: "100%", maxWidth: "980px", display: "flex", flexDirection: "column", gap: "1.25rem", color: "#fff", textAlign: "center" }}>
+    <div style={{ width: "100%", maxWidth: "980px", display: "flex", flexDirection: "column", gap: "1.25rem", color: "#fff", textAlign: "left" }}>
       <div style={{ textAlign: "center" }}>
         <Badge color={BLUE}>03 — Solução</Badge>
         <h2 style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 800, fontSize: "clamp(1.5rem,3vw,2.2rem)", color: "#fff", margin: "0.65rem 0 0", letterSpacing: "-0.02em" }}>
