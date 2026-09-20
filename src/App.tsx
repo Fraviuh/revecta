@@ -492,6 +492,11 @@ function S7() {
           </Card>
         ))}
       </div>
+      <Card accent={TEAL} style={{ width: "100%", boxSizing: "border-box", padding: "0.85rem 1.25rem" }}>
+        <p style={{ margin: 0, color: "#ffffff", fontSize: "0.72rem", lineHeight: 1.5, fontStyle: "italic" }}>
+          *Os valores apresentados no Stream 02 são estimativas meramente ilustrativas para demonstração do modelo de negócio.
+        </p>
+      </Card>
     </div>
   );
 }
