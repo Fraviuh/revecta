@@ -433,7 +433,7 @@ function S6() {
 function S7() {
   const streams = [
     {
-      num: "01", color: BLUE, icon: "💼", title: "Subscrição B2B (SaaS)",
+      num: "01", color: BLUE, title: "Subscrição B2B (SaaS)",
       desc: "Mensalidade por veículo corporativo integrado na plataforma de gestão de frotas e automação de reembolsos.",
       metrics: [
         { label: "Modelo", value: "Por veículo/mês" },
@@ -441,7 +441,7 @@ function S7() {
       ],
     },
     {
-      num: "02", color: TEAL, icon: "⚡", title: "Unit Economics V2G (Arbitragem OMIE)",
+      num: "02", color: TEAL, title: "Unit Economics V2G (Arbitragem OMIE)",
       desc: "Projeção de receita média diária por veículo com margem retida pela plataforma.",
       metrics: [
         { label: "Receita bruta/veículo/dia", value: "2,00€" },
@@ -451,7 +451,7 @@ function S7() {
       ],
     },
     {
-      num: "03", color: PURPLE, icon: "🔗", title: "Comissões B2B2C / Serviços Financeiros",
+      num: "03", color: PURPLE, title: "Comissões B2B2C / Serviços Financeiros",
       desc: "Venda de hardware e intermediação de Embedded Finance.",
       metrics: [
         { label: "Wallboxes (hardware)", value: "Venda directa" },
@@ -475,7 +475,6 @@ function S7() {
           <Card key={s.num} accent={s.color} style={{ padding: "1.75rem", position: "relative", overflow: "hidden", display: "flex", flexDirection: "column", gap: "1rem" }}>
             <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 2, background: s.color }} />
             <div style={{ display: "flex", alignItems: "center", gap: "0.75rem" }}>
-              <div style={{ width: 36, height: 36, borderRadius: 8, display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.2rem", background: `${s.color}18` }}>{s.icon}</div>
               <span style={{ fontSize: "0.65rem", fontWeight: 700, letterSpacing: "0.12em", color: s.color, fontFamily: "'Plus Jakarta Sans',sans-serif", textTransform: "uppercase" }}>Stream {s.num}</span>
             </div>
             <div>
