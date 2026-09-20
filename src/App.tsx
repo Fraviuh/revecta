@@ -289,7 +289,7 @@ function S4() {
         </h2>
       </div>
 
-      <Card accent={BLUE} style={{ width: "100%", boxSizing: "border-box", padding: "1rem 1.25rem" }}>
+      <Card accent={BLUE} style={{ width: "100%", boxSizing: "border-box", padding: "1rem 1.25rem", textAlign: "center" }}>
         <div style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 700, fontSize: "0.78rem", color: BLUE, marginBottom: "0.25rem" }}>
           O MVP
         </div>
