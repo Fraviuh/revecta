@@ -315,11 +315,10 @@ function S4() {
 
       {/* Bottom — Visão de Futuro */}
       <Card style={{ padding: "0.85rem 1.25rem", display: "flex", alignItems: "center", gap: "1rem", border: "1px solid rgba(167,139,250,0.25)", background: "rgba(167,139,250,0.06)" }}>
-        <div style={{ fontSize: "1.2rem", flexShrink: 0 }}>🚀</div>
         <div>
           <div style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 700, fontSize: "0.78rem", color: PURPLE, marginBottom: "0.2rem" }}>Visão de Escalabilidade — Preparados para o Futuro</div>
           <p style={{ margin: 0, fontSize: "0.7rem", color: "#fff", lineHeight: 1.65 }}>
-            A arquitectura da plataforma está preparada para integrar <strong>Vehicle-to-Grid</strong> — convertendo a frota num activo gerador de receita — e <strong>Mercados de Créditos de Carbono</strong>, permitindo monetizar cada quilómetro percorrido com energia renovável.
+            A arquitetura da plataforma ficará preparada para integrar Smart Charging e Vehicle-to-Grid, permitindo rentabilizar a energia armazenada nos veículos durante os períodos que se encontram estacionados. Em paralelo, um Mercado de Créditos de Carbono permitirá também valorizar os quilómetros percorridos com energia sustentável.
           </p>
         </div>
       </Card>
