@@ -1,0 +1,10 @@
+{
+  "description": "Creates animated, interactive pitch presentations with dynamic backgrounds to effectively showcase app concepts and business strategies.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
