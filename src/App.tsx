@@ -304,7 +304,7 @@ function S4() {
           <div style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 700, fontSize: "0.78rem", color: BLUE, textTransform: "uppercase", letterSpacing: "0.08em" }}>B2C — Condutor</div>
           {b2c.map((f) => (
             <div key={f.title} style={{ display: "flex", flexDirection: "column", gap: "0.4rem", paddingBottom: "1rem", borderBottom: "1px solid rgba(255,255,255,0.08)" }}>
-              <div style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 700, fontSize: "0.8rem", color: "#ffffff" }}>{f.title}</div>
+              <div style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 400, fontSize: "0.8rem", color: "#ffffff" }}>{f.title}</div>
               <p style={{ margin: 0, fontSize: "0.74rem", color: "#ffffff", lineHeight: 1.65 }}>{f.desc}</p>
             </div>
           ))}
@@ -315,7 +315,7 @@ function S4() {
           <div style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 700, fontSize: "0.78rem", color: TEAL, textTransform: "uppercase", letterSpacing: "0.08em" }}>B2B — Gestor de Frota</div>
           {b2b.map((f) => (
             <div key={f.title} style={{ display: "flex", flexDirection: "column", gap: "0.4rem", paddingBottom: "1rem", borderBottom: "1px solid rgba(255,255,255,0.08)" }}>
-              <div style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 700, fontSize: "0.8rem", color: "#ffffff" }}>{f.title}</div>
+              <div style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 400, fontSize: "0.8rem", color: "#ffffff" }}>{f.title}</div>
               <p style={{ margin: 0, fontSize: "0.74rem", color: "#ffffff", lineHeight: 1.65 }}>{f.desc}</p>
             </div>
           ))}
@@ -326,7 +326,7 @@ function S4() {
       <Card style={{ padding: "0.85rem 1.25rem", display: "flex", alignItems: "center", gap: "1rem", border: "1px solid rgba(167,139,250,0.25)", background: "rgba(167,139,250,0.06)" }}>
         <div>
           <div style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 700, fontSize: "0.78rem", color: PURPLE, marginBottom: "0.2rem" }}>Visão de Escalabilidade</div>
-          <p style={{ margin: 0, fontSize: "0.7rem", color: "#fff", lineHeight: 1.65 }}>
+          <p style={{ margin: 0, fontSize: "0.74rem", color: "#fff", lineHeight: 1.65 }}>
             A arquitetura da plataforma ficará preparada para integrar <strong style={{ color: PURPLE, fontWeight: 700 }}>Smart Charging e Vehicle-to-Grid</strong>, permitindo rentabilizar a energia armazenada nos veículos durante os períodos que se encontram estacionados. Em paralelo, um Mercado de Créditos de Carbono permitirá também valorizar os quilómetros percorridos com energia sustentável.
           </p>
         </div>
