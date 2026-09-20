@@ -702,7 +702,7 @@ function S11() {
     },
     {
       horizon: "Médio Prazo", period: "6 a 18 Meses — Capacidades Avançadas", color: TEAL,
-      items: ["Assistente de Smart Charging alimentado por IA", "Adequação automática a tarifários dinâmicos (OMIE)", "Relatórios ESG/CSRD automatizados para frotas"],
+      items: ["Integração de APIs de veículos, CPMS e eMSP", "Evolução da IA com aprendizagem contínua", "Otimização dos carregamentos e custos energéticos", "Modelo SaaS e primeiros clientes recorrentes"],
     },
     {
       horizon: "Longo Prazo", period: "18 Meses+ — Evolução Macro", color: PURPLE,
