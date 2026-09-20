@@ -582,7 +582,7 @@ function S9() {
     },
     {
       icon: "🇵🇹", color: PURPLE, title: "Integração Governamental",
-      desc: "Ligação total à rede MOBI.E para garantir usabilidade pública massiva sem fricções no primeiro dia de operação.",
+      desc: "Ligação direta à rede MOBI.E para uma utilização pública sem fricções desde o dia 1.",
     },
   ];
 
