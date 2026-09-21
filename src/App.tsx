@@ -511,11 +511,11 @@ function S7() {
 
 function S8() {
   const competitors = [
-    { name: "Miio", x: 20, y: 18, category: "App PT" },
-    { name: "Via Verde", x: 32, y: 30, category: "App PT" },
-    { name: "Geotab", x: 18, y: 68, category: "Telemetria" },
-    { name: "Samsara", x: 32, y: 82, category: "Telemetria" },
-    { name: "ESG e reporting", x: 78, y: 75, category: "Eixo" },
+    { name: "Miio", x: 24, y: 20, category: "App PT" },
+    { name: "Via Verde", x: 26, y: 32, category: "App PT" },
+    { name: "Geotab", x: 24, y: 68, category: "Telemetria" },
+    { name: "Samsara", x: 26, y: 82, category: "Telemetria" },
+    { name: "ESG e reporting", x: 72, y: 75, category: "Eixo" },
   ];
 
   const advantages = [
@@ -551,7 +551,7 @@ function S8() {
             {competitors.map((c) => (
               <div key={c.name} style={{ position: "absolute", left: `${c.x}%`, top: `${c.y}%`, transform: "translate(-50%,-50%)" }}>
                 <div style={{ width: 8, height: 8, borderRadius: "50%", background: "rgba(255,255,255,0.2)" }} />
-                <span style={{ position: "absolute", top: "100%", left: "50%", transform: "translateX(-50%)", whiteSpace: "nowrap", fontSize: 9, color: "rgba(255,255,255,0.3)", marginTop: 2 }}>{c.name}</span>
+                <span style={{ position: "absolute", top: "100%", left: "50%", transform: "translateX(-50%)", whiteSpace: "nowrap", fontSize: 9, color: "rgba(255,255,255,0.5)", marginTop: 2 }}>{c.name}</span>
               </div>
             ))}
             <div style={{ position: "absolute", left: "50%", top: "50%", transform: "translate(-50%,-50%)" }}>
