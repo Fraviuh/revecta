@@ -217,7 +217,7 @@ function S2() {
             <div style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 700, fontSize: "1.05rem", color: item.color, lineHeight: 1.3 }}>
               {item.title}
             </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "0.3rem", paddingBottom: "0.65rem", borderBottom: "1px solid rgba(255,255,255,0.08)" }}>
+            <div style={{ display: "flex", flexDirection: "column", gap: "0.3rem" }}>
               <p style={{ margin: 0, fontSize: "0.9rem", color: "#ffffff", lineHeight: 1.65 }}>
                 {item.quote}
               </p>
