@@ -536,12 +536,18 @@ function S8() {
       </div>
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1.5rem" }}>
         <Card style={{ padding: "1.5rem", position: "relative", boxSizing: "border-box", height: "100%", display: "flex", flexDirection: "column" }}>
-          <div style={{ fontSize: "0.7rem", color: "rgba(255,255,255,0.25)", marginBottom: "0.5rem" }}>
-            ← Foco EV | Integração Financeira →
+          <div style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.08em", color: "rgba(255,255,255,0.4)", marginBottom: "0.5rem", textAlign: "center" }}>
+            CARREGAMENTO
           </div>
           <div style={{ position: "relative", flex: 1, minHeight: 160 }}>
             <div style={{ position: "absolute", top: "50%", left: 0, right: 0, height: 1, background: "rgba(255,255,255,0.07)" }} />
             <div style={{ position: "absolute", left: "50%", top: 0, bottom: 0, width: 1, background: "rgba(255,255,255,0.07)" }} />
+            <div style={{ position: "absolute", left: 6, top: "50%", transform: "translate(-50%,-50%) rotate(-90deg)", transformOrigin: "center", fontSize: "0.65rem", fontWeight: 700, letterSpacing: "0.08em", color: "rgba(255,255,255,0.4)", whiteSpace: "nowrap" }}>
+              GESTÃO DE FROTAS
+            </div>
+            <div style={{ position: "absolute", right: 6, top: "50%", transform: "translate(50%,-50%) rotate(90deg)", transformOrigin: "center", fontSize: "0.65rem", fontWeight: 700, letterSpacing: "0.08em", color: "rgba(255,255,255,0.4)", whiteSpace: "nowrap" }}>
+              SUSTENTABILIDADE
+            </div>
             {competitors.map((c) => (
               <div key={c.name} style={{ position: "absolute", left: `${c.x}%`, top: `${c.y}%`, transform: "translate(-50%,-50%)" }}>
                 <div style={{ width: 8, height: 8, borderRadius: "50%", background: "rgba(255,255,255,0.2)" }} />
