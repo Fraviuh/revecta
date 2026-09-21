@@ -617,7 +617,7 @@ function S9() {
               <div style={{ width: 42, height: 42, borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.4rem", background: `${c.color}18`, flexShrink: 0, marginBottom: "0.75rem" }}>{c.icon}</div>
               <div style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 700, fontSize: "1.05rem", color: c.color, lineHeight: 1.3, minHeight: "2.75rem", display: "flex", alignItems: "flex-start" }}>{c.title}</div>
             </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "0.3rem", paddingBottom: "0.65rem", borderBottom: "1px solid rgba(255,255,255,0.08)" }}>
+            <div style={{ display: "flex", flexDirection: "column", gap: "0.3rem" }}>
               <p style={{ margin: 0, fontSize: "0.9rem", color: "#ffffff", lineHeight: 1.65 }}>{c.desc}</p>
             </div>
           </Card>
