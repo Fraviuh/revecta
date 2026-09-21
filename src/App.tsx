@@ -645,7 +645,7 @@ function S10() {
           Porquê nós?
         </div>
         <p style={{ margin: 0, fontSize: "0.9rem", color: "#ffffff", lineHeight: 1.65 }}>
-          <strong>Somos a equipa certa porque unimos uma visão de produto estrategicamente validada a uma execução técnica robusta. Esta sinergia transatlântica garante uma plataforma perfeitamente desenhada e operacionalmente estável.</strong>
+          Somos a equipa certa porque unimos uma visão de produto estrategicamente validada a uma execução técnica robusta. Esta sinergia transatlântica garante uma plataforma perfeitamente desenhada e operacionalmente estável.
         </p>
       </Card>
 
