@@ -511,12 +511,11 @@ function S7() {
 
 function S8() {
   const competitors = [
-    { name: "Geotab", x: 68, y: 62, category: "Telemetria" },
-    { name: "Samsara", x: 72, y: 50, category: "Telemetria" },
-    { name: "AMPECO", x: 42, y: 38, category: "CPMS" },
-    { name: "Driivz", x: 38, y: 30, category: "CPMS" },
-    { name: "Miio", x: 20, y: 90, category: "App PT" },
-    { name: "Via Verde", x: 30, y: 80, category: "App PT" },
+    { name: "Miio", x: 20, y: 18, category: "App PT" },
+    { name: "Via Verde", x: 32, y: 30, category: "App PT" },
+    { name: "Geotab", x: 18, y: 68, category: "Telemetria" },
+    { name: "Samsara", x: 32, y: 82, category: "Telemetria" },
+    { name: "ESG e reporting", x: 78, y: 75, category: "Eixo" },
   ];
 
   const advantages = [
