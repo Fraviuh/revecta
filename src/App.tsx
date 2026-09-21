@@ -560,7 +560,7 @@ function S8() {
         </Card>
         <div style={{ display: "flex", flexDirection: "column", gap: "0.6rem" }}>
           <div style={{ fontSize: "0.72rem", color: "rgba(255,255,255,0.3)", fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.08em", marginBottom: "0.25rem" }}>
-            Vantagem competitiva (Moat) — só o ReVecta oferece:
+            Análise de Mercado
           </div>
           {advantages.map((a) => (
             <Card key={a} style={{ padding: "0.65rem 1rem", display: "flex", alignItems: "center", gap: "0.6rem" }}>
