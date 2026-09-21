@@ -511,12 +511,12 @@ function S7() {
 
 function S8() {
   const competitors = [
-    { name: "Geotab", x: 68, y: 62, category: "Telemetria" },
-    { name: "Samsara", x: 72, y: 50, category: "Telemetria" },
-    { name: "AMPECO", x: 42, y: 38, category: "CPMS" },
-    { name: "Driivz", x: 38, y: 30, category: "CPMS" },
-    { name: "Miio", x: 28, y: 55, category: "App PT" },
-    { name: "Via Verde", x: 22, y: 42, category: "App PT" },
+    { name: "CARREGAMENTO", x: 50, y: 4, category: "Eixo" },
+    { name: "Miio · Via Verde", x: 50, y: 16, category: "Carregamento" },
+    { name: "GESTÃO DE FROTAS", x: 14, y: 38, category: "Eixo" },
+    { name: "Geotab · Samsara", x: 18, y: 60, category: "Gestão de Frotas" },
+    { name: "SUSTENTABILIDADE", x: 86, y: 38, category: "Eixo" },
+    { name: "ESG e reporting", x: 86, y: 58, category: "Eixo" },
   ];
 
   const advantages = [
@@ -549,7 +549,7 @@ function S8() {
                 <span style={{ position: "absolute", top: "100%", left: "50%", transform: "translateX(-50%)", whiteSpace: "nowrap", fontSize: 9, color: "rgba(255,255,255,0.3)", marginTop: 2 }}>{c.name}</span>
               </div>
             ))}
-            <div style={{ position: "absolute", left: "88%", top: "12%", transform: "translate(-50%,-50%)" }}>
+            <div style={{ position: "absolute", left: "50%", top: "50%", transform: "translate(-50%,-50%)" }}>
               <div style={{ width: 14, height: 14, borderRadius: "50%", background: TEAL, boxShadow: `0 0 16px ${TEAL}` }} />
               <span style={{ position: "absolute", top: "100%", left: "50%", transform: "translateX(-50%)", whiteSpace: "nowrap", fontSize: 10, color: TEAL, fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 700, marginTop: 4 }}>ReVecta</span>
             </div>
