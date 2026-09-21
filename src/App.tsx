@@ -374,14 +374,14 @@ function S5() {
             <div style={{ fontSize: "0.65rem", fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase", color: m.color, fontFamily: "'Plus Jakarta Sans',sans-serif", marginBottom: "0.75rem" }}>{m.label}</div>
             <div style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 800, fontSize: "1.5rem", color: "#fff", marginBottom: "0.2rem" }}>{m.value}</div>
             <div style={{ fontSize: "0.68rem", color: m.color, fontWeight: 600, marginBottom: "0.75rem", fontFamily: "'Plus Jakarta Sans',sans-serif" }}>{m.sub}</div>
-            <p style={{ margin: 0, fontSize: "0.75rem", color: "#ffffff", lineHeight: 1.65, whiteSpace: "pre-line" }}>{m.desc}</p>
+            <p style={{ margin: 0, fontSize: "0.9rem", color: "#ffffff", lineHeight: 1.65, whiteSpace: "pre-line" }}>{m.desc}</p>
           </Card>
         ))}
       </div>
       <Card style={{ padding: "1rem 1.5rem", display: "flex", alignItems: "center", gap: "1rem", border: "1px solid rgba(59,158,255,0.15)" }}>
         <div style={{ flex: 1 }}>
-          <div style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 700, fontSize: "0.85rem", color: "#fff", marginBottom: "0.2rem" }}>Porquê Agora?</div>
-          <p style={{ margin: 0, fontSize: "0.78rem", color: "#ffffff", lineHeight: 1.6 }}>
+          <div style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 700, fontSize: "1.05rem", color: "#fff", marginBottom: "0.2rem" }}>Porquê Agora?</div>
+          <p style={{ margin: 0, fontSize: "0.9rem", color: "#ffffff", lineHeight: 1.6 }}>
             A <strong style={{ color: BLUE }}>Taxonomia da UE</strong> e as diretivas <strong style={{ color: BLUE }}>ESG/CSRD</strong> forçam as empresas a agir já. A transição para frotas sustentáveis e as metas de descontinuação de novos veículos a combustão criam uma urgência regulatória sem precedentes.
           </p>
         </div>
@@ -420,15 +420,15 @@ function S6() {
         </Card>
         <div style={{ display: "flex", flexDirection: "column", gap: "1rem", height: "100%" }}>
           <Card accent={TEAL} style={{ padding: "1.5rem", height: "100%", display: "flex", flexDirection: "column" }}>
-            <div style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 700, fontSize: "0.9rem", color: BLUE, marginBottom: "0.75rem" }}>Casos de Sucesso</div>
+            <div style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 700, fontSize: "1.05rem", color: BLUE, marginBottom: "0.75rem" }}>Casos de Sucesso</div>
             <div style={{ display: "flex", flexDirection: "column", gap: "0.85rem", flex: 1, justifyContent: "space-between" }}>
               {[
                 { name: "Projeto Galp / Nissan (Portugal)", note: "Em São Miguel, cada veículo poderá gerar uma receita mensal na ordem dos nove euros." },
                 { name: "AYR Platform (Portugal)", note: "Dados reais de mobilidade sustentável transformados em tokens de carbono transacionáveis por empresas locais." },
               ].map((r) => (
                 <div key={r.name} style={{ display: "flex", flexDirection: "column", gap: "0.55rem", paddingBottom: "0.85rem", borderBottom: "1px solid rgba(255,255,255,0.18)" }}>
-                  <div style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 700, fontSize: "0.82rem", color: "#ffffff" }}>{r.name}</div>
-                  <div style={{ fontSize: "0.75rem", color: "#ffffff", lineHeight: 1.6 }}>{r.note}</div>
+                  <div style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 700, fontSize: "1.05rem", color: "#ffffff" }}>{r.name}</div>
+                  <div style={{ fontSize: "0.9rem", color: "#ffffff", lineHeight: 1.6 }}>{r.note}</div>
                 </div>
               ))}
             </div>
@@ -487,8 +487,8 @@ function S7() {
               <span style={{ fontSize: "0.65rem", fontWeight: 700, letterSpacing: "0.12em", color: s.color, fontFamily: "'Plus Jakarta Sans',sans-serif", textTransform: "uppercase" }}>Stream {s.num}</span>
             </div>
             <div>
-              <div style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 700, fontSize: "0.88rem", color: "#fff", marginBottom: "0.4rem" }}>{s.title}</div>
-              <p style={{ margin: 0, fontSize: "0.78rem", color: "#ffffff", lineHeight: 1.6 }}>{s.desc}</p>
+              <div style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 700, fontSize: "1.05rem", color: "#fff", marginBottom: "0.4rem" }}>{s.title}</div>
+              <p style={{ margin: 0, fontSize: "0.9rem", color: "#ffffff", lineHeight: 1.6 }}>{s.desc}</p>
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: "0.4rem", marginTop: "auto" }}>
               {s.metrics.map((m) => (
@@ -562,19 +562,19 @@ function S8() {
           </div>
         </Card>
         <div style={{ display: "flex", flexDirection: "column", gap: "0.6rem" }}>
-          <div style={{ fontSize: "0.9rem", color: TEAL, fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 800, letterSpacing: "-0.01em", marginBottom: "0.25rem" }}>
+          <div style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 700, fontSize: "1.05rem", color: TEAL, letterSpacing: "-0.01em", marginBottom: "0.25rem" }}>
             Análise de Mercado
           </div>
           {advantages.map((a) => (
             <Card key={a} style={{ padding: "0.65rem 1rem", display: "flex", alignItems: "center", gap: "0.6rem" }}>
               <Tick color={TEAL} />
-              <span style={{ fontSize: "0.8rem", color: "#ffffff" }}>{a}</span>
+              <span style={{ fontSize: "0.9rem", color: "#ffffff" }}>{a}</span>
             </Card>
           ))}
 
           <Card style={{ padding: "0.65rem 1rem", display: "flex", flexDirection: "column", gap: "0.35rem" }}>
-            <div style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 700, fontSize: "0.9rem", color: TEAL }}>O Nosso Posicionamento</div>
-            <p style={{ margin: 0, fontSize: "0.8rem", color: "#ffffff", lineHeight: 1.6 }}>
+            <div style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 700, fontSize: "1.05rem", color: TEAL }}>O Nosso Posicionamento</div>
+            <p style={{ margin: 0, fontSize: "0.9rem", color: "#ffffff", lineHeight: 1.6 }}>
               Enquanto os líderes do setor se especializam num domínio específico, a ReVecta procura integrar a experiência da mobilidade elétrica numa única camada operacional.
             </p>
           </Card>
@@ -615,8 +615,8 @@ function S9() {
             <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 2, background: c.color }} />
             <div style={{ width: 42, height: 42, borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.4rem", background: `${c.color}18` }}>{c.icon}</div>
             <div>
-              <div style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 700, fontSize: "0.88rem", color: c.color, marginBottom: "0.5rem" }}>{c.title}</div>
-              <p style={{ margin: 0, fontSize: "0.78rem", color: "#ffffff", lineHeight: 1.65 }}>{c.desc}</p>
+              <div style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 700, fontSize: "1.05rem", color: c.color, marginBottom: "0.5rem" }}>{c.title}</div>
+              <p style={{ margin: 0, fontSize: "0.9rem", color: "#ffffff", lineHeight: 1.65 }}>{c.desc}</p>
             </div>
           </Card>
         ))}
@@ -624,8 +624,8 @@ function S9() {
       <Card style={{ padding: "1.25rem 1.5rem", display: "flex", gap: "1rem", alignItems: "flex-start" }}>
         <span style={{ fontSize: "1.5rem" }}>🎯</span>
         <div>
-          <div style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 600, fontSize: "0.85rem", color: "#fff", marginBottom: "0.3rem" }}>ICP Inicial</div>
-          <p style={{ margin: 0, fontSize: "0.78rem", color: "#ffffff", lineHeight: 1.6 }}>PMEs portuguesas com 5–50 veículos, sectores de serviços e logística, com pressão ESG crescente.</p>
+          <div style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 600, fontSize: "1.05rem", color: "#fff", marginBottom: "0.3rem" }}>ICP Inicial</div>
+          <p style={{ margin: 0, fontSize: "0.9rem", color: "#ffffff", lineHeight: 1.6 }}>PMEs portuguesas com 5–50 veículos, sectores de serviços e logística, com pressão ESG crescente.</p>
         </div>
       </Card>
     </div>
@@ -670,7 +670,7 @@ function S10() {
             ].map(b => (
               <div key={b} style={{ display: "flex", alignItems: "flex-start", gap: "0.6rem" }}>
                 <span style={{ color: BLUE, fontWeight: 700, fontSize: "0.8rem", flexShrink: 0, marginTop: "0.05rem" }}>→</span>
-                <span style={{ fontSize: "0.78rem", color: "#ffffff", lineHeight: 1.6 }}>{b}</span>
+                <span style={{ fontSize: "0.9rem", color: "#ffffff", lineHeight: 1.6 }}>{b}</span>
               </div>
             ))}
           </div>
@@ -698,7 +698,7 @@ function S10() {
             ].map(b => (
               <div key={b} style={{ display: "flex", alignItems: "flex-start", gap: "0.6rem" }}>
                 <span style={{ color: TEAL, fontWeight: 700, fontSize: "0.8rem", flexShrink: 0, marginTop: "0.05rem" }}>→</span>
-                <span style={{ fontSize: "0.78rem", color: "#ffffff", lineHeight: 1.6 }}>{b}</span>
+                <span style={{ fontSize: "0.9rem", color: "#ffffff", lineHeight: 1.6 }}>{b}</span>
               </div>
             ))}
           </div>
@@ -746,12 +746,12 @@ function S11() {
               <div style={{ fontSize: "0.65rem", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: p.color, fontFamily: "'Plus Jakarta Sans',sans-serif", marginBottom: "0.2rem" }}>
                 Fase {i + 1}
               </div>
-              <div style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 700, fontSize: "0.9rem", color: "#fff" }}>{p.horizon}</div>
+              <div style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 700, fontSize: "1.05rem", color: "#fff" }}>{p.horizon}</div>
               <div style={{ fontSize: "0.72rem", color: "rgba(255,255,255,0.35)" }}>{p.period}</div>
             </div>
             <ul style={{ margin: 0, padding: 0, listStyle: "none", display: "flex", flexDirection: "column", gap: "0.5rem" }}>
               {p.items.map((item) => (
-                <li key={item} style={{ display: "flex", alignItems: "flex-start", gap: "0.5rem", fontSize: "0.78rem", color: "#ffffff", lineHeight: 1.5 }}>
+                <li key={item} style={{ display: "flex", alignItems: "flex-start", gap: "0.5rem", fontSize: "0.9rem", color: "#ffffff", lineHeight: 1.5 }}>
                   <Chevron color={p.color} />
                   {item}
                 </li>
