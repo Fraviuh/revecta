@@ -411,7 +411,7 @@ function S6() {
               { label: "Amostra — Homens", value: "63,2%" },
               { label: "Experiência média com VE", value: "2 anos e 10 meses" },
             ].map((s) => (
-              <div key={s.label} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "0.4rem 0", borderBottom: "1px solid rgba(255,255,255,0.04)" }}>
+              <div key={s.label} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "0.4rem 0" }}>
                 <span style={{ fontSize: "0.76rem", color: "#ffffff" }}>{s.label}</span>
                 <span style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 700, fontSize: "0.82rem", color: "#ffffff" }}>{s.value}</span>
               </div>
@@ -426,7 +426,7 @@ function S6() {
                 { name: "Projeto Galp / Nissan (Portugal)", note: "Em São Miguel, cada veículo poderá gerar uma receita mensal na ordem dos nove euros." },
                 { name: "AYR Platform (Portugal)", note: "Dados reais de mobilidade sustentável transformados em tokens de carbono transacionáveis por empresas locais." },
               ].map((r) => (
-                <div key={r.name} style={{ display: "flex", flexDirection: "column", gap: "0.55rem", paddingBottom: "0.85rem", borderBottom: "1px solid rgba(255,255,255,0.18)" }}>
+                <div key={r.name} style={{ display: "flex", flexDirection: "column", gap: "0.55rem" }}>
                   <div style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 700, fontSize: "1.05rem", color: "#ffffff" }}>{r.name}</div>
                   <div style={{ fontSize: "0.9rem", color: "#ffffff", lineHeight: 1.6 }}>{r.note}</div>
                 </div>
