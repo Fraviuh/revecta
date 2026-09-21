@@ -511,27 +511,13 @@ function S7() {
 
 function S8() {
   const competitors = [
-    { name: "Miio", category: "App PT" },
-    { name: "Via Verde", category: "App PT" },
-    { name: "AMPECO", category: "CPMS" },
-    { name: "Driivz", category: "CPMS" },
-    { name: "Geotab", category: "Telemetria" },
-    { name: "Samsara", category: "Telemetria" },
+    { name: "Geotab", x: 68, y: 62, category: "Telemetria" },
+    { name: "Samsara", x: 72, y: 50, category: "Telemetria" },
+    { name: "AMPECO", x: 42, y: 38, category: "CPMS" },
+    { name: "Driivz", x: 38, y: 30, category: "CPMS" },
+    { name: "Miio", x: 28, y: 55, category: "App PT" },
+    { name: "Via Verde", x: 22, y: 42, category: "App PT" },
   ];
-
-  const groupByCategory = (categories: string[]) => competitors.filter((c) => categories.includes(c.category)).map((c) => c.name);
-  const chargingNames = groupByCategory(["App PT", "CPMS"]);
-  const fleetNames = groupByCategory(["Telemetria"]);
-
-  const axisLabelStyle: React.CSSProperties = {
-    fontSize: "0.58rem", fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase",
-    color: "rgba(255,255,255,0.45)", fontFamily: "'Plus Jakarta Sans',sans-serif",
-  };
-  const chipStyle: React.CSSProperties = {
-    fontSize: "0.62rem", fontWeight: 600, padding: "0.18rem 0.5rem", borderRadius: 999,
-    background: "rgba(255,255,255,0.08)", border: "1px solid rgba(255,255,255,0.18)",
-    color: "#ffffff", whiteSpace: "nowrap",
-  };
 
   const advantages = [
     "Reembolso automático carregamento doméstico",
@@ -554,39 +540,21 @@ function S8() {
       </div>
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1.5rem" }}>
         <Card style={{ padding: "1.5rem", position: "relative", height: 260 }}>
-          <div style={{ position: "relative", display: "grid", gridTemplateColumns: "1fr auto 1fr", gridTemplateRows: "auto 1fr", height: "100%", gap: "0.4rem" }}>
-
-            {/* Topo — Carregamento */}
-            <div style={{ gridColumn: "1 / -1", gridRow: 1, display: "flex", flexDirection: "column", alignItems: "center", gap: "0.35rem" }}>
-              <span style={axisLabelStyle}>Carregamento</span>
-              <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "0.3rem" }}>
-                {chargingNames.map((n) => <span key={n} style={chipStyle}>{n}</span>)}
+          <div style={{ fontSize: "0.7rem", color: "rgba(255,255,255,0.25)", marginBottom: "0.5rem" }}>
+            ← Foco EV | Integração Financeira →
+          </div>
+          <div style={{ position: "relative", flex: 1, height: 200 }}>
+            <div style={{ position: "absolute", top: "50%", left: 0, right: 0, height: 1, background: "rgba(255,255,255,0.07)" }} />
+            <div style={{ position: "absolute", left: "50%", top: 0, bottom: 0, width: 1, background: "rgba(255,255,255,0.07)" }} />
+            {competitors.map((c) => (
+              <div key={c.name} style={{ position: "absolute", left: `${c.x}%`, top: `${c.y}%`, transform: "translate(-50%,-50%)" }}>
+                <div style={{ width: 8, height: 8, borderRadius: "50%", background: "rgba(255,255,255,0.2)" }} />
+                <span style={{ position: "absolute", top: "100%", left: "50%", transform: "translateX(-50%)", whiteSpace: "nowrap", fontSize: 9, color: "rgba(255,255,255,0.3)", marginTop: 2 }}>{c.name}</span>
               </div>
-            </div>
-
-            {/* Esquerda — Gestão de Frotas */}
-            <div style={{ gridColumn: 1, gridRow: 2, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: "0.35rem" }}>
-              <span style={axisLabelStyle}>Gestão de Frotas</span>
-              <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "0.3rem" }}>
-                {fleetNames.map((n) => <span key={n} style={chipStyle}>{n}</span>)}
-              </div>
-            </div>
-
-            {/* Centro — ReVecta como orquestrador */}
-            <div style={{ gridColumn: 2, gridRow: 2, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: "0.3rem" }}>
-              <span style={{ fontSize: 13, lineHeight: 1, color: "rgba(255,255,255,0.35)" }}>↑</span>
-              <div style={{ width: 1, height: 18, background: "rgba(255,255,255,0.18)" }} />
-              <div style={{ position: "relative", display: "flex", flexDirection: "column", alignItems: "center", gap: "0.35rem" }}>
-                <div style={{ position: "absolute", top: 7, left: "-1.25rem", right: "-1.25rem", height: 1, background: "rgba(255,255,255,0.18)" }} />
-                <div style={{ width: 14, height: 14, borderRadius: "50%", background: TEAL, boxShadow: `0 0 16px ${TEAL}` }} />
-                <span style={{ fontSize: "0.68rem", color: TEAL, fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 800 }}>ReVecta</span>
-              </div>
-            </div>
-
-            {/* Direita — Sustentabilidade */}
-            <div style={{ gridColumn: 3, gridRow: 2, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: "0.35rem" }}>
-              <span style={axisLabelStyle}>Sustentabilidade</span>
-              <span style={{ fontSize: "0.62rem", color: "rgba(255,255,255,0.5)" }}>ESG e reporting</span>
+            ))}
+            <div style={{ position: "absolute", left: "88%", top: "12%", transform: "translate(-50%,-50%)" }}>
+              <div style={{ width: 14, height: 14, borderRadius: "50%", background: TEAL, boxShadow: `0 0 16px ${TEAL}` }} />
+              <span style={{ position: "absolute", top: "100%", left: "50%", transform: "translateX(-50%)", whiteSpace: "nowrap", fontSize: 10, color: TEAL, fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 700, marginTop: 4 }}>ReVecta</span>
             </div>
           </div>
         </Card>
