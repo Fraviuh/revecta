@@ -781,9 +781,9 @@ function BlankSlide() {
       </h2>
       <Card style={{ width: "100%", maxWidth: "900px", boxSizing: "border-box", padding: "1.25rem 1.5rem" }}>
         <p style={{ margin: 0, fontSize: "0.9rem", color: "#ffffff", lineHeight: 1.7 }}>
-          O nosso pedido de incubação foca-se em três pilares estratégicos de aceleração: a <strong>capacitação tecnológica</strong>, através do contacto com parceiros de desenvolvimento ou apoio no recrutamento para escalar a nossa infraestrutura, e o <strong>aconselhamento regulatório</strong>, com mentoria jurídica especializada para o enquadramento do modelo V2G junto da ERSE e OMIE no mercado energético português.
+          O nosso pedido de incubação foca-se em três pilares estratégicos de aceleração: a <strong style={{ color: BLUE }}>capacitação tecnológica</strong>, através do contacto com parceiros de desenvolvimento ou apoio no recrutamento para escalar a nossa infraestrutura, e o <strong style={{ color: BLUE }}>aconselhamento regulatório</strong>, com mentoria jurídica especializada para o enquadramento do modelo V2G junto da ERSE e OMIE no mercado energético português.
           <br /><br />
-          O terceiro pilar é o <strong>acesso ao mercado B2B</strong>, ligando a ReVecta à rede de PMEs da incubadora para a realização de testes-piloto da nossa funcionalidade de automação de reembolsos.
+          O terceiro pilar é o <strong style={{ color: BLUE }}>acesso ao mercado B2B</strong>, ligando a ReVecta à rede de PMEs da incubadora para a realização de testes-piloto da nossa funcionalidade de automação de reembolsos.
         </p>
       </Card>
     </div>
