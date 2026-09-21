@@ -611,7 +611,7 @@ function S9() {
       </div>
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "1rem" }}>
         {channels.map((c) => (
-          <Card key={c.title} accent={c.color} style={{ padding: "1.75rem", display: "flex", flexDirection: "column", gap: "1rem", position: "relative", overflow: "hidden" }}>
+          <Card key={c.title} accent={c.color} style={{ padding: "1.75rem", display: "flex", flexDirection: "column", gap: "0.5rem", position: "relative", overflow: "hidden" }}>
             <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 2, background: c.color }} />
             <div>
               <div style={{ width: 42, height: 42, borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.4rem", background: `${c.color}18`, flexShrink: 0, marginBottom: "0.2rem" }}>{c.icon}</div>
