@@ -781,11 +781,20 @@ function BlankSlide() {
         <span style={{ color: BLUE }}>(The Ask)</span>
       </h2>
       <Card style={{ width: "100%", maxWidth: "900px", boxSizing: "border-box", padding: "1.25rem 1.5rem" }}>
-        <p style={{ margin: 0, fontSize: "0.9rem", color: "#ffffff", lineHeight: 1.7 }}>
-          O nosso pedido de incubação foca-se em três pilares estratégicos de aceleração: a <strong style={{ color: BLUE }}>capacitação tecnológica</strong>, através do contacto com parceiros de desenvolvimento ou apoio no recrutamento para escalar a nossa infraestrutura, e o <strong style={{ color: BLUE }}>aconselhamento regulatório</strong>, com mentoria jurídica especializada para o enquadramento do modelo V2G junto da ERSE e OMIE no mercado energético português.
-          <br /><br />
-          O terceiro pilar é o <strong style={{ color: BLUE }}>acesso ao mercado B2B</strong>, ligando a ReVecta à rede de PMEs da incubadora para a realização de testes-piloto da nossa funcionalidade de automação de reembolsos.
-        </p>
+        <ul style={{ margin: 0, paddingLeft: "1.25rem", display: "flex", flexDirection: "column", gap: "0.75rem", fontSize: "0.9rem", color: "#ffffff", lineHeight: 1.7 }}>
+          <li>
+            <strong style={{ color: BLUE }}>Capacitação tecnológica:</strong>{" "}
+            Contacto com parceiros de desenvolvimento ou apoio no recrutamento para escalar a nossa infraestrutura.
+          </li>
+          <li>
+            <strong style={{ color: BLUE }}>Aconselhamento regulatório:</strong>{" "}
+            Mentoria jurídica especializada para o enquadramento do modelo V2G junto da ERSE e OMIE no mercado energético português.
+          </li>
+          <li>
+            <strong style={{ color: BLUE }}>Acesso ao mercado B2B:</strong>{" "}
+            Ligação da ReVecta à rede de PMEs da incubadora para a realização de testes-piloto da nossa funcionalidade de automação de reembolsos.
+          </li>
+        </ul>
       </Card>
     </div>
   );
