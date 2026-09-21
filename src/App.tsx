@@ -640,6 +640,15 @@ function S10() {
         </h2>
       </div>
 
+      <Card accent={BLUE} style={{ width: "100%", boxSizing: "border-box", padding: "1rem 1.25rem" }}>
+        <div style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 700, fontSize: "0.95rem", color: BLUE, marginBottom: "0.5rem" }}>
+          Porquê nós?
+        </div>
+        <p style={{ margin: 0, fontSize: "0.9rem", color: "#ffffff", lineHeight: 1.65 }}>
+          <strong>Somos a equipa certa porque unimos uma visão de produto estrategicamente validada a uma execução técnica robusta. Esta sinergia transatlântica garante uma plataforma perfeitamente desenhada e operacionalmente estável.</strong>
+        </p>
+      </Card>
+
       {/* Team cards */}
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1.25rem" }}>
         {/* Rebeca */}
