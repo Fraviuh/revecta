@@ -565,6 +565,13 @@ function S8() {
               <span style={{ fontSize: "0.8rem", color: "rgba(255,255,255,0.6)" }}>{a}</span>
             </Card>
           ))}
+
+          <Card style={{ padding: "0.65rem 1rem", display: "flex", flexDirection: "column", gap: "0.35rem" }}>
+            <div style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 700, fontSize: "0.9rem", color: TEAL }}>O Nosso Posicionamento</div>
+            <p style={{ margin: 0, fontSize: "0.8rem", color: "rgba(255,255,255,0.6)", lineHeight: 1.6 }}>
+              Enquanto os líderes do setor se especializam num domínio específico, a ReVecta procura integrar a experiência da mobilidade elétrica numa única camada operacional.
+            </p>
+          </Card>
         </div>
       </div>
       <Card style={{ padding: "1rem 1.5rem" }}>
