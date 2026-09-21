@@ -611,13 +611,13 @@ function S9() {
       </div>
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "1rem" }}>
         {channels.map((c) => (
-          <Card key={c.title} accent={c.color} style={{ padding: "1.75rem", display: "flex", flexDirection: "column", gap: "0.5rem", position: "relative", overflow: "hidden" }}>
+          <Card key={c.title} accent={c.color} style={{ padding: "1rem", display: "flex", flexDirection: "column", gap: "0.75rem", position: "relative", overflow: "hidden" }}>
             <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 2, background: c.color }} />
             <div>
-              <div style={{ width: 42, height: 42, borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.4rem", background: `${c.color}18`, flexShrink: 0, marginBottom: "0.2rem" }}>{c.icon}</div>
+              <div style={{ width: 42, height: 42, borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.4rem", background: `${c.color}18`, flexShrink: 0, marginBottom: "0.75rem" }}>{c.icon}</div>
               <div style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 700, fontSize: "1.05rem", color: c.color, lineHeight: 1.3, minHeight: "2.75rem", display: "flex", alignItems: "flex-start" }}>{c.title}</div>
             </div>
-            <div style={{ margin: 0, padding: 0, display: "flex", flexDirection: "column", gap: "0.5rem", fontSize: "0.9rem", color: "#ffffff", lineHeight: 1.5 }}>
+            <div style={{ display: "flex", flexDirection: "column", gap: "0.3rem", paddingBottom: "0.65rem", borderBottom: "1px solid rgba(255,255,255,0.08)" }}>
               <p style={{ margin: 0, fontSize: "0.9rem", color: "#ffffff", lineHeight: 1.65 }}>{c.desc}</p>
             </div>
           </Card>
