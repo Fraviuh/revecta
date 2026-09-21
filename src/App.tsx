@@ -185,16 +185,19 @@ function S2() {
     {
       icon: "",
       title: "Reembolso Doméstico Complexo",
+      color: BLUE,
       quote: "Processamento manual de tarifários e perdas de eficiência anulam a poupança potencial ( 30 – 60% ).",
     },
     {
       icon: "",
       title: "Défice de Literacia de Condução",
+      color: TEAL,
       quote: "Manuseamento desadequado do veículo elétrico, resultando em custos acrescidos de manutenção e desgaste da frota.",
     },
     {
       icon: "",
       title: "Fragmentação da Experiência de Carregamento",
+      color: PURPLE,
       quote: "Informação e serviços dispersos por diferentes aplicações e operadores obrigam o condutor a realizar múltiplos passos e a cruzar dados para decidir onde, quando e como carregar.",
     },
   ];
@@ -210,15 +213,15 @@ function S2() {
       </div>
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "0.75rem" }}>
         {items.map((item) => (
-          <Card key={item.title} style={{ padding: "1.25rem 1.25rem", display: "flex", flexDirection: "column", gap: "0.9rem", position: "relative", overflow: "hidden" }}>
-            <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: "2px", background: BLUE, opacity: 0.5 }} />
+          <Card key={item.title} accent={item.color} style={{ padding: "1.25rem 1.25rem", display: "flex", flexDirection: "column", gap: "0.9rem", position: "relative", overflow: "hidden" }}>
+            <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: "2px", background: item.color, opacity: 0.5 }} />
             <div style={{ display: "flex", alignItems: "center", gap: "0.6rem" }}>
-              <div style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 700, fontSize: "0.82rem", color: "#ffffff", lineHeight: 1.3 }}>
+              <div style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 700, fontSize: "0.82rem", color: item.color, lineHeight: 1.3 }}>
                 {item.title}
               </div>
             </div>
             <div style={{ height: "1px", background: "rgba(255,255,255,0.07)" }} />
-            <p style={{ margin: 0, fontSize: "0.76rem", color: "#ffffff", lineHeight: 1.65, paddingLeft: "0.7rem", borderLeft: `2px solid ${BLUE}55` }}>
+            <p style={{ margin: 0, fontSize: "0.76rem", color: "#ffffff", lineHeight: 1.65, paddingLeft: "0.7rem", borderLeft: `2px solid ${item.color}55` }}>
                 {item.quote}
             </p>
           </Card>
