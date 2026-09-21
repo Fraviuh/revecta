@@ -549,7 +549,7 @@ function S8() {
                 <span style={{ position: "absolute", top: "100%", left: "50%", transform: "translateX(-50%)", whiteSpace: "nowrap", fontSize: 9, color: "rgba(255,255,255,0.3)", marginTop: 2 }}>{c.name}</span>
               </div>
             ))}
-            <div style={{ position: "absolute", left: "88%", top: "12%", transform: "translate(-50%,-50%)" }}>
+            <div style={{ position: "absolute", left: "50%", top: "50%", transform: "translate(-50%,-50%)" }}>
               <div style={{ width: 14, height: 14, borderRadius: "50%", background: TEAL, boxShadow: `0 0 16px ${TEAL}` }} />
               <span style={{ position: "absolute", top: "100%", left: "50%", transform: "translateX(-50%)", whiteSpace: "nowrap", fontSize: 10, color: TEAL, fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 700, marginTop: 4 }}>ReVecta</span>
             </div>
