@@ -211,19 +211,17 @@ function S2() {
           <span style={{ color: BLUE }}>B2C + B2B</span>
         </h2>
       </div>
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "0.75rem" }}>
+      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "1rem" }}>
         {items.map((item) => (
-          <Card key={item.title} accent={item.color} style={{ padding: "1.25rem 1.25rem", display: "flex", flexDirection: "column", gap: "0.9rem", position: "relative", overflow: "hidden" }}>
-            <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: "2px", background: item.color, opacity: 0.5 }} />
-            <div style={{ display: "flex", alignItems: "center", gap: "0.6rem" }}>
-              <div style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 700, fontSize: "0.82rem", color: item.color, lineHeight: 1.3 }}>
-                {item.title}
-              </div>
+          <Card key={item.title} accent={item.color} style={{ padding: "1rem", display: "flex", flexDirection: "column", gap: "0.75rem" }}>
+            <div style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 700, fontSize: "1.05rem", color: item.color, lineHeight: 1.3 }}>
+              {item.title}
             </div>
-            <div style={{ height: "1px", background: "rgba(255,255,255,0.07)" }} />
-            <p style={{ margin: 0, fontSize: "0.76rem", color: "#ffffff", lineHeight: 1.65, paddingLeft: "0.7rem", borderLeft: `2px solid ${item.color}55` }}>
+            <div style={{ display: "flex", flexDirection: "column", gap: "0.3rem", paddingBottom: "0.65rem", borderBottom: "1px solid rgba(255,255,255,0.08)" }}>
+              <p style={{ margin: 0, fontSize: "0.9rem", color: "#ffffff", lineHeight: 1.65 }}>
                 {item.quote}
-            </p>
+              </p>
+            </div>
           </Card>
         ))}
       </div>
