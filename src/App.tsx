@@ -515,8 +515,8 @@ function S8() {
     { name: "Samsara", x: 72, y: 50, category: "Telemetria" },
     { name: "AMPECO", x: 42, y: 38, category: "CPMS" },
     { name: "Driivz", x: 38, y: 30, category: "CPMS" },
-    { name: "Miio", x: 28, y: 55, category: "App PT" },
-    { name: "Via Verde", x: 22, y: 42, category: "App PT" },
+    { name: "Miio", x: 28, y: 60, category: "App PT" },
+    { name: "Via Verde", x: 30, y: 62, category: "App PT" },
   ];
 
   const advantages = [
