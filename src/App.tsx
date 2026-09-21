@@ -519,9 +519,9 @@ function S8() {
   ];
 
   const advantages = [
-    "Especialização crescente das plataformas;",
-    "Dados dispersos entre múltiplos sistemas;",
-    "Operações distribuídas por diferentes fornecedores;",
+    "Especialização crescente das plataformas",
+    "Dados dispersos entre múltiplos sistemas.",
+    "Operações distribuídas por diferentes fornecedores.",
   ];
 
   return (
@@ -561,7 +561,7 @@ function S8() {
           {advantages.map((a) => (
             <Card key={a} style={{ padding: "0.65rem 1rem", display: "flex", alignItems: "center", gap: "0.6rem" }}>
               <Tick color={TEAL} />
-              <span style={{ fontSize: "0.8rem", color: "rgba(255,255,255,0.6)" }}>{a}</span>
+              <span style={{ fontSize: "0.8rem", color: "#ffffff" }}>{a}</span>
             </Card>
           ))}
 
