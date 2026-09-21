@@ -84,7 +84,7 @@ function Badge({ children, color = BLUE }: { children: React.ReactNode; color?: 
     <span style={{
       display: "inline-flex", alignItems: "center", padding: "0.22rem 0.8rem", borderRadius: 999,
       fontSize: "0.68rem", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase",
-      border: `1px solid ${color}55`, color, background: `${color}12`,
+      color,
       fontFamily: "'Plus Jakarta Sans', sans-serif",
     }}>{children}</span>
   );
