@@ -555,7 +555,7 @@ function S8() {
           </div>
         </Card>
         <div style={{ display: "flex", flexDirection: "column", gap: "0.6rem" }}>
-          <div style={{ fontSize: "0.72rem", color: "rgba(255,255,255,0.3)", fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.08em", marginBottom: "0.25rem" }}>
+          <div style={{ fontSize: "0.9rem", color: TEAL, fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 800, letterSpacing: "-0.01em", marginBottom: "0.25rem" }}>
             Análise de Mercado
           </div>
           {advantages.map((a) => (
