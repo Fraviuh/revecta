@@ -203,7 +203,7 @@ function S2() {
     <div style={{ width: "100%", maxWidth: "1020px", display: "flex", flexDirection: "column", gap: "1.25rem", color: "#ffffff" }}>
       <div style={{ textAlign: "center" }}>
         <Badge color={BLUE}>02 — Problema B2B2C</Badge>
-        <h2 style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 800, fontSize: "clamp(1.6rem,3.2vw,2.4rem)", color: "#fff", margin: "0.65rem 0 0", letterSpacing: "-0.02em" }}>
+        <h2 style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 800, fontSize: "clamp(1.8rem,4vw,2.8rem)", color: "#fff", margin: "0.75rem 0 0.5rem", letterSpacing: "-0.02em", lineHeight: 1.15 }}>
           Barreiras à adoção da mobilidade elétrica{" "}
           <span style={{ color: BLUE }}>B2C + B2B</span>
         </h2>
@@ -284,7 +284,7 @@ function S4() {
     <div style={{ width: "100%", maxWidth: "980px", display: "flex", flexDirection: "column", gap: "1.25rem", color: "#fff", textAlign: "left" }}>
       <div style={{ textAlign: "center" }}>
         <Badge color={BLUE}>03 — Solução</Badge>
-        <h2 style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 800, fontSize: "clamp(1.5rem,3vw,2.2rem)", color: "#fff", margin: "0.65rem 0 0", letterSpacing: "-0.02em" }}>
+        <h2 style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 800, fontSize: "clamp(1.8rem,4vw,2.8rem)", color: "#fff", margin: "0.75rem 0 0.5rem", letterSpacing: "-0.02em", lineHeight: 1.15 }}>
           O Ecossistema Unificado <span style={{ color: BLUE }}>ReVecta</span>
         </h2>
       </div>
@@ -361,7 +361,7 @@ function S5() {
     <div style={{ width: "100%", maxWidth: "920px", display: "flex", flexDirection: "column", gap: "1.5rem" }}>
       <div style={{ textAlign: "center" }}>
         <Badge color={TEAL}>04 — Tamanho de Mercado</Badge>
-        <h2 style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 800, fontSize: "clamp(1.6rem,3.5vw,2.5rem)", color: "#fff", margin: "0.6rem 0 0", letterSpacing: "-0.02em" }}>
+        <h2 style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 800, fontSize: "clamp(1.8rem,4vw,2.8rem)", color: "#fff", margin: "0.75rem 0 0.5rem", letterSpacing: "-0.02em", lineHeight: 1.15 }}>
           Oportunidade Escalável:{" "}
           <span style={{ color: TEAL }}>Dados Reais, Metas Realistas</span>
         </h2>
@@ -636,7 +636,7 @@ function S10() {
     <div style={{ width: "100%", maxWidth: "900px", display: "flex", flexDirection: "column", gap: "1.5rem" }}>
       <div style={{ textAlign: "center" }}>
         <Badge color={TEAL}>09 — Equipa</Badge>
-        <h2 style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 800, fontSize: "clamp(1.4rem,3vw,2.2rem)", color: "#fff", margin: "0.5rem 0 0", letterSpacing: "-0.02em" }}>
+        <h2 style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 800, fontSize: "clamp(1.8rem,4vw,2.8rem)", color: "#fff", margin: "0.75rem 0 0.5rem", letterSpacing: "-0.02em", lineHeight: 1.15 }}>
           Da Academia à Realidade: <span style={{ color: TEAL }}>Quem Somos</span>
         </h2>
       </div>
@@ -776,7 +776,7 @@ function BlankSlide() {
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", width: "100%", height: "100%", gap: "0.75rem" }}>
       <Badge color={BLUE}>11 — Pedido de Incubação</Badge>
-      <h2 style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 800, fontSize: "clamp(1.8rem,4vw,2.8rem)", color: "#fff", margin: 0, textAlign: "center" }}>
+      <h2 style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 800, fontSize: "clamp(1.8rem,4vw,2.8rem)", color: "#fff", margin: "0.75rem 0 0.5rem", textAlign: "center", letterSpacing: "-0.02em", lineHeight: 1.15 }}>
         Pedido de Incubação{" "}
         <span style={{ color: BLUE }}>(The Ask)</span>
       </h2>
