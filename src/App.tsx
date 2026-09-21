@@ -536,11 +536,11 @@ function S8() {
         <p style={{ fontSize: "0.82rem", color: "rgba(255,255,255,0.35)", margin: 0 }}>Análise baseada em 27+ intervenientes no ecossistema global</p>
       </div>
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1.5rem" }}>
-        <Card style={{ padding: "1.5rem", position: "relative", height: 260 }}>
+        <Card style={{ padding: "1.5rem", position: "relative", boxSizing: "border-box", height: "100%", display: "flex", flexDirection: "column" }}>
           <div style={{ fontSize: "0.7rem", color: "rgba(255,255,255,0.25)", marginBottom: "0.5rem" }}>
             ← Foco EV | Integração Financeira →
           </div>
-          <div style={{ position: "relative", flex: 1, height: 200 }}>
+          <div style={{ position: "relative", flex: 1, minHeight: 160 }}>
             <div style={{ position: "absolute", top: "50%", left: 0, right: 0, height: 1, background: "rgba(255,255,255,0.07)" }} />
             <div style={{ position: "absolute", left: "50%", top: 0, bottom: 0, width: 1, background: "rgba(255,255,255,0.07)" }} />
             {competitors.map((c) => (
