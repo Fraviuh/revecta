@@ -671,7 +671,6 @@ function S10() {
               "Conduz o User Research e a comunicação estratégica da plataforma",
             ].map(b => (
               <div key={b} style={{ display: "flex", alignItems: "flex-start", gap: "0.6rem" }}>
-                <span style={{ color: BLUE, fontWeight: 700, fontSize: "0.8rem", flexShrink: 0, marginTop: "0.05rem" }}>→</span>
                 <span style={{ fontSize: "0.9rem", color: "#ffffff", lineHeight: 1.6 }}>{b}</span>
               </div>
             ))}
@@ -699,7 +698,6 @@ function S10() {
               "Garante a estabilidade operacional de todo o ecossistema ReVecta",
             ].map(b => (
               <div key={b} style={{ display: "flex", alignItems: "flex-start", gap: "0.6rem" }}>
-                <span style={{ color: TEAL, fontWeight: 700, fontSize: "0.8rem", flexShrink: 0, marginTop: "0.05rem" }}>→</span>
                 <span style={{ fontSize: "0.9rem", color: "#ffffff", lineHeight: 1.6 }}>{b}</span>
               </div>
             ))}
