@@ -520,12 +520,9 @@ function S8() {
   ];
 
   const advantages = [
-    "Reembolso automático carregamento doméstico",
-    "Integração V2G para arbitragem energética",
-    "Monitorização SoH (State of Health) da bateria",
-    "Embedded Finance + crédito de carbono",
-    "Interoperabilidade MOBI.E nativa",
-    "Relatórios ESG / GAR automáticos",
+    "Especialização crescente das plataformas;",
+    "Dados dispersos entre múltiplos sistemas;",
+    "Operações distribuídas por diferentes fornecedores;",
   ];
 
   return (
