@@ -774,7 +774,10 @@ function S11() {
 function BlankSlide() {
   return (
     <div style={{ display: "flex", alignItems: "center", justifyContent: "center", width: "100%", height: "100%" }}>
-      <div style={{ width: "100%", maxWidth: 900, height: "70vh", border: "1px dashed rgba(255,255,255,0.12)", borderRadius: "1.2rem", background: "rgba(255,255,255,0.01)" }} />
+      <h2 style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 800, fontSize: "clamp(1.8rem,4vw,2.8rem)", color: "#fff", margin: 0, textAlign: "center" }}>
+        Pedido de Incubação{" "}
+        <span style={{ color: BLUE }}>(The Ask)</span>
+      </h2>
     </div>
   );
 }
