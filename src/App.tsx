@@ -779,6 +779,13 @@ function BlankSlide() {
         Pedido de Incubação{" "}
         <span style={{ color: BLUE }}>(The Ask)</span>
       </h2>
+      <Card style={{ width: "100%", maxWidth: "900px", boxSizing: "border-box", padding: "1.25rem 1.5rem" }}>
+        <p style={{ margin: 0, fontSize: "0.9rem", color: "#ffffff", lineHeight: 1.7 }}>
+          <strong>O nosso pedido de incubação foca-se em três pilares estratégicos de aceleração: a capacitação tecnológica, através do contacto com parceiros de desenvolvimento ou apoio no recrutamento para escalar a nossa infraestrutura, e o aconselhamento regulatório, com mentoria jurídica especializada para o enquadramento do modelo V2G junto da ERSE e OMIE no mercado energético português.</strong>
+          <br /><br />
+          <strong>O terceiro pilar é o acesso ao mercado B2B, ligando a ReVecta à rede de PMEs da incubadora para a realização de testes-piloto da nossa funcionalidade de automação de reembolsos.</strong>
+        </p>
+      </Card>
     </div>
   );
 }
