@@ -574,14 +574,6 @@ function S8() {
           </Card>
         </div>
       </div>
-      <Card style={{ padding: "1rem 1.5rem" }}>
-        <p style={{ margin: 0, fontSize: "0.8rem", color: "rgba(255,255,255,0.45)", lineHeight: 1.65 }}>
-          <strong style={{ color: TEAL }}>O ReVecta é o primeiro orquestrador ibérico</strong> a criar a "Ponte" cruzando as três vertentes essenciais:{" "}
-          <span style={{ color: "rgba(255,255,255,0.7)" }}>Finanças</span> (reembolsos/poupança) +{" "}
-          <span style={{ color: "rgba(255,255,255,0.7)" }}>Telemetria</span> (SoH das baterias) +{" "}
-          <span style={{ color: "rgba(255,255,255,0.7)" }}>Mercado Flexível de Energia</span> (V2G).
-        </p>
-      </Card>
     </div>
   );
 }
