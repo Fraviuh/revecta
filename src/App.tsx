@@ -773,7 +773,8 @@ function S11() {
 
 function BlankSlide() {
   return (
-    <div style={{ display: "flex", alignItems: "center", justifyContent: "center", width: "100%", height: "100%" }}>
+    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", width: "100%", height: "100%", gap: "0.75rem" }}>
+      <Badge color={BLUE}>11 — Pedido de Incubação</Badge>
       <h2 style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 800, fontSize: "clamp(1.8rem,4vw,2.8rem)", color: "#fff", margin: 0, textAlign: "center" }}>
         Pedido de Incubação{" "}
         <span style={{ color: BLUE }}>(The Ask)</span>
