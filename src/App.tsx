@@ -425,7 +425,7 @@ function S6() {
         <div style={{ display: "flex", flexDirection: "column", gap: "1rem", height: "100%" }}>
           <Card accent={TEAL} style={{ padding: "1rem 1.2rem", height: "100%", display: "flex", flexDirection: "column", gap: "0.45rem" }}>
             <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "0.95rem", color: BLUE, marginBottom: "0.15rem", lineHeight: 1.2 }}>Casos de Sucesso</div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "0.6rem", flex: 1, justifyContent: "flex-start" }}>
+            <div style={{ display: "flex", flexDirection: "column", gap: "1.1rem", flex: 1, justifyContent: "flex-start" }}>
               {[
                 { name: "Projeto Galp / Nissan (Portugal)", note: "Em São Miguel, cada veículo poderá gerar uma receita mensal na ordem dos nove euros." },
                 { name: "AYR Platform (Portugal)", note: "Dados reais de mobilidade sustentável transformados em tokens de carbono transacionáveis por empresas locais." },
