@@ -118,37 +118,6 @@ function Chevron({ color }: { color: string }) {
   return <span style={{ color, marginTop: 2, flexShrink: 0 }}>›</span>;
 }
 
-// ─── Logo ─────────────────────────────────────────────────────────────────────
-
-function ReVectaLogo({ size = 72 }: { size?: number }) {
-  const bgId = "nm-bg";
-  const strokeId = "nm-stroke";
-  return (
-    <svg width={size} height={size} viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <linearGradient id={bgId} x1="0" y1="0" x2="60" y2="60" gradientUnits="userSpaceOnUse">
-          <stop offset="0%" stopColor="#1a3a5c" />
-          <stop offset="100%" stopColor="#0a2a2a" />
-        </linearGradient>
-        <linearGradient id={strokeId} x1="0" y1="0" x2="60" y2="60" gradientUnits="userSpaceOnUse">
-          <stop offset="0%" stopColor="#3B9EFF" />
-          <stop offset="100%" stopColor="#00D4AA" />
-        </linearGradient>
-      </defs>
-      {/* Dark tile */}
-      <rect width="60" height="60" rx="15" fill={`url(#${bgId})`} />
-      {/* Outer glow ring */}
-      <rect width="60" height="60" rx="15" fill="none" stroke={`url(#${strokeId})`} strokeWidth="1.5" strokeOpacity="0.5" />
-      {/* N — left vertical */}
-      <rect x="12" y="13" width="8" height="34" rx="2" fill={`url(#${strokeId})`} />
-      {/* N — right vertical */}
-      <rect x="40" y="13" width="8" height="34" rx="2" fill={`url(#${strokeId})`} />
-      {/* N — diagonal stroke */}
-      <polygon points="20,13 28,13 40,47 32,47" fill={`url(#${strokeId})`} />
-    </svg>
-  );
-}
-
 // ─── Slides ───────────────────────────────────────────────────────────────────
 
 function S1() {
@@ -232,46 +201,6 @@ function S2() {
               </p>
             </div>
           </Card>
-        ))}
-      </div>
-    </div>
-  );
-}
-
-function MockupCondutor() {
-  return (
-    <div style={{ background: "rgba(255,255,255,0.03)", borderRadius: "0.75rem", border: "1px solid rgba(59,158,255,0.2)", padding: "0.75rem", marginBottom: "0.85rem" }}>
-      <div style={{ fontSize: "0.6rem", color: BLUE, fontFamily: FONT_DISPLAY, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", marginBottom: "0.5rem" }}>Dashboard Condutor</div>
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.4rem", marginBottom: "0.4rem" }}>
-        {[{ l: "Autonomia real", v: "187 km" }, { l: "Custo €/km", v: "0,032€" }, { l: "Driver Score", v: "84/100" }, { l: "Próx. carga", v: "1,2 km" }].map(s => (
-          <div key={s.l} style={{ background: "rgba(59,158,255,0.07)", borderRadius: "0.4rem", padding: "0.35rem 0.5rem" }}>
-            <div style={{ fontSize: "0.58rem", color: "rgba(255,255,255,0.45)" }}>{s.l}</div>
-            <div style={{ fontSize: "0.72rem", fontWeight: 700, color: "#fff", fontFamily: FONT_DISPLAY }}>{s.v}</div>
-          </div>
-        ))}
-      </div>
-      <div style={{ height: 3, background: "rgba(255,255,255,0.05)", borderRadius: 2 }}>
-        <div style={{ height: "100%", width: "68%", background: `linear-gradient(90deg,${BLUE},${TEAL})`, borderRadius: 2 }} />
-      </div>
-    </div>
-  );
-}
-
-function MockupGestor() {
-  return (
-    <div style={{ background: "rgba(255,255,255,0.03)", borderRadius: "0.75rem", border: "1px solid rgba(0,212,170,0.2)", padding: "0.75rem", marginBottom: "0.85rem" }}>
-      <div style={{ fontSize: "0.6rem", color: TEAL, fontFamily: FONT_DISPLAY, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", marginBottom: "0.5rem" }}>Dashboard Gestor de Frota</div>
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.4rem", marginBottom: "0.4rem" }}>
-        {[{ l: "Veículos activos", v: "14" }, { l: "TCO mensal", v: "€3.240" }, { l: "Reembolsos", v: "€820 auto" }, { l: "CO₂ evitado", v: "1,4 t" }].map(s => (
-          <div key={s.l} style={{ background: "rgba(0,212,170,0.07)", borderRadius: "0.4rem", padding: "0.35rem 0.5rem" }}>
-            <div style={{ fontSize: "0.58rem", color: "rgba(255,255,255,0.45)" }}>{s.l}</div>
-            <div style={{ fontSize: "0.72rem", fontWeight: 700, color: "#fff", fontFamily: FONT_DISPLAY }}>{s.v}</div>
-          </div>
-        ))}
-      </div>
-      <div style={{ display: "flex", gap: "0.3rem" }}>
-        {["Em trânsito", "A carregar", "Disponível"].map((st, i) => (
-          <div key={st} style={{ flex: 1, padding: "0.2rem 0.3rem", borderRadius: "0.3rem", fontSize: "0.58rem", textAlign: "center", color: "#fff", background: i === 0 ? "rgba(59,158,255,0.2)" : i === 1 ? "rgba(0,212,170,0.2)" : "rgba(255,255,255,0.06)" }}>{st}</div>
         ))}
       </div>
     </div>
@@ -829,11 +758,13 @@ function S12() {
           <div style={{ fontSize: "0.62rem", fontWeight: 600, color: "rgba(255,255,255,0.35)", fontFamily: FONT_DISPLAY, textTransform: "uppercase", letterSpacing: "0.1em" }}>Email</div>
           <div style={{ fontSize: "0.78rem", color: BLUE }}>hello@revecta.pt</div>
         </Card>
-        <a href="#" style={{ textDecoration: "none", borderRadius: "1rem", background: "linear-gradient(135deg,rgba(0,212,170,0.15),rgba(59,158,255,0.1))", border: "1px solid rgba(0,212,170,0.35)", padding: "1.1rem", display: "flex", flexDirection: "column", alignItems: "center", gap: "0.4rem", cursor: "pointer", transition: "box-shadow 0.2s", boxShadow: "0 0 24px rgba(0,212,170,0.12)" }}>
+        {/* Sem URL de protótipo definida ainda — card informativo, não um link.
+            Quando existir o link (Figma / TestFlight / vídeo demo), trocar por <a href={URL}>. */}
+        <div style={{ borderRadius: "1rem", background: "linear-gradient(135deg,rgba(0,212,170,0.15),rgba(59,158,255,0.1))", border: "1px solid rgba(0,212,170,0.35)", padding: "1.1rem", display: "flex", flexDirection: "column", alignItems: "center", gap: "0.4rem", boxShadow: "0 0 24px rgba(0,212,170,0.12)" }}>
           <span style={{ fontSize: "1.5rem" }}>▶</span>
           <div style={{ fontSize: "0.62rem", fontWeight: 600, color: TEAL, fontFamily: FONT_DISPLAY, textTransform: "uppercase", letterSpacing: "0.1em" }}>Ver Protótipo</div>
           <div style={{ fontSize: "0.72rem", color: "#ffffff", fontWeight: 500 }}>Explorar o MVP →</div>
-        </a>
+        </div>
       </div>
       <Card style={{ padding: "0.85rem 1.75rem", border: "1px solid rgba(0,212,170,0.2)", boxShadow: "0 0 30px rgba(0,212,170,0.07)" }}>
         <p style={{ margin: 0, fontSize: "0.8rem", color: "rgba(255,255,255,0.5)" }}>
