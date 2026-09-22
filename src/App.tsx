@@ -405,9 +405,9 @@ function S6() {
         </h2>
       </div>
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1.25rem", alignItems: "stretch" }}>
-        <Card accent={BLUE} style={{ padding: "1.75rem", display: "flex", flexDirection: "column", gap: "1.25rem", height: "100%" }}>
-          <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "0.9rem", color: BLUE }}>Investigação Qualitativa</div>
-          <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem", flex: 1, justifyContent: "space-between" }}>
+        <Card accent={BLUE} style={{ padding: "1.4rem 1.5rem", display: "flex", flexDirection: "column", gap: "0.9rem", height: "100%" }}>
+          <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1.15rem", color: BLUE, lineHeight: 1.25 }}>Investigação Qualitativa</div>
+          <div style={{ display: "flex", flexDirection: "column", gap: "0.55rem", flex: 1, justifyContent: "space-between" }}>
             {[
               { label: "Entrevistas Semi-Estruturadas", value: "20" },
               { label: "Período de recolha", value: "13 a 20 Jul 2026" },
@@ -415,9 +415,9 @@ function S6() {
               { label: "Amostra — Homens", value: "63,2%" },
               { label: "Experiência média com VE", value: "2 anos e 10 meses" },
             ].map((s) => (
-              <div key={s.label} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "0.4rem 0" }}>
-                <span style={{ fontSize: "0.76rem", color: "#ffffff" }}>{s.label}</span>
-                <span style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "0.82rem", color: "#ffffff" }}>{s.value}</span>
+              <div key={s.label} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: "0.75rem", padding: "0.55rem 0" }}>
+                <span style={{ fontSize: "0.95rem", color: "#ffffff", lineHeight: 1.45 }}>{s.label}</span>
+                <span style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: "#ffffff", whiteSpace: "nowrap" }}>{s.value}</span>
               </div>
             ))}
           </div>
