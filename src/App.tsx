@@ -425,7 +425,7 @@ function S7() {
               <span style={{ fontSize: "0.72rem", fontWeight: 700, letterSpacing: "0.12em", color: s.color, fontFamily: FONT_DISPLAY, textTransform: "uppercase" }}>Stream {s.num}</span>
             </div>
             <div>
-              <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1.15rem", color: s.color, marginBottom: "0.4rem" }}>{s.title}</div>
+              <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1.15rem", color: "#fff", marginBottom: "0.4rem" }}>{s.title}</div>
               <p style={{ margin: 0, fontSize: "0.95rem", color: "#ffffff", lineHeight: 1.6 }}>{s.desc}</p>
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: "0.4rem", marginTop: "auto" }}>
