@@ -24,9 +24,10 @@ function AnimatedBackground() {
         pulseSpeed: 0.015 + Math.random() * 0.02,
       }));
     };
+    const onMouseMove = (e: MouseEvent) => { mouseRef.current = { x: e.clientX, y: e.clientY }; };
     resize();
     window.addEventListener("resize", resize);
-    window.addEventListener("mousemove", (e) => { mouseRef.current = { x: e.clientX, y: e.clientY }; });
+    window.addEventListener("mousemove", onMouseMove);
 
     const draw = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -62,7 +63,11 @@ function AnimatedBackground() {
       rafRef.current = requestAnimationFrame(draw);
     };
     rafRef.current = requestAnimationFrame(draw);
-    return () => { cancelAnimationFrame(rafRef.current); window.removeEventListener("resize", resize); };
+    return () => {
+      cancelAnimationFrame(rafRef.current);
+      window.removeEventListener("resize", resize);
+      window.removeEventListener("mousemove", onMouseMove);
+    };
   }, []);
 
   return (
@@ -824,7 +829,7 @@ function S12() {
           <div style={{ fontSize: "0.62rem", fontWeight: 600, color: "rgba(255,255,255,0.35)", fontFamily: FONT_DISPLAY, textTransform: "uppercase", letterSpacing: "0.1em" }}>Email</div>
           <div style={{ fontSize: "0.78rem", color: BLUE }}>hello@revecta.pt</div>
         </Card>
-        <a href="#" style={{ textDecoration: "none", borderRadius: "1rem", display: "block", background: "linear-gradient(135deg,rgba(0,212,170,0.15),rgba(59,158,255,0.1))", border: "1px solid rgba(0,212,170,0.35)", padding: "1.1rem", display: "flex", flexDirection: "column", alignItems: "center", gap: "0.4rem", cursor: "pointer", transition: "box-shadow 0.2s", boxShadow: "0 0 24px rgba(0,212,170,0.12)" }}>
+        <a href="#" style={{ textDecoration: "none", borderRadius: "1rem", background: "linear-gradient(135deg,rgba(0,212,170,0.15),rgba(59,158,255,0.1))", border: "1px solid rgba(0,212,170,0.35)", padding: "1.1rem", display: "flex", flexDirection: "column", alignItems: "center", gap: "0.4rem", cursor: "pointer", transition: "box-shadow 0.2s", boxShadow: "0 0 24px rgba(0,212,170,0.12)" }}>
           <span style={{ fontSize: "1.5rem" }}>▶</span>
           <div style={{ fontSize: "0.62rem", fontWeight: 600, color: TEAL, fontFamily: FONT_DISPLAY, textTransform: "uppercase", letterSpacing: "0.1em" }}>Ver Protótipo</div>
           <div style={{ fontSize: "0.72rem", color: "#ffffff", fontWeight: 500 }}>Explorar o MVP →</div>

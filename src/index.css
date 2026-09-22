@@ -55,7 +55,13 @@ select {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /* `safe center` evita que o topo do conteúdo fique inacessível quando
+     excede a altura do ecrã (o body tem overflow: hidden). */
+  justify-content: safe center;
   padding: 2.5rem 3rem;
+  /* Permite scroll vertical em ecrãs baixos em vez de cortar conteúdo. */
+  overflow-y: auto;
+  overflow-x: hidden;
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
