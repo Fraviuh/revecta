@@ -713,14 +713,16 @@ function S11() {
 
 function BlankSlide() {
   return (
-    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", width: "100%", height: "100%", gap: "0.75rem" }}>
-      <Badge color={BLUE}>11 — Pedido de Incubação</Badge>
-      <h2 style={{ fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: "clamp(1.8rem,4vw,2.8rem)", color: "#fff", margin: "0.75rem 0 0.5rem", textAlign: "center", letterSpacing: "-0.02em", lineHeight: 1.15 }}>
-        Pedido de Incubação{" "}
-        <span style={{ color: BLUE }}>(The Ask)</span>
-      </h2>
-      <Card style={{ width: "100%", maxWidth: "900px", boxSizing: "border-box", padding: "1.25rem 1.5rem" }}>
-        <ul style={{ margin: 0, paddingLeft: "1.25rem", display: "flex", flexDirection: "column", gap: "0.75rem", fontSize: "0.95rem", color: "#ffffff", lineHeight: 1.7 }}>
+    <div style={{ width: "100%", maxWidth: "1000px", display: "flex", flexDirection: "column", alignItems: "center", gap: "1.5rem" }}>
+      <div style={{ textAlign: "center" }}>
+        <Badge color={BLUE}>11 — Pedido de Incubação</Badge>
+        <h2 style={{ fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: "clamp(1.8rem,4vw,2.8rem)", color: "#fff", margin: "0.75rem 0 0", letterSpacing: "-0.02em", lineHeight: 1.15 }}>
+          Pedido de Incubação{" "}
+          <span style={{ color: BLUE }}>(The Ask)</span>
+        </h2>
+      </div>
+      <Card style={{ width: "100%", boxSizing: "border-box", padding: "1.75rem 2.25rem" }}>
+        <ul style={{ margin: 0, paddingLeft: "1.6rem", display: "flex", flexDirection: "column", gap: "1.15rem", fontSize: "1.05rem", color: "#ffffff", lineHeight: 1.8 }}>
           <li>
             <strong style={{ color: BLUE }}>Capacitação tecnológica:</strong>{" "}
             Contacto com parceiros de desenvolvimento ou apoio no recrutamento para escalar a nossa infraestrutura.
