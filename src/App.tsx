@@ -423,14 +423,14 @@ function S6() {
           </div>
         </Card>
         <div style={{ display: "flex", flexDirection: "column", gap: "1rem", height: "100%" }}>
-          <Card accent={TEAL} style={{ padding: "1.4rem 1.5rem", height: "100%", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
-            <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1.15rem", color: BLUE, margin: 0, lineHeight: 1.25 }}>Casos de Sucesso</div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "1.15rem" }}>
+          <Card accent={TEAL} style={{ padding: "1.4rem 1.5rem", display: "flex", flexDirection: "column", gap: "0.9rem", height: "100%" }}>
+            <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1.15rem", color: BLUE, lineHeight: 1.25 }}>Casos de Sucesso</div>
+            <div style={{ display: "flex", flexDirection: "column", gap: "0.55rem", flex: 1, justifyContent: "space-between" }}>
               {[
                 { name: "Projeto Galp / Nissan (Portugal)", note: "Em São Miguel, cada veículo poderá gerar uma receita mensal na ordem dos nove euros." },
                 { name: "AYR Platform (Portugal)", note: "Dados reais de mobilidade sustentável transformados em tokens de carbono transacionáveis por empresas locais." },
               ].map((r) => (
-                <div key={r.name} style={{ display: "flex", flexDirection: "column", gap: "0.45rem" }}>
+                <div key={r.name} style={{ display: "flex", flexDirection: "column", gap: "0.45rem", padding: "0.55rem 0" }}>
                   <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1.05rem", color: "#ffffff", lineHeight: 1.35, margin: 0 }}>{r.name}</div>
                   <div style={{ fontSize: "0.95rem", color: "#ffffff", lineHeight: 1.6, margin: 0 }}>{r.note}</div>
                 </div>
