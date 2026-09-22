@@ -728,11 +728,11 @@ function BlankSlide() {
             Contacto com parceiros de desenvolvimento ou apoio no recrutamento para escalar a nossa infraestrutura.
           </li>
           <li>
-            <strong style={{ color: BLUE }}>Aconselhamento regulatório:</strong>{" "}
+            <strong style={{ color: TEAL }}>Aconselhamento regulatório:</strong>{" "}
             Mentoria jurídica especializada para o enquadramento do modelo V2G junto da ERSE e OMIE no mercado energético português.
           </li>
           <li>
-            <strong style={{ color: BLUE }}>Acesso ao mercado B2B:</strong>{" "}
+            <strong style={{ color: PURPLE }}>Acesso ao mercado B2B:</strong>{" "}
             Ligação da ReVecta à rede de PMEs da incubadora para a realização de testes-piloto da nossa funcionalidade de automação de reembolsos.
           </li>
         </ul>
