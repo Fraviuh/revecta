@@ -712,6 +712,21 @@ function S11() {
 }
 
 function BlankSlide() {
+  const asks = [
+    {
+      title: "Capacitação tecnológica", color: BLUE,
+      desc: "Contacto com parceiros de desenvolvimento ou apoio no recrutamento para escalar a nossa infraestrutura.",
+    },
+    {
+      title: "Aconselhamento regulatório", color: TEAL,
+      desc: "Mentoria jurídica especializada para o enquadramento do modelo V2G junto da ERSE e OMIE no mercado energético português.",
+    },
+    {
+      title: "Acesso ao mercado B2B", color: PURPLE,
+      desc: "Ligação da ReVecta à rede de PMEs da incubadora para a realização de testes-piloto da nossa funcionalidade de automação de reembolsos.",
+    },
+  ];
+
   return (
     <div style={{ width: "100%", maxWidth: "1000px", display: "flex", flexDirection: "column", alignItems: "center", gap: "1.5rem" }}>
       <div style={{ textAlign: "center" }}>
@@ -721,22 +736,15 @@ function BlankSlide() {
           <span style={{ color: BLUE }}>(The Ask)</span>
         </h2>
       </div>
-      <Card style={{ width: "100%", boxSizing: "border-box", padding: "1.75rem 2.25rem" }}>
-        <ul style={{ margin: 0, paddingLeft: "1.6rem", display: "flex", flexDirection: "column", gap: "1.15rem", fontSize: "1.05rem", color: "#ffffff", lineHeight: 1.8 }}>
-          <li>
-            <strong style={{ color: BLUE }}>Capacitação tecnológica:</strong>{" "}
-            Contacto com parceiros de desenvolvimento ou apoio no recrutamento para escalar a nossa infraestrutura.
-          </li>
-          <li>
-            <strong style={{ color: TEAL }}>Aconselhamento regulatório:</strong>{" "}
-            Mentoria jurídica especializada para o enquadramento do modelo V2G junto da ERSE e OMIE no mercado energético português.
-          </li>
-          <li>
-            <strong style={{ color: PURPLE }}>Acesso ao mercado B2B:</strong>{" "}
-            Ligação da ReVecta à rede de PMEs da incubadora para a realização de testes-piloto da nossa funcionalidade de automação de reembolsos.
-          </li>
-        </ul>
-      </Card>
+      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "1rem", width: "100%" }}>
+        {asks.map((a) => (
+          <Card key={a.title} accent={a.color} style={{ padding: "1.5rem", position: "relative", overflow: "hidden", display: "flex", flexDirection: "column", gap: "0.5rem" }}>
+            <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 2, background: a.color }} />
+            <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1.15rem", color: a.color, lineHeight: 1.3 }}>{a.title}</div>
+            <p style={{ margin: 0, fontSize: "0.95rem", color: "#ffffff", lineHeight: 1.6 }}>{a.desc}</p>
+          </Card>
+        ))}
+      </div>
     </div>
   );
 }
