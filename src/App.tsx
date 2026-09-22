@@ -728,10 +728,10 @@ function BlankSlide() {
   ];
 
   return (
-    <div style={{ width: "100%", maxWidth: "1000px", display: "flex", flexDirection: "column", alignItems: "center", gap: "1.5rem" }}>
+    <div style={{ width: "100%", maxWidth: "1000px", display: "flex", flexDirection: "column", alignItems: "center", gap: "2rem" }}>
       <div style={{ textAlign: "center" }}>
         <Badge color={BLUE}>11 — Pedido de Incubação</Badge>
-        <h2 style={{ fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: "clamp(1.8rem,4vw,2.8rem)", color: "#fff", margin: "0.75rem 0 0", letterSpacing: "-0.02em", lineHeight: 1.15 }}>
+        <h2 style={{ fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: "clamp(1.8rem,4vw,2.8rem)", color: "#fff", margin: "0.75rem 0 0.5rem", letterSpacing: "-0.02em", lineHeight: 1.15 }}>
           Pedido de Incubação{" "}
           <span style={{ color: BLUE }}>(The Ask)</span>
         </h2>
