@@ -181,7 +181,7 @@ function S2() {
   ];
 
   return (
-    <div style={{ width: "100%", maxWidth: "960px", display: "flex", flexDirection: "column", gap: "1rem", color: "#ffffff" }}>
+    <div style={{ width: "100%", maxWidth: "960px", display: "flex", flexDirection: "column", gap: "2rem", color: "#ffffff" }}>
       <div style={{ textAlign: "center" }}>
         <Badge color={BLUE}>02 — Problema B2B2C</Badge>
         <h2 style={{ fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: "clamp(1.6rem,4vw,2.8rem)", color: "#fff", margin: "0.75rem 0 0.5rem", letterSpacing: "-0.02em", lineHeight: 1.15 }}>
@@ -297,7 +297,7 @@ function S5() {
   ];
 
   return (
-    <div style={{ width: "100%", maxWidth: "920px", display: "flex", flexDirection: "column", gap: "1.25rem" }}>
+    <div style={{ width: "100%", maxWidth: "920px", display: "flex", flexDirection: "column", gap: "2rem" }}>
       <div style={{ textAlign: "center" }}>
         <Badge color={TEAL}>04 — Tamanho de Mercado</Badge>
         <h2 style={{ fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: "clamp(1.6rem,4vw,2.8rem)", color: "#fff", margin: "0.75rem 0 0.5rem", letterSpacing: "-0.02em", lineHeight: 1.15 }}>
@@ -411,7 +411,7 @@ function S7() {
   ];
 
   return (
-    <div style={{ width: "100%", maxWidth: "960px", display: "flex", flexDirection: "column", gap: "1.5rem" }}>
+    <div style={{ width: "100%", maxWidth: "960px", display: "flex", flexDirection: "column", gap: "2rem" }}>
       <div style={{ textAlign: "center" }}>
         <Badge color={BLUE}>06 — Modelo de Negócio</Badge>
         <h2 style={{ fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: "clamp(1.6rem,4vw,2.8rem)", color: "#fff", margin: "0.75rem 0 0.5rem", letterSpacing: "-0.02em" }}>
