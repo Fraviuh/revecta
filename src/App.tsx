@@ -743,7 +743,7 @@ function BlankSlide() {
           <Card key={a.title} accent={a.color} style={{ padding: "1.1rem", position: "relative", overflow: "hidden", display: "flex", flexDirection: "column", gap: "2.5rem" }}>
             <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 2, background: a.color }} />
             <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: a.color, lineHeight: 1.3 }}>{a.title}</div>
-            <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6, textAlign: "justify" }}>{a.desc}</p>
+            <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6, textAlign: "justify", hyphens: "auto", wordSpacing: "normal" }}>{a.desc}</p>
           </Card>
         ))}
       </div>
