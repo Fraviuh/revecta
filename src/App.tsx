@@ -787,37 +787,44 @@ function S12() {
   );
 }
 
-// ─── Slide engine ─────────────────────────────────────────────────────────────
+// ─── Slide engine (vertical scroll-snap) ─────────────────────────────────────
 
 const SLIDES = [S1, S2, S4, S5, S6, S7, S8, S9, S10, S11, BlankSlide, S12];
 const LABELS = ["Capa", "Problema B2C", "Solução", "Mercado", "Validação", "Modelo de Negócio", "Competitivo", "Go-To-Market", "Equipa", "Roadmap", "", "Fecho"];
-type SlideState = "enter" | "exit" | "below";
-
-function SlideWrapper({ state, children }: { state: SlideState; children: React.ReactNode }) {
-  return (
-    <div className={`slide ${state === "enter" ? "slide-enter" : state === "exit" ? "slide-exit" : "slide-below"}`}>
-      {children}
-    </div>
-  );
-}
 
 export default function App() {
+  const deckRef = useRef<HTMLDivElement>(null);
+  const slideRefs = useRef<(HTMLDivElement | null)[]>([]);
   const [current, setCurrent] = useState(0);
-  const [prev, setPrev] = useState<number | null>(null);
-  const [dir, setDir] = useState<"fwd" | "bwd">("fwd");
+  const [progress, setProgress] = useState(0);
 
   const go = useCallback((next: number) => {
-    if (next < 0 || next >= SLIDES.length || next === current) return;
-    setDir(next > current ? "fwd" : "bwd");
-    setPrev(current);
-    setCurrent(next);
-    setTimeout(() => setPrev(null), 560);
-  }, [current]);
+    if (next < 0 || next >= SLIDES.length) return;
+    slideRefs.current[next]?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }, []);
+
+  // Deteta a página visível conforme o scroll e calcula o progresso real.
+  useEffect(() => {
+    const deck = deckRef.current;
+    if (!deck) return;
+    const onScroll = () => {
+      const { scrollTop, scrollHeight, clientHeight } = deck;
+      const max = Math.max(1, scrollHeight - clientHeight);
+      setProgress(Math.min(1, scrollTop / max));
+      const idx = Math.round(scrollTop / Math.max(1, clientHeight));
+      setCurrent(Math.max(0, Math.min(SLIDES.length - 1, idx)));
+    };
+    onScroll();
+    deck.addEventListener("scroll", onScroll, { passive: true });
+    return () => deck.removeEventListener("scroll", onScroll);
+  }, []);
 
   useEffect(() => {
     const h = (e: KeyboardEvent) => {
-      if (e.key === "ArrowRight" || e.key === "ArrowDown" || e.key === " ") go(current + 1);
-      if (e.key === "ArrowLeft" || e.key === "ArrowUp") go(current - 1);
+      if (e.key === "ArrowRight" || e.key === "ArrowDown" || e.key === " " || e.key === "PageDown") go(current + 1);
+      if (e.key === "ArrowLeft" || e.key === "ArrowUp" || e.key === "PageUp") go(current - 1);
+      if (e.key === "Home") go(0);
+      if (e.key === "End") go(SLIDES.length - 1);
     };
     window.addEventListener("keydown", h);
     return () => window.removeEventListener("keydown", h);
@@ -827,20 +834,18 @@ export default function App() {
     <div style={{ position: "fixed", inset: 0, overflow: "hidden" }}>
       <AnimatedBackground />
 
-      {/* Slides */}
-      <div style={{ position: "fixed", inset: 0, zIndex: 1 }}>
-        {SLIDES.map((Comp, i) => {
-          let state: SlideState;
-          if (i === current) state = "enter";
-          else if (i === prev) state = dir === "fwd" ? "exit" : "below";
-          else state = i < current ? "exit" : "below";
-          return <SlideWrapper key={i} state={state}><Comp /></SlideWrapper>;
-        })}
+      {/* Deck vertical — todas as páginas empilhadas, uma por viewport */}
+      <div className="deck" ref={deckRef}>
+        {SLIDES.map((Comp, i) => (
+          <div key={i} className="slide" ref={(el) => { slideRefs.current[i] = el; }}>
+            <Comp />
+          </div>
+        ))}
       </div>
 
       {/* Progress bar */}
       <div style={{ position: "fixed", top: 0, left: 0, right: 0, height: 3, zIndex: 20, background: "rgba(255,255,255,0.04)" }}>
-        <div style={{ height: "100%", background: "linear-gradient(90deg,var(--blue),var(--teal))", width: `${((current + 1) / SLIDES.length) * 100}%`, transition: "width 0.5s ease", borderRadius: "0 2px 2px 0" }} />
+        <div style={{ height: "100%", background: "linear-gradient(90deg,var(--blue),var(--teal))", width: `${progress * 100}%`, transition: "width 0.15s linear", borderRadius: "0 2px 2px 0" }} />
       </div>
 
       {/* Top left — slide info */}
@@ -867,13 +872,13 @@ export default function App() {
         ))}
       </div>
 
-      {/* Prev / Next */}
+      {/* Up / Down */}
       {[
-        { side: "left", disabled: current === 0, icon: "‹", onClick: () => go(current - 1) },
-        { side: "right", disabled: current === SLIDES.length - 1, icon: "›", onClick: () => go(current + 1) },
+        { side: "right", bottom: "5.25rem", disabled: current === 0, icon: "↑", onClick: () => go(current - 1) },
+        { side: "right", bottom: "2.25rem", disabled: current === SLIDES.length - 1, icon: "↓", onClick: () => go(current + 1) },
       ].map((btn) => (
-        <button key={btn.side} onClick={btn.onClick} disabled={btn.disabled} style={{
-          position: "fixed", [btn.side]: "1.25rem", top: "50%", transform: "translateY(-50%)", zIndex: 10,
+        <button key={btn.icon} onClick={btn.onClick} disabled={btn.disabled} style={{
+          position: "fixed", right: btn.side === "right" ? "1.25rem" : undefined, bottom: btn.bottom, zIndex: 10,
           width: 38, height: 38, borderRadius: "50%", border: "1px solid rgba(255,255,255,0.09)",
           background: "rgba(255,255,255,0.04)", backdropFilter: "blur(8px)",
           color: btn.disabled ? "rgba(255,255,255,0.12)" : "rgba(255,255,255,0.55)",
