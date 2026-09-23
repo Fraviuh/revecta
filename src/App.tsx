@@ -242,7 +242,7 @@ function S4() {
         <Card accent={BLUE} style={{ padding: "1.1rem", display: "flex", flexDirection: "column", gap: "1rem" }}>
           <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: BLUE, textTransform: "uppercase", letterSpacing: "0.08em" }}>B2C — Condutor</div>
           {b2c.map((f) => (
-            <div key={f.title} style={{ display: "flex", flexDirection: "column", gap: "0.75rem" }}>
+            <div key={f.title} style={{ display: "flex", flexDirection: "column", gap: "2rem" }}>
               <div style={{ fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6 }}>{f.title}</div>
               <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6 }}>{f.desc}</p>
             </div>
@@ -253,7 +253,7 @@ function S4() {
         <Card accent={TEAL} style={{ padding: "1.1rem", display: "flex", flexDirection: "column", gap: "1rem" }}>
           <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: TEAL, textTransform: "uppercase", letterSpacing: "0.08em" }}>B2B — Gestor de Frota</div>
           {b2b.map((f) => (
-            <div key={f.title} style={{ display: "flex", flexDirection: "column", gap: "0.75rem" }}>
+            <div key={f.title} style={{ display: "flex", flexDirection: "column", gap: "2rem" }}>
               <div style={{ fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6 }}>{f.title}</div>
               <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6 }}>{f.desc}</p>
             </div>
@@ -501,7 +501,7 @@ function S8() {
             </div>
           </div>
         </Card>
-        <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem" }}>
+        <div style={{ display: "flex", flexDirection: "column", gap: "2rem" }}>
           <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: TEAL, letterSpacing: "-0.01em", marginBottom: "0.6rem" }}>
             Análise de Mercado
           </div>
@@ -557,7 +557,7 @@ function S9() {
               <div style={{ width: 42, height: 42, borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.4rem", background: `${c.color}18`, flexShrink: 0, marginBottom: "0.75rem" }}>{c.icon}</div>
               <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: c.color, lineHeight: 1.3, display: "flex", alignItems: "flex-start" }}>{c.title}</div>
             </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem" }}>
+            <div style={{ display: "flex", flexDirection: "column", gap: "2rem" }}>
               <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6 }}>{c.desc}</p>
             </div>
           </Card>
@@ -604,7 +604,7 @@ function S10() {
               <div style={{ fontSize: "0.75rem", color: BLUE, fontWeight: 600, letterSpacing: "0.04em", textTransform: "uppercase", marginTop: "0.25rem" }}>Founder &amp; Head of Product</div>
             </div>
           </div>
-          <div style={{ borderTop: "1px solid rgba(255,255,255,0.07)", paddingTop: "1rem", display: "flex", flexDirection: "column", gap: "0.75rem" }}>
+          <div style={{ borderTop: "1px solid rgba(255,255,255,0.07)", paddingTop: "1rem", display: "flex", flexDirection: "column", gap: "2rem" }}>
             {[
               "Conceito acolhido na Divisão de Inovação do Novo Banco",
               "Estudante no IPAM — foco em Service Design e UX/UI",
@@ -631,7 +631,7 @@ function S10() {
               <div style={{ fontSize: "0.75rem", color: TEAL, fontWeight: 600, letterSpacing: "0.04em", textTransform: "uppercase", marginTop: "0.25rem" }}>Co-Fundador &amp; Tech Lead</div>
             </div>
           </div>
-          <div style={{ borderTop: "1px solid rgba(255,255,255,0.07)", paddingTop: "1rem", display: "flex", flexDirection: "column", gap: "0.75rem" }}>
+          <div style={{ borderTop: "1px solid rgba(255,255,255,0.07)", paddingTop: "1rem", display: "flex", flexDirection: "column", gap: "2rem" }}>
             {[
               "Analista Funcional com experiência no Mercado Eletrônico",
               "Lidera a arquitectura técnica e a automação de dados em Python",
@@ -689,7 +689,7 @@ function S11() {
               <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: "#fff" }}>{p.horizon}</div>
               <div style={{ fontSize: "0.8rem", color: "rgba(255,255,255,0.35)" }}>{p.period}</div>
             </div>
-            <ul style={{ margin: 0, padding: 0, listStyle: "none", display: "flex", flexDirection: "column", gap: "0.75rem" }}>
+            <ul style={{ margin: 0, padding: 0, listStyle: "none", display: "flex", flexDirection: "column", gap: "2rem" }}>
               {p.items.map((item) => (
                 <li key={item} style={{ display: "flex", alignItems: "flex-start", gap: "0.5rem", fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6 }}>
                   <Chevron color={p.color} />
