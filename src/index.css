@@ -25,6 +25,8 @@ body {
   color: #fff;
   font-family: var(--font-sans);
   overflow: hidden;
+  /* Espaçamento padrão entre palavras em todo o projeto (títulos, frases, labels). */
+  word-spacing: 2px;
 }
 
 /* ── Padronização tipográfica ──
