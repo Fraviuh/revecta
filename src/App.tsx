@@ -280,19 +280,19 @@ function S5() {
       label: "TAM", name: "Mercado Endereçável Total", color: BLUE,
       value: "659.336 VE",
       sub: "Projeção 2030 — Portugal",
-      desc: "• Base ( final de 2025 ): 243.954 veículos BEV\n\n• Escala: ~2,7x até 2030 ( CAGR de 22% )\n\n• Impacto: Eletrificação acelerada do parque automóvel nacional.",
+      desc: "Base ( final de 2025 ): 243.954 veículos BEV\n\nEscala: ~2,7x até 2030 ( CAGR de 22% )\n\nImpacto: Eletrificação acelerada do parque automóvel nacional.",
     },
     {
       label: "SAM", name: "Mercado Útil Disponível", color: TEAL,
       value: "236.250 VE",
       sub: "Segmento Empresarial B2B — 2026",
-      desc: "• Expansão liderada pelo segmento empresarial.\n\n• 85% planeiam instalar postos nas próprias instalações.",
+      desc: "Expansão liderada pelo segmento empresarial.\n\n85% planeiam instalar postos nas próprias instalações.",
     },
     {
       label: "SOM", name: "Mercado Útil Obtível — Anos 1–3", color: PURPLE,
       value: "1.890 VE",
       sub: "4% do subsegmento-alvo",
-      desc: "• Meta de captação focado nos primeiros 3 anos de operação.\n\n• Foco direto no universo de 20% das empresas com soluções de carregamento residencial.",
+      desc: "Meta de captação focado nos primeiros 3 anos de operação.\n\nFoco direto no universo de 20% das empresas com soluções de carregamento residencial.",
     },
   ];
 
