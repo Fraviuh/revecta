@@ -771,7 +771,7 @@ function S12() {
         </Card>
         {/* Sem URL de protótipo definida ainda — card informativo, não um link.
             Quando existir o link (Figma / TestFlight / vídeo demo), trocar por <a href={URL}>. */}
-        <div style={{ borderRadius: "1rem", background: "linear-gradient(135deg,rgba(0,212,170,0.15),rgba(59,158,255,0.1))", border: "1px solid rgba(0,212,170,0.35)", padding: "1.1rem", display: "flex", flexDirection: "column", alignItems: "center", gap: "0.4rem", boxShadow: "0 0 24px rgba(0,212,170,0.12)" }}>
+        <div style={{ borderRadius: "1rem", background: "linear-gradient(135deg,rgba(0,212,170,0.15),rgba(59,158,255,0.1))", border: "1px solid rgba(0,212,170,0.35)", padding: "1.1rem", display: "flex", flexDirection: "column", alignItems: "center", gap: "0.75rem", boxShadow: "0 0 24px rgba(0,212,170,0.12)" }}>
           <span style={{ fontSize: "1.5rem" }}>▶</span>
           <div style={{ fontSize: "0.62rem", fontWeight: 600, color: TEAL, fontFamily: FONT_DISPLAY, textTransform: "uppercase", letterSpacing: "0.1em" }}>Ver Protótipo</div>
           <div style={{ fontSize: "0.72rem", color: "#ffffff", fontWeight: 500 }}>Explorar o MVP →</div>
