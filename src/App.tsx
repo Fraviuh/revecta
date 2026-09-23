@@ -239,10 +239,10 @@ function S4() {
 
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem" }}>
         {/* B2C */}
-        <Card accent={BLUE} style={{ padding: "1.1rem", display: "flex", flexDirection: "column", gap: "0.6rem" }}>
+        <Card accent={BLUE} style={{ padding: "1.1rem", display: "flex", flexDirection: "column", gap: "1rem" }}>
           <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: BLUE, textTransform: "uppercase", letterSpacing: "0.08em" }}>B2C — Condutor</div>
           {b2c.map((f) => (
-            <div key={f.title} style={{ display: "flex", flexDirection: "column", gap: "0.3rem" }}>
+            <div key={f.title} style={{ display: "flex", flexDirection: "column", gap: "0.75rem" }}>
               <div style={{ fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6 }}>{f.title}</div>
               <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6 }}>{f.desc}</p>
             </div>
@@ -250,10 +250,10 @@ function S4() {
         </Card>
 
         {/* B2B */}
-        <Card accent={TEAL} style={{ padding: "1.1rem", display: "flex", flexDirection: "column", gap: "0.6rem" }}>
+        <Card accent={TEAL} style={{ padding: "1.1rem", display: "flex", flexDirection: "column", gap: "1rem" }}>
           <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: TEAL, textTransform: "uppercase", letterSpacing: "0.08em" }}>B2B — Gestor de Frota</div>
           {b2b.map((f) => (
-            <div key={f.title} style={{ display: "flex", flexDirection: "column", gap: "0.3rem" }}>
+            <div key={f.title} style={{ display: "flex", flexDirection: "column", gap: "0.75rem" }}>
               <div style={{ fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6 }}>{f.title}</div>
               <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6 }}>{f.desc}</p>
             </div>
@@ -280,19 +280,19 @@ function S5() {
       label: "TAM", name: "Mercado Endereçável Total", color: BLUE,
       value: "659.336 VE",
       sub: "Projeção 2030 — Portugal",
-      desc: "Base ( final de 2025 ): 243.954 veículos BEV\n\nEscala: ~2,7x até 2030 ( CAGR de 22% )\n\nImpacto: Eletrificação acelerada do parque automóvel nacional.",
+      desc: "Base ( final de 2025 ): 243.954 veículos BEV\n\n\nEscala: ~2,7x até 2030 ( CAGR de 22% )\n\n\nImpacto: Eletrificação acelerada do parque automóvel nacional.",
     },
     {
       label: "SAM", name: "Mercado Útil Disponível", color: TEAL,
       value: "236.250 VE",
       sub: "Segmento Empresarial B2B — 2026",
-      desc: "Expansão liderada pelo segmento empresarial.\n\n85% planeiam instalar postos nas próprias instalações.",
+      desc: "Expansão liderada pelo segmento empresarial.\n\n\n85% planeiam instalar postos nas próprias instalações.",
     },
     {
       label: "SOM", name: "Mercado Útil Obtível — Anos 1–3", color: PURPLE,
       value: "1.890 VE",
       sub: "4% do subsegmento-alvo",
-      desc: "Meta de captação focado nos primeiros 3 anos de operação.\n\nFoco direto no universo de 20% das empresas com soluções de carregamento residencial.",
+      desc: "Meta de captação focado nos primeiros 3 anos de operação.\n\n\nFoco direto no universo de 20% das empresas com soluções de carregamento residencial.",
     },
   ];
 
@@ -501,7 +501,7 @@ function S8() {
             </div>
           </div>
         </Card>
-        <div style={{ display: "flex", flexDirection: "column", gap: "0.6rem" }}>
+        <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem" }}>
           <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: TEAL, letterSpacing: "-0.01em", marginBottom: "0.25rem" }}>
             Análise de Mercado
           </div>
@@ -551,13 +551,13 @@ function S9() {
       </div>
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "1rem" }}>
         {channels.map((c) => (
-          <Card key={c.title} accent={c.color} style={{ padding: "1.1rem", display: "flex", flexDirection: "column", gap: "0.3rem", position: "relative", overflow: "hidden" }}>
+          <Card key={c.title} accent={c.color} style={{ padding: "1.1rem", display: "flex", flexDirection: "column", gap: "1rem", position: "relative", overflow: "hidden" }}>
             <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 2, background: c.color }} />
             <div>
               <div style={{ width: 42, height: 42, borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.4rem", background: `${c.color}18`, flexShrink: 0, marginBottom: "0.75rem" }}>{c.icon}</div>
               <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: c.color, lineHeight: 1.3, minHeight: "2.75rem", display: "flex", alignItems: "flex-start" }}>{c.title}</div>
             </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "0.3rem" }}>
+            <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem" }}>
               <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6 }}>{c.desc}</p>
             </div>
           </Card>
@@ -604,7 +604,7 @@ function S10() {
               <div style={{ fontSize: "0.75rem", color: BLUE, fontWeight: 600, letterSpacing: "0.04em", textTransform: "uppercase", marginTop: "0.25rem" }}>Founder &amp; Head of Product</div>
             </div>
           </div>
-          <div style={{ borderTop: "1px solid rgba(255,255,255,0.07)", paddingTop: "1rem", display: "flex", flexDirection: "column", gap: "0.5rem" }}>
+          <div style={{ borderTop: "1px solid rgba(255,255,255,0.07)", paddingTop: "1rem", display: "flex", flexDirection: "column", gap: "0.75rem" }}>
             {[
               "Conceito acolhido na Divisão de Inovação do Novo Banco",
               "Estudante no IPAM — foco em Service Design e UX/UI",
@@ -631,7 +631,7 @@ function S10() {
               <div style={{ fontSize: "0.75rem", color: TEAL, fontWeight: 600, letterSpacing: "0.04em", textTransform: "uppercase", marginTop: "0.25rem" }}>Co-Fundador &amp; Tech Lead</div>
             </div>
           </div>
-          <div style={{ borderTop: "1px solid rgba(255,255,255,0.07)", paddingTop: "1rem", display: "flex", flexDirection: "column", gap: "0.5rem" }}>
+          <div style={{ borderTop: "1px solid rgba(255,255,255,0.07)", paddingTop: "1rem", display: "flex", flexDirection: "column", gap: "0.75rem" }}>
             {[
               "Analista Funcional com experiência no Mercado Eletrônico",
               "Lidera a arquitectura técnica e a automação de dados em Python",
@@ -689,7 +689,7 @@ function S11() {
               <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: "#fff" }}>{p.horizon}</div>
               <div style={{ fontSize: "0.8rem", color: "rgba(255,255,255,0.35)" }}>{p.period}</div>
             </div>
-            <ul style={{ margin: 0, padding: 0, listStyle: "none", display: "flex", flexDirection: "column", gap: "0.5rem" }}>
+            <ul style={{ margin: 0, padding: 0, listStyle: "none", display: "flex", flexDirection: "column", gap: "0.75rem" }}>
               {p.items.map((item) => (
                 <li key={item} style={{ display: "flex", alignItems: "flex-start", gap: "0.5rem", fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6 }}>
                   <Chevron color={p.color} />
@@ -740,7 +740,7 @@ function BlankSlide() {
       </div>
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "1rem", width: "100%" }}>
         {asks.map((a) => (
-          <Card key={a.title} accent={a.color} style={{ padding: "1.1rem", position: "relative", overflow: "hidden", display: "flex", flexDirection: "column", gap: "0.5rem" }}>
+          <Card key={a.title} accent={a.color} style={{ padding: "1.1rem", position: "relative", overflow: "hidden", display: "flex", flexDirection: "column", gap: "1rem" }}>
             <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 2, background: a.color }} />
             <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: a.color, lineHeight: 1.3 }}>{a.title}</div>
             <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6 }}>{a.desc}</p>
@@ -764,7 +764,7 @@ function S12() {
       <p style={{ fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6, maxWidth: 500, margin: 0 }}>        Junte-se a nós para redefinir o paradigma da mobilidade na Ibéria, unindo Finanças, Energia e Sustentabilidade de forma lucrativa e inteligente.
       </p>
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem", width: "100%" }}>
-        <Card style={{ padding: "1.1rem", display: "flex", flexDirection: "column", alignItems: "center", gap: "0.4rem" }}>
+        <Card style={{ padding: "1.1rem", display: "flex", flexDirection: "column", alignItems: "center", gap: "0.75rem" }}>
           <span style={{ fontSize: "1.5rem" }}>✉️</span>
           <div style={{ fontSize: "0.62rem", fontWeight: 600, color: "rgba(255,255,255,0.35)", fontFamily: FONT_DISPLAY, textTransform: "uppercase", letterSpacing: "0.1em" }}>Email</div>
           <div style={{ fontSize: "0.78rem", color: BLUE }}>hello@revecta.pt</div>
