@@ -127,12 +127,12 @@ function S1() {
         <h1 style={{ fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: "clamp(3rem,7vw,5.5rem)", color: "#fff", letterSpacing: "-0.02em", margin: 0, lineHeight: 1.05 }}>
           Re<span style={{ color: BLUE }}>Vecta</span>
         </h1>
-        <p style={{ margin: 0, fontSize: "1.05rem", color: "#ffffff", fontFamily: FONT_DISPLAY, fontWeight: 600, letterSpacing: "-0.01em", lineHeight: 1.5 }}>
+        <p style={{ margin: 0, fontSize: "0.95rem", color: "#ffffff", fontFamily: FONT_DISPLAY, fontWeight: 600, letterSpacing: "-0.01em", lineHeight: 1.5 }}>
           A Plataforma que une Mobilidade Elétrica e Inteligência Financeira — num só lugar.
         </p>
       </div>
       <Card style={{ maxWidth: 620, padding: "1.5rem 2.25rem", border: "1px solid rgba(59,158,255,0.2)" }}>
-        <p style={{ margin: 0, fontSize: "0.95rem", color: "#ffffff", lineHeight: 1.85 }}>
+        <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.85 }}>
           Acabou a complexidade. A ReVecta transforma uma experiência elétrica fragmentada numa gestão simples, transparente e financeiramente inteligente — para condutores e empresas que não querem escolher entre sustentabilidade e eficiência.
         </p>
       </Card>
@@ -184,19 +184,19 @@ function S2() {
     <div style={{ width: "100%", maxWidth: "1020px", display: "flex", flexDirection: "column", gap: "1rem", color: "#ffffff" }}>
       <div style={{ textAlign: "center" }}>
         <Badge color={BLUE}>02 — Problema B2B2C</Badge>
-        <h2 style={{ fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: "clamp(1.8rem,4vw,2.8rem)", color: "#fff", margin: "0.75rem 0 0.5rem", letterSpacing: "-0.02em", lineHeight: 1.15 }}>
+        <h2 style={{ fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: "clamp(1.6rem,4vw,2.8rem)", color: "#fff", margin: "0.75rem 0 0.5rem", letterSpacing: "-0.02em", lineHeight: 1.15 }}>
           Barreiras à adoção da mobilidade elétrica{" "}
           <span style={{ color: BLUE }}>B2C + B2B</span>
         </h2>
       </div>
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "1rem" }}>
         {items.map((item) => (
-          <Card key={item.title} accent={item.color} style={{ padding: "1rem", display: "flex", flexDirection: "column", gap: "0.75rem" }}>
-            <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1.15rem", color: item.color, lineHeight: 1.3 }}>
+          <Card key={item.title} accent={item.color} style={{ padding: "1.1rem", display: "flex", flexDirection: "column", gap: "0.75rem" }}>
+            <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: item.color, lineHeight: 1.3 }}>
               {item.title}
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: "0.3rem" }}>
-              <p style={{ margin: 0, fontSize: "0.95rem", color: "#ffffff", lineHeight: 1.65 }}>
+              <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.65 }}>
                 {item.quote}
               </p>
             </div>
@@ -223,39 +223,39 @@ function S4() {
     <div style={{ width: "100%", maxWidth: "980px", display: "flex", flexDirection: "column", gap: "1rem", color: "#fff", textAlign: "left" }}>
       <div style={{ textAlign: "center" }}>
         <Badge color={BLUE}>03 — Solução</Badge>
-        <h2 style={{ fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: "clamp(1.8rem,4vw,2.8rem)", color: "#fff", margin: "0.75rem 0 0.5rem", letterSpacing: "-0.02em", lineHeight: 1.15 }}>
+        <h2 style={{ fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: "clamp(1.6rem,4vw,2.8rem)", color: "#fff", margin: "0.75rem 0 0.5rem", letterSpacing: "-0.02em", lineHeight: 1.15 }}>
           O Ecossistema Unificado <span style={{ color: BLUE }}>ReVecta</span>
         </h2>
       </div>
 
       <Card accent={BLUE} style={{ width: "100%", boxSizing: "border-box", padding: "0.9rem 1.25rem", textAlign: "left" }}>
-        <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1.15rem", color: BLUE, marginBottom: "0.25rem" }}>
+        <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: BLUE, marginBottom: "0.25rem" }}>
           O MVP
         </div>
-        <p style={{ margin: 0, fontSize: "0.95rem", color: "#ffffff", lineHeight: 1.6 }}>
+        <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6 }}>
           A ReVecta unifica numa única plataforma a experiência do condutor e da empresa.
         </p>
       </Card>
 
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem" }}>
         {/* B2C */}
-        <Card accent={BLUE} style={{ padding: "1rem", display: "flex", flexDirection: "column", gap: "0.6rem" }}>
-          <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1.15rem", color: BLUE, textTransform: "uppercase", letterSpacing: "0.08em" }}>B2C — Condutor</div>
+        <Card accent={BLUE} style={{ padding: "1.1rem", display: "flex", flexDirection: "column", gap: "0.6rem" }}>
+          <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: BLUE, textTransform: "uppercase", letterSpacing: "0.08em" }}>B2C — Condutor</div>
           {b2c.map((f) => (
             <div key={f.title} style={{ display: "flex", flexDirection: "column", gap: "0.3rem" }}>
-              <div style={{ fontSize: "0.95rem", color: "#ffffff", lineHeight: 1.65 }}>{f.title}</div>
-              <p style={{ margin: 0, fontSize: "0.95rem", color: "#ffffff", lineHeight: 1.65 }}>{f.desc}</p>
+              <div style={{ fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.65 }}>{f.title}</div>
+              <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.65 }}>{f.desc}</p>
             </div>
           ))}
         </Card>
 
         {/* B2B */}
-        <Card accent={TEAL} style={{ padding: "1rem", display: "flex", flexDirection: "column", gap: "0.6rem" }}>
-          <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1.15rem", color: TEAL, textTransform: "uppercase", letterSpacing: "0.08em" }}>B2B — Gestor de Frota</div>
+        <Card accent={TEAL} style={{ padding: "1.1rem", display: "flex", flexDirection: "column", gap: "0.6rem" }}>
+          <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: TEAL, textTransform: "uppercase", letterSpacing: "0.08em" }}>B2B — Gestor de Frota</div>
           {b2b.map((f) => (
             <div key={f.title} style={{ display: "flex", flexDirection: "column", gap: "0.3rem" }}>
-              <div style={{ fontSize: "0.95rem", color: "#ffffff", lineHeight: 1.65 }}>{f.title}</div>
-              <p style={{ margin: 0, fontSize: "0.95rem", color: "#ffffff", lineHeight: 1.65 }}>{f.desc}</p>
+              <div style={{ fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.65 }}>{f.title}</div>
+              <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.65 }}>{f.desc}</p>
             </div>
           ))}
         </Card>
@@ -264,8 +264,8 @@ function S4() {
       {/* Bottom — Visão de Futuro */}
       <Card style={{ padding: "0.85rem 1.25rem", display: "flex", alignItems: "center", gap: "1rem", border: "1px solid rgba(167,139,250,0.25)", background: "rgba(167,139,250,0.06)" }}>
         <div>
-          <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1.15rem", color: PURPLE, marginBottom: "0.35rem" }}>Visão de Escalabilidade</div>
-          <p style={{ margin: 0, fontSize: "0.95rem", color: "#fff", lineHeight: 1.65 }}>
+          <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: PURPLE, marginBottom: "0.35rem" }}>Visão de Escalabilidade</div>
+          <p style={{ margin: 0, fontSize: "0.88rem", color: "#fff", lineHeight: 1.65 }}>
             A arquitetura da plataforma ficará preparada para integrar <strong style={{ color: PURPLE, fontWeight: 700 }}>Smart Charging e Vehicle-to-Grid</strong>, permitindo rentabilizar a energia armazenada nos veículos durante os períodos que se encontram estacionados. Em paralelo, um <strong style={{ color: PURPLE, fontWeight: 700 }}>Mercado de Créditos de Carbono</strong> permitirá também valorizar os quilómetros percorridos com energia sustentável.
           </p>
         </div>
@@ -300,7 +300,7 @@ function S5() {
     <div style={{ width: "100%", maxWidth: "920px", display: "flex", flexDirection: "column", gap: "1.25rem" }}>
       <div style={{ textAlign: "center" }}>
         <Badge color={TEAL}>04 — Tamanho de Mercado</Badge>
-        <h2 style={{ fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: "clamp(1.8rem,4vw,2.8rem)", color: "#fff", margin: "0.75rem 0 0.5rem", letterSpacing: "-0.02em", lineHeight: 1.15 }}>
+        <h2 style={{ fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: "clamp(1.6rem,4vw,2.8rem)", color: "#fff", margin: "0.75rem 0 0.5rem", letterSpacing: "-0.02em", lineHeight: 1.15 }}>
           Oportunidade Escalável:{" "}
           <span style={{ color: TEAL }}>Dados Reais, Metas Realistas</span>
         </h2>
@@ -312,14 +312,14 @@ function S5() {
             <div style={{ fontSize: "0.72rem", fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase", color: m.color, fontFamily: FONT_DISPLAY, marginBottom: "0.75rem" }}>{m.label}</div>
             <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: "1.65rem", color: "#fff", marginBottom: "0.2rem" }}>{m.value}</div>
             <div style={{ fontSize: "0.75rem", color: m.color, fontWeight: 600, marginBottom: "0.75rem", fontFamily: FONT_DISPLAY }}>{m.sub}</div>
-            <p style={{ margin: 0, fontSize: "0.95rem", color: "#ffffff", lineHeight: 1.65, whiteSpace: "pre-line" }}>{m.desc}</p>
+            <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.65, whiteSpace: "pre-line" }}>{m.desc}</p>
           </Card>
         ))}
       </div>
       <Card style={{ padding: "1rem 1.5rem", display: "flex", alignItems: "center", gap: "1rem", border: "1px solid rgba(59,158,255,0.15)" }}>
         <div style={{ flex: 1 }}>
-          <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1.15rem", color: "#fff", marginBottom: "0.2rem" }}>Porquê Agora?</div>
-          <p style={{ margin: 0, fontSize: "0.95rem", color: "#ffffff", lineHeight: 1.6 }}>
+          <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: "#fff", marginBottom: "0.2rem" }}>Porquê Agora?</div>
+          <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6 }}>
             A <strong style={{ color: BLUE }}>Taxonomia da UE</strong> e as diretivas <strong style={{ color: BLUE }}>ESG/CSRD</strong> forçam as empresas a agir já. A transição para frotas sustentáveis e as metas de descontinuação de novos veículos a combustão criam uma urgência regulatória sem precedentes.
           </p>
         </div>
@@ -333,14 +333,14 @@ function S6() {
     <div style={{ width: "100%", maxWidth: "920px", display: "flex", flexDirection: "column", gap: "2rem", color: "#ffffff" }}>
       <div style={{ textAlign: "center" }}>
         <Badge color={BLUE}>05 — Validação de Conceito & Tecnologia</Badge>
-        <h2 style={{ fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: "clamp(1.8rem,4vw,2.8rem)", color: "#fff", margin: "0.75rem 0 0.5rem", letterSpacing: "-0.02em" }}>
+        <h2 style={{ fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: "clamp(1.6rem,4vw,2.8rem)", color: "#fff", margin: "0.75rem 0 0.5rem", letterSpacing: "-0.02em" }}>
           Dados Reais e{" "}
           <span style={{ color: BLUE }}>Tecnologia Comprovada</span>
         </h2>
       </div>
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1.25rem", alignItems: "stretch" }}>
         <Card accent={BLUE} style={{ padding: "1.4rem 1.5rem", display: "flex", flexDirection: "column", gap: "0.9rem", height: "100%" }}>
-          <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1.15rem", color: BLUE, lineHeight: 1.25 }}>Investigação Qualitativa</div>
+          <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: BLUE, lineHeight: 1.25 }}>Investigação Qualitativa</div>
           <div style={{ display: "flex", flexDirection: "column", gap: "0.55rem", flex: 1, justifyContent: "space-between" }}>
             {[
               { label: "Entrevistas Semi-Estruturadas", value: "20" },
@@ -350,7 +350,7 @@ function S6() {
               { label: "Experiência média com VE", value: "2 anos e 10 meses" },
             ].map((s) => (
               <div key={s.label} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: "0.75rem", padding: "0.55rem 0" }}>
-                <span style={{ fontSize: "0.95rem", color: "#ffffff", lineHeight: 1.45 }}>{s.label}</span>
+                <span style={{ fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.45 }}>{s.label}</span>
                 <span style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: "#ffffff", whiteSpace: "nowrap" }}>{s.value}</span>
               </div>
             ))}
@@ -358,15 +358,15 @@ function S6() {
         </Card>
         <div style={{ display: "flex", flexDirection: "column", gap: "1rem", height: "100%" }}>
           <Card accent={TEAL} style={{ padding: "1.4rem 1.5rem", display: "flex", flexDirection: "column", gap: "0.9rem", height: "100%" }}>
-            <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1.15rem", color: BLUE, lineHeight: 1.25 }}>Casos de Sucesso</div>
+            <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: BLUE, lineHeight: 1.25 }}>Casos de Sucesso</div>
             <div style={{ display: "flex", flexDirection: "column", gap: "0.55rem", flex: 1, justifyContent: "space-between" }}>
               {[
                 { name: "Projeto Galp / Nissan (Portugal)", note: "Em São Miguel, cada veículo poderá gerar uma receita mensal na ordem dos nove euros." },
                 { name: "AYR Platform (Portugal)", note: "Dados reais de mobilidade sustentável transformados em tokens de carbono transacionáveis por empresas locais." },
               ].map((r) => (
                 <div key={r.name} style={{ display: "flex", flexDirection: "column", gap: "0.45rem", padding: "0.55rem 0" }}>
-                  <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1.05rem", color: "#ffffff", lineHeight: 1.35, margin: 0 }}>{r.name}</div>
-                  <div style={{ fontSize: "0.95rem", color: "#ffffff", lineHeight: 1.6, margin: 0 }}>{r.note}</div>
+                  <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "0.95rem", color: "#ffffff", lineHeight: 1.35, margin: 0 }}>{r.name}</div>
+                  <div style={{ fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6, margin: 0 }}>{r.note}</div>
                 </div>
               ))}
             </div>
@@ -412,25 +412,25 @@ function S7() {
     <div style={{ width: "100%", maxWidth: "960px", display: "flex", flexDirection: "column", gap: "1.5rem" }}>
       <div style={{ textAlign: "center" }}>
         <Badge color={BLUE}>06 — Modelo de Negócio</Badge>
-        <h2 style={{ fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: "clamp(1.8rem,4vw,2.8rem)", color: "#fff", margin: "0.75rem 0 0.5rem", letterSpacing: "-0.02em" }}>
+        <h2 style={{ fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: "clamp(1.6rem,4vw,2.8rem)", color: "#fff", margin: "0.75rem 0 0.5rem", letterSpacing: "-0.02em" }}>
           Receitas{" "}
           <span style={{ color: BLUE }}>Diversificadas e Escaláveis</span>
         </h2>
       </div>
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "1rem" }}>
         {streams.map((s) => (
-          <Card key={s.num} accent={s.color} style={{ padding: "1.5rem", position: "relative", overflow: "hidden", display: "flex", flexDirection: "column", gap: "1rem" }}>
+          <Card key={s.num} accent={s.color} style={{ padding: "1.1rem", position: "relative", overflow: "hidden", display: "flex", flexDirection: "column", gap: "1rem" }}>
             <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 2, background: s.color }} />
             <div style={{ display: "flex", alignItems: "center", gap: "0.75rem" }}>
               <span style={{ fontSize: "0.72rem", fontWeight: 700, letterSpacing: "0.12em", color: s.color, fontFamily: FONT_DISPLAY, textTransform: "uppercase" }}>Stream {s.num}</span>
             </div>
             <div>
-              <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1.15rem", color: "#fff", marginBottom: "0.4rem" }}>{s.title}</div>
-              <p style={{ margin: 0, fontSize: "0.95rem", color: "#ffffff", lineHeight: 1.6 }}>{s.desc}</p>
+              <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: "#fff", marginBottom: "0.4rem" }}>{s.title}</div>
+              <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6 }}>{s.desc}</p>
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: "0.4rem", marginTop: "auto" }}>
               {s.metrics.map((m) => (
-                <div key={m.label} style={{ display: "flex", justifyContent: "space-between", fontSize: "0.82rem", padding: "0.35rem 0", borderBottom: "1px solid rgba(255,255,255,0.04)" }}>
+                <div key={m.label} style={{ display: "flex", justifyContent: "space-between", fontSize: "0.78rem", padding: "0.35rem 0", borderBottom: "1px solid rgba(255,255,255,0.04)" }}>
                   <span style={{ color: "#ffffff" }}>{m.label}</span>
                   <span style={{ color: s.color, fontFamily: FONT_DISPLAY, fontWeight: 600 }}>{m.value}</span>
                 </div>
@@ -467,11 +467,11 @@ function S8() {
     <div style={{ width: "100%", maxWidth: "960px", display: "flex", flexDirection: "column", gap: "1.5rem" }}>
       <div style={{ textAlign: "center" }}>
         <Badge color={TEAL}>07 — Paisagem Competitiva</Badge>
-        <h2 style={{ fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: "clamp(1.8rem,4vw,2.8rem)", color: "#fff", margin: "0.75rem 0 0.5rem", letterSpacing: "-0.02em" }}>
+        <h2 style={{ fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: "clamp(1.6rem,4vw,2.8rem)", color: "#fff", margin: "0.75rem 0 0.5rem", letterSpacing: "-0.02em" }}>
           Benchmark:{" "}
           <span style={{ color: TEAL }}>A Nossa Vantagem Única</span>
         </h2>
-        <p style={{ fontSize: "0.9rem", color: "rgba(255,255,255,0.35)", margin: 0 }}>Análise baseada em 27+ intervenientes no ecossistema global</p>
+        <p style={{ fontSize: "0.85rem", color: "rgba(255,255,255,0.35)", margin: 0 }}>Análise baseada em 27+ intervenientes no ecossistema global</p>
       </div>
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1.5rem" }}>
         <Card style={{ padding: "1.4rem", position: "relative", boxSizing: "border-box", height: "100%", display: "flex", flexDirection: "column" }}>
@@ -500,19 +500,19 @@ function S8() {
           </div>
         </Card>
         <div style={{ display: "flex", flexDirection: "column", gap: "0.6rem" }}>
-          <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1.15rem", color: TEAL, letterSpacing: "-0.01em", marginBottom: "0.25rem" }}>
+          <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: TEAL, letterSpacing: "-0.01em", marginBottom: "0.25rem" }}>
             Análise de Mercado
           </div>
           {advantages.map((a) => (
             <Card key={a} style={{ padding: "0.65rem 1rem", display: "flex", alignItems: "center", gap: "0.6rem" }}>
               <Tick color={TEAL} />
-              <span style={{ fontSize: "0.95rem", color: "#ffffff" }}>{a}</span>
+              <span style={{ fontSize: "0.88rem", color: "#ffffff" }}>{a}</span>
             </Card>
           ))}
 
           <Card style={{ padding: "0.65rem 1rem", display: "flex", flexDirection: "column", gap: "0.35rem" }}>
-            <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1.15rem", color: TEAL }}>O Nosso Posicionamento</div>
-            <p style={{ margin: 0, fontSize: "0.95rem", color: "#ffffff", lineHeight: 1.6 }}>
+            <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: TEAL }}>O Nosso Posicionamento</div>
+            <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6 }}>
               Enquanto os líderes do setor se especializam num domínio específico, a ReVecta procura integrar a experiência da mobilidade elétrica numa única camada operacional.
             </p>
           </Card>
@@ -542,21 +542,21 @@ function S9() {
     <div style={{ width: "100%", maxWidth: "920px", display: "flex", flexDirection: "column", gap: "1.5rem" }}>
       <div style={{ textAlign: "center" }}>
         <Badge color={BLUE}>08 — Estratégia Go-To-Market</Badge>
-        <h2 style={{ fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: "clamp(1.8rem,4vw,2.8rem)", color: "#fff", margin: "0.75rem 0 0.5rem", letterSpacing: "-0.02em" }}>
+        <h2 style={{ fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: "clamp(1.6rem,4vw,2.8rem)", color: "#fff", margin: "0.75rem 0 0.5rem", letterSpacing: "-0.02em" }}>
           Estratégia GTM e{" "}
           <span style={{ color: BLUE }}>Parcerias Estratégicas</span>
         </h2>
       </div>
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "1rem" }}>
         {channels.map((c) => (
-          <Card key={c.title} accent={c.color} style={{ padding: "1.15rem", display: "flex", flexDirection: "column", gap: "0.3rem", position: "relative", overflow: "hidden" }}>
+          <Card key={c.title} accent={c.color} style={{ padding: "1.1rem", display: "flex", flexDirection: "column", gap: "0.3rem", position: "relative", overflow: "hidden" }}>
             <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 2, background: c.color }} />
             <div>
               <div style={{ width: 42, height: 42, borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.4rem", background: `${c.color}18`, flexShrink: 0, marginBottom: "0.75rem" }}>{c.icon}</div>
-              <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1.15rem", color: c.color, lineHeight: 1.3, minHeight: "2.75rem", display: "flex", alignItems: "flex-start" }}>{c.title}</div>
+              <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: c.color, lineHeight: 1.3, minHeight: "2.75rem", display: "flex", alignItems: "flex-start" }}>{c.title}</div>
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: "0.3rem" }}>
-              <p style={{ margin: 0, fontSize: "0.95rem", color: "#ffffff", lineHeight: 1.65 }}>{c.desc}</p>
+              <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.65 }}>{c.desc}</p>
             </div>
           </Card>
         ))}
@@ -564,8 +564,8 @@ function S9() {
       <Card style={{ padding: "1.25rem 1.5rem", display: "flex", gap: "1rem", alignItems: "flex-start" }}>
         <span style={{ fontSize: "1.5rem" }}>🎯</span>
         <div>
-          <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: "1.15rem", color: "#fff", marginBottom: "0.3rem" }}>ICP Inicial</div>
-          <p style={{ margin: 0, fontSize: "0.95rem", color: "#ffffff", lineHeight: 1.6 }}>PMEs portuguesas com 5–50 veículos, sectores de serviços e logística, com pressão ESG crescente.</p>
+          <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: "1rem", color: "#fff", marginBottom: "0.3rem" }}>ICP Inicial</div>
+          <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6 }}>PMEs portuguesas com 5–50 veículos, sectores de serviços e logística, com pressão ESG crescente.</p>
         </div>
       </Card>
     </div>
@@ -577,16 +577,16 @@ function S10() {
     <div style={{ width: "100%", maxWidth: "900px", display: "flex", flexDirection: "column", gap: "1.25rem" }}>
       <div style={{ textAlign: "center" }}>
         <Badge color={TEAL}>09 — Equipa</Badge>
-        <h2 style={{ fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: "clamp(1.8rem,4vw,2.8rem)", color: "#fff", margin: "0.75rem 0 0.5rem", letterSpacing: "-0.02em", lineHeight: 1.15 }}>
+        <h2 style={{ fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: "clamp(1.6rem,4vw,2.8rem)", color: "#fff", margin: "0.75rem 0 0.5rem", letterSpacing: "-0.02em", lineHeight: 1.15 }}>
           Da Academia à Realidade: <span style={{ color: TEAL }}>Quem Somos</span>
         </h2>
       </div>
 
       <Card accent={BLUE} style={{ width: "100%", boxSizing: "border-box", padding: "1rem 1.25rem" }}>
-        <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1.05rem", color: BLUE, marginBottom: "0.5rem" }}>
+        <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "0.95rem", color: BLUE, marginBottom: "0.5rem" }}>
           Porquê nós?
         </div>
-        <p style={{ margin: 0, fontSize: "0.95rem", color: "#ffffff", lineHeight: 1.65 }}>
+        <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.65 }}>
           Somos a equipa certa porque unimos uma visão de produto estrategicamente validada a uma execução técnica robusta. Esta sinergia transatlântica garante uma plataforma perfeitamente desenhada e operacionalmente estável.
         </p>
       </Card>
@@ -594,11 +594,11 @@ function S10() {
       {/* Team cards */}
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1.25rem" }}>
         {/* Rebeca */}
-        <Card style={{ padding: "1.5rem", display: "flex", flexDirection: "column", gap: "1.1rem", border: "1px solid rgba(59,158,255,0.2)" }}>
+        <Card style={{ padding: "1.1rem", display: "flex", flexDirection: "column", gap: "1.1rem", border: "1px solid rgba(59,158,255,0.2)" }}>
           <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
-            <div style={{ width: "56px", height: "56px", borderRadius: "50%", background: "linear-gradient(135deg,#3B9EFF 0%,#00D4AA 100%)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: "1.15rem", color: "#fff", letterSpacing: "-0.02em" }}>RV</div>
+            <div style={{ width: "56px", height: "56px", borderRadius: "50%", background: "linear-gradient(135deg,#3B9EFF 0%,#00D4AA 100%)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: "1rem", color: "#fff", letterSpacing: "-0.02em" }}>RV</div>
             <div>
-              <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1.05rem", color: "#ffffff", lineHeight: 1.2 }}>Rebeca Venâncio</div>
+              <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "0.95rem", color: "#ffffff", lineHeight: 1.2 }}>Rebeca Venâncio</div>
               <div style={{ fontSize: "0.75rem", color: BLUE, fontWeight: 600, letterSpacing: "0.04em", textTransform: "uppercase", marginTop: "0.25rem" }}>Founder &amp; Head of Product</div>
             </div>
           </div>
@@ -609,7 +609,7 @@ function S10() {
               "Conduz o User Research e a comunicação estratégica da plataforma",
             ].map(b => (
               <div key={b} style={{ display: "flex", alignItems: "flex-start", gap: "0.6rem" }}>
-                <span style={{ fontSize: "0.95rem", color: "#ffffff", lineHeight: 1.6 }}>{b}</span>
+                <span style={{ fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6 }}>{b}</span>
               </div>
             ))}
           </div>
@@ -621,11 +621,11 @@ function S10() {
         </Card>
 
         {/* José */}
-        <Card style={{ padding: "1.5rem", display: "flex", flexDirection: "column", gap: "1.1rem", border: "1px solid rgba(0,212,170,0.2)" }}>
+        <Card style={{ padding: "1.1rem", display: "flex", flexDirection: "column", gap: "1.1rem", border: "1px solid rgba(0,212,170,0.2)" }}>
           <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
-            <div style={{ width: "56px", height: "56px", borderRadius: "50%", background: "linear-gradient(135deg,#00D4AA 0%,#3B9EFF 100%)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: "1.15rem", color: "#fff", letterSpacing: "-0.02em" }}>JG</div>
+            <div style={{ width: "56px", height: "56px", borderRadius: "50%", background: "linear-gradient(135deg,#00D4AA 0%,#3B9EFF 100%)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: "1rem", color: "#fff", letterSpacing: "-0.02em" }}>JG</div>
             <div>
-              <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1.05rem", color: "#ffffff", lineHeight: 1.2 }}>José Flávio Gama</div>
+              <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "0.95rem", color: "#ffffff", lineHeight: 1.2 }}>José Flávio Gama</div>
               <div style={{ fontSize: "0.75rem", color: TEAL, fontWeight: 600, letterSpacing: "0.04em", textTransform: "uppercase", marginTop: "0.25rem" }}>Co-Fundador &amp; Tech Lead</div>
             </div>
           </div>
@@ -636,7 +636,7 @@ function S10() {
               "Garante a estabilidade operacional de todo o ecossistema ReVecta",
             ].map(b => (
               <div key={b} style={{ display: "flex", alignItems: "flex-start", gap: "0.6rem" }}>
-                <span style={{ fontSize: "0.95rem", color: "#ffffff", lineHeight: 1.6 }}>{b}</span>
+                <span style={{ fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6 }}>{b}</span>
               </div>
             ))}
           </div>
@@ -671,25 +671,25 @@ function S11() {
     <div style={{ width: "100%", maxWidth: "960px", display: "flex", flexDirection: "column", gap: "1.5rem" }}>
       <div style={{ textAlign: "center" }}>
         <Badge color={PURPLE}>10 — Cronograma de Desenvolvimento</Badge>
-        <h2 style={{ fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: "clamp(1.8rem,4vw,2.8rem)", color: "#fff", margin: "0.75rem 0 0.5rem", letterSpacing: "-0.02em" }}>
+        <h2 style={{ fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: "clamp(1.6rem,4vw,2.8rem)", color: "#fff", margin: "0.75rem 0 0.5rem", letterSpacing: "-0.02em" }}>
           Roadmap de{" "}
           <span style={{ color: PURPLE }}>Implementação e Visão</span>
         </h2>
       </div>
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "1rem" }}>
         {phases.map((p, i) => (
-          <Card key={p.horizon} accent={p.color} style={{ padding: "1.5rem", display: "flex", flexDirection: "column", gap: "1rem", position: "relative", overflow: "hidden" }}>
+          <Card key={p.horizon} accent={p.color} style={{ padding: "1.1rem", display: "flex", flexDirection: "column", gap: "1rem", position: "relative", overflow: "hidden" }}>
             <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 2, background: p.color }} />
             <div>
               <div style={{ fontSize: "0.72rem", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: p.color, fontFamily: FONT_DISPLAY, marginBottom: "0.2rem" }}>
                 Fase {i + 1}
               </div>
-              <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1.15rem", color: "#fff" }}>{p.horizon}</div>
+              <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: "#fff" }}>{p.horizon}</div>
               <div style={{ fontSize: "0.8rem", color: "rgba(255,255,255,0.35)" }}>{p.period}</div>
             </div>
             <ul style={{ margin: 0, padding: 0, listStyle: "none", display: "flex", flexDirection: "column", gap: "0.5rem" }}>
               {p.items.map((item) => (
-                <li key={item} style={{ display: "flex", alignItems: "flex-start", gap: "0.5rem", fontSize: "0.95rem", color: "#ffffff", lineHeight: 1.5 }}>
+                <li key={item} style={{ display: "flex", alignItems: "flex-start", gap: "0.5rem", fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.5 }}>
                   <Chevron color={p.color} />
                   {item}
                 </li>
@@ -731,17 +731,17 @@ function BlankSlide() {
     <div style={{ width: "100%", maxWidth: "1000px", display: "flex", flexDirection: "column", alignItems: "center", gap: "2rem" }}>
       <div style={{ textAlign: "center" }}>
         <Badge color={BLUE}>11 — Pedido de Incubação</Badge>
-        <h2 style={{ fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: "clamp(1.8rem,4vw,2.8rem)", color: "#fff", margin: "0.75rem 0 0.5rem", letterSpacing: "-0.02em", lineHeight: 1.15 }}>
+        <h2 style={{ fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: "clamp(1.6rem,4vw,2.8rem)", color: "#fff", margin: "0.75rem 0 0.5rem", letterSpacing: "-0.02em", lineHeight: 1.15 }}>
           Pedido de Incubação{" "}
           <span style={{ color: BLUE }}>(The Ask)</span>
         </h2>
       </div>
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "1rem", width: "100%" }}>
         {asks.map((a) => (
-          <Card key={a.title} accent={a.color} style={{ padding: "1.5rem", position: "relative", overflow: "hidden", display: "flex", flexDirection: "column", gap: "0.5rem" }}>
+          <Card key={a.title} accent={a.color} style={{ padding: "1.1rem", position: "relative", overflow: "hidden", display: "flex", flexDirection: "column", gap: "0.5rem" }}>
             <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 2, background: a.color }} />
-            <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1.15rem", color: a.color, lineHeight: 1.3 }}>{a.title}</div>
-            <p style={{ margin: 0, fontSize: "0.95rem", color: "#ffffff", lineHeight: 1.6 }}>{a.desc}</p>
+            <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: a.color, lineHeight: 1.3 }}>{a.title}</div>
+            <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6 }}>{a.desc}</p>
           </Card>
         ))}
       </div>
