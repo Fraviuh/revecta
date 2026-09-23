@@ -557,8 +557,8 @@ function S9() {
               <div style={{ width: 42, height: 42, borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.4rem", background: `${c.color}18`, flexShrink: 0, marginBottom: "0.75rem" }}>{c.icon}</div>
               <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: c.color, lineHeight: 1.3, display: "flex", alignItems: "flex-start" }}>{c.title}</div>
             </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "2rem" }}>
-              <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6 }}>{c.desc}</p>
+            <div style={{ display: "flex", flexDirection: "column", gap: "2.5rem" }}>
+              <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6, textAlign: "justify", hyphens: "auto", wordSpacing: "normal" }}>{c.desc}</p>
             </div>
           </Card>
         ))}
@@ -566,8 +566,8 @@ function S9() {
       <Card style={{ padding: "1.25rem 1.5rem", display: "flex", gap: "1rem", alignItems: "flex-start" }}>
         <span style={{ fontSize: "1.5rem" }}>🎯</span>
         <div>
-          <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: "1rem", color: "#fff", marginBottom: "1.5rem" }}>ICP Inicial</div>
-          <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6 }}>PMEs portuguesas com 5–150 veículos, sectores de serviços e logística, com pressão ESG crescente.</p>
+          <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: "1rem", color: "#fff", marginBottom: "2.5rem" }}>ICP Inicial</div>
+          <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6, textAlign: "justify", hyphens: "auto", wordSpacing: "normal" }}>PMEs portuguesas com 5–150 veículos, sectores de serviços e logística, com pressão ESG crescente.</p>
         </div>
       </Card>
     </div>
