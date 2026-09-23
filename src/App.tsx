@@ -366,7 +366,7 @@ function S6() {
                 { name: "Projeto Galp / Nissan (Portugal)", note: "Em São Miguel, cada veículo poderá gerar uma receita mensal na ordem dos nove euros." },
                 { name: "AYR Platform (Portugal)", note: "Dados reais de mobilidade sustentável transformados em tokens de carbono transacionáveis por empresas locais." },
               ].map((r) => (
-                <div key={r.name} style={{ display: "flex", flexDirection: "column", gap: "0.45rem", padding: "0.55rem 0" }}>
+                <div key={r.name} style={{ display: "flex", flexDirection: "column", gap: "1rem", padding: "0.55rem 0" }}>
                   <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "0.95rem", color: "#ffffff", lineHeight: 1.35, margin: 0 }}>{r.name}</div>
                   <div style={{ fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6, margin: 0 }}>{r.note}</div>
                 </div>
