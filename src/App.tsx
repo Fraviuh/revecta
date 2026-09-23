@@ -181,7 +181,7 @@ function S2() {
   ];
 
   return (
-    <div style={{ width: "100%", maxWidth: "1020px", display: "flex", flexDirection: "column", gap: "1rem", color: "#ffffff" }}>
+    <div style={{ width: "100%", maxWidth: "960px", display: "flex", flexDirection: "column", gap: "1rem", color: "#ffffff" }}>
       <div style={{ textAlign: "center" }}>
         <Badge color={BLUE}>02 — Problema B2B2C</Badge>
         <h2 style={{ fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: "clamp(1.6rem,4vw,2.8rem)", color: "#fff", margin: "0.75rem 0 0.5rem", letterSpacing: "-0.02em", lineHeight: 1.15 }}>
@@ -190,15 +190,15 @@ function S2() {
         </h2>
       </div>
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "1rem" }}>
-        {items.map((item) => (
-          <Card key={item.title} accent={item.color} style={{ padding: "1.1rem", display: "flex", flexDirection: "column", gap: "0.75rem" }}>
-            <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: item.color, lineHeight: 1.3 }}>
-              {item.title}
+        {items.map((item, i) => (
+          <Card key={item.title} accent={item.color} style={{ padding: "1.1rem", position: "relative", overflow: "hidden", display: "flex", flexDirection: "column", gap: "1rem" }}>
+            <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 2, background: item.color }} />
+            <div style={{ display: "flex", alignItems: "center", gap: "0.75rem" }}>
+              <span style={{ fontSize: "0.72rem", fontWeight: 700, letterSpacing: "0.12em", color: item.color, fontFamily: FONT_DISPLAY, textTransform: "uppercase" }}>Barreira {String(i + 1).padStart(2, "0")}</span>
             </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "0.3rem" }}>
-              <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.65 }}>
-                {item.quote}
-              </p>
+            <div>
+              <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: "#fff", marginBottom: "0.4rem" }}>{item.title}</div>
+              <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6 }}>{item.quote}</p>
             </div>
           </Card>
         ))}
