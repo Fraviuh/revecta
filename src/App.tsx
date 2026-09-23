@@ -312,7 +312,7 @@ function S5() {
             <div style={{ fontSize: "0.72rem", fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase", color: m.color, fontFamily: FONT_DISPLAY, marginBottom: "0.75rem" }}>{m.label}</div>
             <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: "1.65rem", color: "#fff", marginBottom: "0.2rem" }}>{m.value}</div>
             <div style={{ fontSize: "0.75rem", color: m.color, fontWeight: 600, marginBottom: "0.75rem", fontFamily: FONT_DISPLAY }}>{m.sub}</div>
-            <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.65, whiteSpace: "pre-line" }}>{m.desc}</p>
+            <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.65, whiteSpace: "pre-line", textAlign: "left" }}>{m.desc}</p>
           </Card>
         ))}
       </div>
