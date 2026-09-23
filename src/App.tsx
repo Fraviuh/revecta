@@ -197,7 +197,7 @@ function S2() {
               <span style={{ fontSize: "0.72rem", fontWeight: 700, letterSpacing: "0.12em", color: item.color, fontFamily: FONT_DISPLAY, textTransform: "uppercase" }}>Barreira {String(i + 1).padStart(2, "0")}</span>
             </div>
             <div>
-              <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: "#fff", marginBottom: "0.4rem" }}>{item.title}</div>
+              <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: "#fff", marginBottom: "0.75rem" }}>{item.title}</div>
               <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6 }}>{item.quote}</p>
             </div>
           </Card>
@@ -229,7 +229,7 @@ function S4() {
       </div>
 
       <Card accent={BLUE} style={{ width: "100%", boxSizing: "border-box", padding: "0.9rem 1.25rem", textAlign: "left" }}>
-        <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: BLUE, marginBottom: "0.25rem" }}>
+        <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: BLUE, marginBottom: "0.6rem" }}>
           O MVP
         </div>
         <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6 }}>
@@ -264,7 +264,7 @@ function S4() {
       {/* Bottom — Visão de Futuro */}
       <Card style={{ padding: "0.85rem 1.25rem", display: "flex", alignItems: "center", gap: "1rem", border: "1px solid rgba(167,139,250,0.25)", background: "rgba(167,139,250,0.06)" }}>
         <div>
-          <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: PURPLE, marginBottom: "0.35rem" }}>Visão de Escalabilidade</div>
+          <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: PURPLE, marginBottom: "0.6rem" }}>Visão de Escalabilidade</div>
           <p style={{ margin: 0, fontSize: "0.88rem", color: "#fff", lineHeight: 1.6 }}>
             A arquitetura da plataforma ficará preparada para integrar <strong style={{ color: PURPLE, fontWeight: 700 }}>Smart Charging e Vehicle-to-Grid</strong>, permitindo rentabilizar a energia armazenada nos veículos durante os períodos que se encontram estacionados. Em paralelo, um <strong style={{ color: PURPLE, fontWeight: 700 }}>Mercado de Créditos de Carbono</strong> permitirá também valorizar os quilómetros percorridos com energia sustentável.
           </p>
@@ -309,9 +309,9 @@ function S5() {
         {markets.map((m) => (
           <Card key={m.label} style={{ padding: "1.4rem", textAlign: "center", position: "relative", overflow: "hidden", border: `1px solid ${m.color}33` }}>
             <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 2, background: m.color }} />
-            <div style={{ fontSize: "0.72rem", fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase", color: m.color, fontFamily: FONT_DISPLAY, marginBottom: "0.75rem" }}>{m.label}</div>
+            <div style={{ fontSize: "0.72rem", fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase", color: m.color, fontFamily: FONT_DISPLAY, marginBottom: "1rem" }}>{m.label}</div>
             <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: "1.65rem", color: "#fff", marginBottom: "0.2rem" }}>{m.value}</div>
-            <div style={{ fontSize: "0.75rem", color: m.color, fontWeight: 600, marginBottom: "0.75rem", fontFamily: FONT_DISPLAY }}>{m.sub}</div>
+            <div style={{ fontSize: "0.75rem", color: m.color, fontWeight: 600, marginBottom: "1rem", fontFamily: FONT_DISPLAY }}>{m.sub}</div>
             <div style={{ textAlign: "left" }}>
               <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6, whiteSpace: "pre-line", textAlign: "left" }}>{m.desc}</p>
             </div>
@@ -320,7 +320,7 @@ function S5() {
       </div>
       <Card style={{ padding: "1rem 1.5rem", display: "flex", alignItems: "center", gap: "1rem", border: "1px solid rgba(59,158,255,0.15)" }}>
         <div style={{ flex: 1 }}>
-          <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: "#fff", marginBottom: "0.2rem" }}>Porquê Agora?</div>
+          <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: "#fff", marginBottom: "0.6rem" }}>Porquê Agora?</div>
           <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6 }}>
             A <strong style={{ color: BLUE }}>Taxonomia da UE</strong> e as diretivas <strong style={{ color: BLUE }}>ESG/CSRD</strong> forçam as empresas a agir já. A transição para frotas sustentáveis e as metas de descontinuação de novos veículos a combustão criam uma urgência regulatória sem precedentes.
           </p>
@@ -427,7 +427,7 @@ function S7() {
               <span style={{ fontSize: "0.72rem", fontWeight: 700, letterSpacing: "0.12em", color: s.color, fontFamily: FONT_DISPLAY, textTransform: "uppercase" }}>Stream {s.num}</span>
             </div>
             <div>
-              <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: "#fff", marginBottom: "0.4rem" }}>{s.title}</div>
+              <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: "#fff", marginBottom: "0.75rem" }}>{s.title}</div>
               <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6 }}>{s.desc}</p>
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: "0.4rem", marginTop: "auto" }}>
@@ -502,7 +502,7 @@ function S8() {
           </div>
         </Card>
         <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem" }}>
-          <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: TEAL, letterSpacing: "-0.01em", marginBottom: "0.25rem" }}>
+          <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: TEAL, letterSpacing: "-0.01em", marginBottom: "0.6rem" }}>
             Análise de Mercado
           </div>
           {advantages.map((a) => (
@@ -566,7 +566,7 @@ function S9() {
       <Card style={{ padding: "1.25rem 1.5rem", display: "flex", gap: "1rem", alignItems: "flex-start" }}>
         <span style={{ fontSize: "1.5rem" }}>🎯</span>
         <div>
-          <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: "1rem", color: "#fff", marginBottom: "0.3rem" }}>ICP Inicial</div>
+          <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: "1rem", color: "#fff", marginBottom: "0.6rem" }}>ICP Inicial</div>
           <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6 }}>PMEs portuguesas com 5–50 veículos, sectores de serviços e logística, com pressão ESG crescente.</p>
         </div>
       </Card>
@@ -585,7 +585,7 @@ function S10() {
       </div>
 
       <Card accent={BLUE} style={{ width: "100%", boxSizing: "border-box", padding: "1rem 1.25rem" }}>
-        <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "0.95rem", color: BLUE, marginBottom: "0.5rem" }}>
+        <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "0.95rem", color: BLUE, marginBottom: "0.75rem" }}>
           Porquê nós?
         </div>
         <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6 }}>
@@ -683,7 +683,7 @@ function S11() {
           <Card key={p.horizon} accent={p.color} style={{ padding: "1.1rem", display: "flex", flexDirection: "column", gap: "1rem", position: "relative", overflow: "hidden" }}>
             <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 2, background: p.color }} />
             <div>
-              <div style={{ fontSize: "0.72rem", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: p.color, fontFamily: FONT_DISPLAY, marginBottom: "0.2rem" }}>
+              <div style={{ fontSize: "0.72rem", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: p.color, fontFamily: FONT_DISPLAY, marginBottom: "0.5rem" }}>
                 Fase {i + 1}
               </div>
               <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: "#fff" }}>{p.horizon}</div>
