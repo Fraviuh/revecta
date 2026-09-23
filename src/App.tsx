@@ -541,7 +541,7 @@ function S9() {
   ];
 
   return (
-    <div style={{ width: "100%", maxWidth: "920px", display: "flex", flexDirection: "column", gap: "1.5rem" }}>
+    <div style={{ width: "100%", maxWidth: "920px", display: "flex", flexDirection: "column", gap: "3rem" }}>
       <div style={{ textAlign: "center" }}>
         <Badge color={BLUE}>08 — Estratégia Go-To-Market</Badge>
         <h2 style={{ fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: "clamp(1.6rem,4vw,2.8rem)", color: "#fff", margin: "0.75rem 0 0.5rem", letterSpacing: "-0.02em" }}>
