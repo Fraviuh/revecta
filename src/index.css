@@ -4,6 +4,8 @@
 * {
   scrollbar-width: none;
   -ms-overflow-style: none;
+  /* Garante que padding e border nunca ultrapassam as bordas das caixas. */
+  box-sizing: border-box;
 }
 *::-webkit-scrollbar {
   display: none;

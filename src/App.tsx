@@ -127,12 +127,12 @@ function S1() {
         <h1 style={{ fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: "clamp(3rem,7vw,5.5rem)", color: "#fff", letterSpacing: "-0.02em", margin: 0, lineHeight: 1.05 }}>
           Re<span style={{ color: BLUE }}>Vecta</span>
         </h1>
-        <p style={{ margin: 0, fontSize: "0.95rem", color: "#ffffff", fontFamily: FONT_DISPLAY, fontWeight: 600, letterSpacing: "-0.01em", lineHeight: 1.5 }}>
+        <p style={{ margin: 0, fontSize: "0.95rem", color: "#ffffff", fontFamily: FONT_DISPLAY, fontWeight: 600, letterSpacing: "-0.01em", lineHeight: 1.6 }}>
           A Plataforma que une Mobilidade Elétrica e Inteligência Financeira — num só lugar.
         </p>
       </div>
-      <Card style={{ maxWidth: 620, padding: "1.5rem 2.25rem", border: "1px solid rgba(59,158,255,0.2)" }}>
-        <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.85 }}>
+      <Card style={{ maxWidth: 620, width: "100%", boxSizing: "border-box", padding: "1.5rem 2.25rem", border: "1px solid rgba(59,158,255,0.2)", textAlign: "left" }}>
+        <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6 }}>
           Acabou a complexidade. A ReVecta transforma uma experiência elétrica fragmentada numa gestão simples, transparente e financeiramente inteligente — para condutores e empresas que não querem escolher entre sustentabilidade e eficiência.
         </p>
       </Card>
@@ -243,8 +243,8 @@ function S4() {
           <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: BLUE, textTransform: "uppercase", letterSpacing: "0.08em" }}>B2C — Condutor</div>
           {b2c.map((f) => (
             <div key={f.title} style={{ display: "flex", flexDirection: "column", gap: "0.3rem" }}>
-              <div style={{ fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.65 }}>{f.title}</div>
-              <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.65 }}>{f.desc}</p>
+              <div style={{ fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6 }}>{f.title}</div>
+              <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6 }}>{f.desc}</p>
             </div>
           ))}
         </Card>
@@ -254,8 +254,8 @@ function S4() {
           <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: TEAL, textTransform: "uppercase", letterSpacing: "0.08em" }}>B2B — Gestor de Frota</div>
           {b2b.map((f) => (
             <div key={f.title} style={{ display: "flex", flexDirection: "column", gap: "0.3rem" }}>
-              <div style={{ fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.65 }}>{f.title}</div>
-              <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.65 }}>{f.desc}</p>
+              <div style={{ fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6 }}>{f.title}</div>
+              <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6 }}>{f.desc}</p>
             </div>
           ))}
         </Card>
@@ -265,7 +265,7 @@ function S4() {
       <Card style={{ padding: "0.85rem 1.25rem", display: "flex", alignItems: "center", gap: "1rem", border: "1px solid rgba(167,139,250,0.25)", background: "rgba(167,139,250,0.06)" }}>
         <div>
           <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: PURPLE, marginBottom: "0.35rem" }}>Visão de Escalabilidade</div>
-          <p style={{ margin: 0, fontSize: "0.88rem", color: "#fff", lineHeight: 1.65 }}>
+          <p style={{ margin: 0, fontSize: "0.88rem", color: "#fff", lineHeight: 1.6 }}>
             A arquitetura da plataforma ficará preparada para integrar <strong style={{ color: PURPLE, fontWeight: 700 }}>Smart Charging e Vehicle-to-Grid</strong>, permitindo rentabilizar a energia armazenada nos veículos durante os períodos que se encontram estacionados. Em paralelo, um <strong style={{ color: PURPLE, fontWeight: 700 }}>Mercado de Créditos de Carbono</strong> permitirá também valorizar os quilómetros percorridos com energia sustentável.
           </p>
         </div>
@@ -313,7 +313,7 @@ function S5() {
             <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: "1.65rem", color: "#fff", marginBottom: "0.2rem" }}>{m.value}</div>
             <div style={{ fontSize: "0.75rem", color: m.color, fontWeight: 600, marginBottom: "0.75rem", fontFamily: FONT_DISPLAY }}>{m.sub}</div>
             <div style={{ textAlign: "left" }}>
-              <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.65, whiteSpace: "pre-line", textAlign: "left" }}>{m.desc}</p>
+              <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6, whiteSpace: "pre-line", textAlign: "left" }}>{m.desc}</p>
             </div>
           </Card>
         ))}
@@ -352,7 +352,7 @@ function S6() {
               { label: "Experiência média com VE", value: "2 anos e 10 meses" },
             ].map((s) => (
               <div key={s.label} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: "0.75rem", padding: "0.55rem 0" }}>
-                <span style={{ fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.45 }}>{s.label}</span>
+                <span style={{ fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6 }}>{s.label}</span>
                 <span style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: "#ffffff", whiteSpace: "nowrap" }}>{s.value}</span>
               </div>
             ))}
@@ -442,7 +442,7 @@ function S7() {
         ))}
       </div>
       <Card accent={TEAL} style={{ width: "100%", boxSizing: "border-box", padding: "0.85rem 1.25rem" }}>
-        <p style={{ margin: 0, color: "#ffffff", fontSize: "0.8rem", lineHeight: 1.5, fontStyle: "italic" }}>
+        <p style={{ margin: 0, color: "#ffffff", fontSize: "0.8rem", lineHeight: 1.6, fontStyle: "italic" }}>
           *Os valores apresentados no Stream 02 são estimativas meramente ilustrativas para demonstração do modelo de negócio.
         </p>
       </Card>
@@ -558,7 +558,7 @@ function S9() {
               <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: c.color, lineHeight: 1.3, minHeight: "2.75rem", display: "flex", alignItems: "flex-start" }}>{c.title}</div>
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: "0.3rem" }}>
-              <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.65 }}>{c.desc}</p>
+              <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6 }}>{c.desc}</p>
             </div>
           </Card>
         ))}
@@ -588,7 +588,7 @@ function S10() {
         <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "0.95rem", color: BLUE, marginBottom: "0.5rem" }}>
           Porquê nós?
         </div>
-        <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.65 }}>
+        <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6 }}>
           Somos a equipa certa porque unimos uma visão de produto estrategicamente validada a uma execução técnica robusta. Esta sinergia transatlântica garante uma plataforma perfeitamente desenhada e operacionalmente estável.
         </p>
       </Card>
@@ -691,7 +691,7 @@ function S11() {
             </div>
             <ul style={{ margin: 0, padding: 0, listStyle: "none", display: "flex", flexDirection: "column", gap: "0.5rem" }}>
               {p.items.map((item) => (
-                <li key={item} style={{ display: "flex", alignItems: "flex-start", gap: "0.5rem", fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.5 }}>
+                <li key={item} style={{ display: "flex", alignItems: "flex-start", gap: "0.5rem", fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6 }}>
                   <Chevron color={p.color} />
                   {item}
                 </li>
@@ -761,8 +761,7 @@ function S12() {
           <br /><span style={{ color: TEAL }}>Rentabiliza-a.</span>
         </h2>
       </div>
-      <p style={{ fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.75, maxWidth: 500, margin: 0 }}>
-        Junte-se a nós para redefinir o paradigma da mobilidade na Ibéria, unindo Finanças, Energia e Sustentabilidade de forma lucrativa e inteligente.
+      <p style={{ fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6, maxWidth: 500, margin: 0 }}>        Junte-se a nós para redefinir o paradigma da mobilidade na Ibéria, unindo Finanças, Energia e Sustentabilidade de forma lucrativa e inteligente.
       </p>
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem", width: "100%" }}>
         <Card style={{ padding: "1.1rem", display: "flex", flexDirection: "column", alignItems: "center", gap: "0.4rem" }}>
@@ -778,7 +777,7 @@ function S12() {
           <div style={{ fontSize: "0.72rem", color: "#ffffff", fontWeight: 500 }}>Explorar o MVP →</div>
         </div>
       </div>
-      <Card style={{ padding: "0.85rem 1.75rem", border: "1px solid rgba(0,212,170,0.2)", boxShadow: "0 0 30px rgba(0,212,170,0.07)" }}>
+      <Card style={{ padding: "0.85rem 1.75rem", border: "1px solid rgba(0,212,170,0.2)", boxShadow: "0 0 30px rgba(0,212,170,0.07)", textAlign: "left", boxSizing: "border-box" }}>
         <p style={{ margin: 0, fontSize: "0.8rem", color: "rgba(255,255,255,0.5)" }}>
           <span style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, color: "#fff" }}>ReVecta</span>
           {" "}— A Plataforma Integrada de Mobilidade Elétrica e Gestão Financeira
