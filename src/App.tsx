@@ -567,7 +567,7 @@ function S9() {
         <span style={{ fontSize: "1.5rem" }}>🎯</span>
         <div>
           <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: "1rem", color: "#fff", marginBottom: "1.5rem" }}>ICP Inicial</div>
-          <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6 }}>PMEs portuguesas com 5–50 veículos, sectores de serviços e logística, com pressão ESG crescente.</p>
+          <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6 }}>PMEs portuguesas com 5–150 veículos, sectores de serviços e logística, com pressão ESG crescente.</p>
         </div>
       </Card>
     </div>
