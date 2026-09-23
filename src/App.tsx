@@ -280,7 +280,7 @@ function S5() {
       label: "TAM", name: "Mercado Endereçável Total", color: BLUE,
       value: "659.336 VE",
       sub: "Projeção 2030 — Portugal",
-      desc: "Base ( final de 2025 ): 243.954 veículos BEV\n\n\nEletrificação acelerada do parque automóvel nacional.",
+      desc: "Final de 2025, 243.954 veículos BEV.\n\n\nEletrificação acelerada do parque automóvel nacional.",
     },
     {
       label: "SAM", name: "Mercado Útil Disponível", color: TEAL,
