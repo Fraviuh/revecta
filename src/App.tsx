@@ -366,7 +366,7 @@ function S6() {
                 { name: "Projeto Galp / Nissan (Portugal)", note: "Em São Miguel, cada veículo poderá gerar uma receita mensal na ordem dos nove euros." },
                 { name: "AYR Platform (Portugal)", note: "Dados reais de mobilidade sustentável transformados em tokens de carbono transacionáveis por empresas locais." },
               ].map((r) => (
-                <div key={r.name} style={{ display: "flex", flexDirection: "column", gap: "0.75rem", padding: "0.15rem 0" }}>
+                <div key={r.name} style={{ display: "flex", flexDirection: "column", gap: "1rem", padding: "0.15rem 0" }}>
                   <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "0.95rem", color: "#ffffff", lineHeight: 1.35, margin: 0 }}>{r.name}</div>
                   <div style={{ fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6, margin: 0 }}>{r.note}</div>
                 </div>
@@ -764,7 +764,7 @@ function S12() {
       <p style={{ fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6, maxWidth: 500, margin: 0 }}>        Junte-se a nós para redefinir o paradigma da mobilidade na Ibéria, unindo Finanças, Energia e Sustentabilidade de forma lucrativa e inteligente.
       </p>
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem", width: "100%" }}>
-        <Card style={{ padding: "1.1rem", display: "flex", flexDirection: "column", alignItems: "center", gap: "0.75rem" }}>
+        <Card style={{ padding: "1.1rem", display: "flex", flexDirection: "column", alignItems: "center", gap: "1rem" }}>
           <span style={{ fontSize: "1.5rem" }}>✉️</span>
           <div style={{ fontSize: "0.62rem", fontWeight: 600, color: "rgba(255,255,255,0.35)", fontFamily: FONT_DISPLAY, textTransform: "uppercase", letterSpacing: "0.1em" }}>Email</div>
           <div style={{ fontSize: "0.78rem", color: BLUE }}>hello@revecta.pt</div>
