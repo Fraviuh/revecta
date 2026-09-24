@@ -368,8 +368,8 @@ function S6() {
           <span style={{ color: BLUE }}>Tecnologia Comprovada</span>
         </h2>
       </div>
-      <div style={{ display: "grid", gridTemplateColumns: "1.1fr 0.9fr", gap: "1.25rem", alignItems: "start" }}>
-        <Card accent={BLUE} style={{ padding: "1.4rem 1.5rem", display: "flex", flexDirection: "column", gap: "2.5rem", alignSelf: "start" }}>
+      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1.25rem", alignItems: "stretch" }}>
+        <Card accent={BLUE} style={{ padding: "1.4rem 1.5rem", display: "flex", flexDirection: "column", gap: "2.5rem", height: "100%" }}>
           <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: BLUE, lineHeight: 1.25 }}>Investigação Qualitativa</div>
           <div style={{ display: "flex", flexDirection: "column", gap: "2rem", flex: 1, justifyContent: "flex-start" }}>
             {[
@@ -386,8 +386,8 @@ function S6() {
             ))}
           </div>
         </Card>
-        <div style={{ display: "flex", flexDirection: "column", gap: "1rem", alignSelf: "start" }}>
-          <Card accent={TEAL} style={{ padding: "1.2rem 1.25rem", display: "flex", flexDirection: "column", gap: "0.75rem", alignSelf: "start" }}>
+        <div style={{ display: "flex", flexDirection: "column", gap: "1rem", height: "100%" }}>
+          <Card accent={TEAL} style={{ padding: "1.2rem 1.25rem", display: "flex", flexDirection: "column", gap: "0.75rem", flex: 1 }}>
             <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: BLUE, lineHeight: 1.25 }}>Casos de Sucesso</div>
             <div style={{ display: "flex", flexDirection: "column", gap: "1.25rem", flex: 1, justifyContent: "center" }}>
               {successCases.map((r) => (
