@@ -379,7 +379,7 @@ function S6() {
               { label: "Amostra — Homens", value: "63,2%" },
               { label: "Experiência média com VE", value: "2 anos e 10 meses" },
             ].map((s) => (
-              <div key={s.label} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: "0.75rem", padding: 0 }}>
+              <div key={s.label} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: "0.75rem", padding: "0 0 0.75rem", borderBottom: "1px solid rgba(255,255,255,0.12)" }}>
                 <span style={{ fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6 }}>{s.label}</span>
                 <span style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: "#ffffff", whiteSpace: "nowrap" }}>{s.value}</span>
               </div>
