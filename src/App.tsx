@@ -118,35 +118,6 @@ function Chevron({ color }: { color: string }) {
   return <span style={{ color, marginTop: 2, flexShrink: 0 }}>›</span>;
 }
 
-function NeonIcon({ kind, color }: { kind: "invoice" | "literacy" | "fragmentation"; color: string }) {
-  return (
-    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" style={{ color }} aria-hidden="true">
-      {kind === "invoice" && (
-        <>
-          <path d="M6 3.5h12v17l-2.5-1.5-2.5 1.5-2.5-1.5L8 20.5 6 19V3.5Z" />
-          <path d="M9 8h6M9 11.5h6M9 15h3" />
-          <path d="M16.5 14.5v3M15 16h3" />
-        </>
-      )}
-      {kind === "literacy" && (
-        <>
-          <circle cx="12" cy="12" r="8.5" />
-          <circle cx="12" cy="12" r="2.2" />
-          <path d="M12 9.8V3.5M10.3 13.2l-5 3.3M13.7 13.2l5 3.3" />
-        </>
-      )}
-      {kind === "fragmentation" && (
-        <>
-          <rect x="3" y="4" width="7" height="5" rx="1" />
-          <rect x="14" y="4" width="7" height="5" rx="1" />
-          <rect x="8.5" y="15" width="7" height="5" rx="1" />
-          <path d="M10 9v3h4V9M12 12v3" />
-        </>
-      )}
-    </svg>
-  );
-}
-
 // ─── Slides ───────────────────────────────────────────────────────────────────
 
 function S1() {
@@ -190,30 +161,24 @@ function S1() {
 function S2() {
   const items = [
     {
-      icon: "invoice" as const,
       metric: "30–60%",
       metricLabel: "de poupança potencial perdida",
       title: "Reembolso Doméstico Complexo",
       color: BLUE,
-      glow: "#3B9EFF",
       quote: "Processamento manual de tarifários e perdas de eficiência anulam a poupança potencial.",
     },
     {
-      icon: "literacy" as const,
       metric: "+25%",
       metricLabel: "de custo operacional",
       title: "Défice de Literacia de Condução",
       color: TEAL,
-      glow: "#00D4AA",
       quote: "Manuseamento desadequado do veículo elétrico, resultando em custos acrescidos de manutenção e desgaste da frota.",
     },
     {
-      icon: "fragmentation" as const,
       metric: "4+",
       metricLabel: "apps e operadores para coordenar",
       title: "Fragmentação da Experiência de Carregamento",
       color: PURPLE,
-      glow: "#A78BFA",
       quote: "Informação e serviços dispersos obrigam o condutor a realizar múltiplos passos e a cruzar dados para decidir onde, quando e como carregar.",
     },
   ];
@@ -231,16 +196,9 @@ function S2() {
         {items.map((item, i) => (
           <Card key={item.title} accent={item.color} style={{ padding: "1.2rem", position: "relative", overflow: "hidden", display: "flex", flexDirection: "column", gap: "0.8rem" }}>
             <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 2, background: item.color }} />
-            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-              <div style={{ width: 40, height: 40, display: "flex", alignItems: "center", justifyContent: "center", borderRadius: "0.8rem", color: item.color, background: `${item.glow}18`, border: `1px solid ${item.glow}55`, boxShadow: `0 0 22px ${item.glow}38` }}>
-                <NeonIcon kind={item.icon} color={item.color} />
-              </div>
-              <span style={{ fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.12em", color: item.color, fontFamily: FONT_DISPLAY, textTransform: "uppercase" }}>Barreira {String(i + 1).padStart(2, "0")}</span>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "0.2rem" }}>
-              <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: "clamp(2.4rem, 5vw, 3.4rem)", lineHeight: 0.95, color: item.color, textShadow: `0 0 22px ${item.glow}55` }}>{item.metric}</div>
-              <div style={{ fontSize: "0.7rem", fontWeight: 600, letterSpacing: "0.04em", color: "rgba(255,255,255,0.62)", textTransform: "uppercase" }}>{item.metricLabel}</div>
-            </div>
+            <div style={{ fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.12em", color: item.color, fontFamily: FONT_DISPLAY, textTransform: "uppercase" }}>Barreira {String(i + 1).padStart(2, "0")}</div>
+            <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: "1.65rem", color: "#fff", lineHeight: 1.1 }}>{item.metric}</div>
+            <div style={{ fontSize: "0.75rem", color: item.color, fontWeight: 600, fontFamily: FONT_DISPLAY }}>{item.metricLabel}</div>
             <div>
               <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: "#fff", marginBottom: "0.45rem" }}>{item.title}</div>
               <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6 }}>{item.quote}</p>
