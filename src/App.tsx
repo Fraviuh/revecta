@@ -307,11 +307,11 @@ function S5() {
       </div>
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "1rem" }}>
         {markets.map((m) => (
-          <Card key={m.label} style={{ padding: "1.4rem", textAlign: "center", position: "relative", overflow: "hidden", border: `1px solid ${m.color}33` }}>
+          <Card key={m.label} style={{ padding: "1.4rem", textAlign: "center", position: "relative", overflow: "hidden", border: `1px solid ${m.color}33`, display: "flex", flexDirection: "column", gap: "1rem" }}>
             <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 2, background: m.color }} />
-            <div style={{ fontSize: "0.72rem", fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase", color: m.color, fontFamily: FONT_DISPLAY, marginBottom: "1rem" }}>{m.label}</div>
-            <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: "1.65rem", color: "#fff", marginBottom: "0.2rem" }}>{m.value}</div>
-            <div style={{ fontSize: "0.75rem", color: m.color, fontWeight: 600, marginBottom: "1rem", fontFamily: FONT_DISPLAY }}>{m.sub}</div>
+            <div style={{ fontSize: "0.72rem", fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase", color: m.color, fontFamily: FONT_DISPLAY }}>{m.label}</div>
+            <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: "1.65rem", color: "#fff" }}>{m.value}</div>
+            <div style={{ fontSize: "0.75rem", color: m.color, fontWeight: 600, fontFamily: FONT_DISPLAY }}>{m.sub}</div>
             <div style={{ textAlign: "left" }}>
               <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6, whiteSpace: "pre-line", textAlign: "left" }}>{m.desc}</p>
             </div>
@@ -319,8 +319,8 @@ function S5() {
         ))}
       </div>
       <Card style={{ padding: "1rem 1.5rem", display: "flex", alignItems: "center", gap: "1rem", border: "1px solid rgba(59,158,255,0.15)" }}>
-        <div style={{ flex: 1 }}>
-          <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: "#fff", marginBottom: "0.6rem" }}>Porquê Agora?</div>
+        <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: "1rem" }}>
+          <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: "#fff" }}>Porquê Agora?</div>
           <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6 }}>
             A <strong style={{ color: BLUE }}>Taxonomia da UE</strong> e as diretivas <strong style={{ color: BLUE }}>ESG/CSRD</strong> forçam as empresas a agir já. A transição para frotas sustentáveis e as metas de descontinuação de novos veículos a combustão criam uma urgência regulatória sem precedentes.
           </p>
