@@ -368,7 +368,7 @@ function S6() {
           <span style={{ color: BLUE }}>Tecnologia Comprovada</span>
         </h2>
       </div>
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1.25rem", alignItems: "start" }}>
+      <div style={{ display: "grid", gridTemplateColumns: "1.1fr 0.9fr", gap: "1.25rem", alignItems: "start" }}>
         <Card accent={BLUE} style={{ padding: "1.4rem 1.5rem", display: "flex", flexDirection: "column", gap: "2.5rem", alignSelf: "start" }}>
           <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: BLUE, lineHeight: 1.25 }}>Investigação Qualitativa</div>
           <div style={{ display: "flex", flexDirection: "column", gap: "2rem", flex: 1, justifyContent: "flex-start" }}>
@@ -387,16 +387,16 @@ function S6() {
           </div>
         </Card>
         <div style={{ display: "flex", flexDirection: "column", gap: "1rem", alignSelf: "start" }}>
-          <Card accent={TEAL} style={{ padding: "1.4rem 1.5rem", display: "flex", flexDirection: "column", gap: "0.9rem", alignSelf: "start" }}>
+          <Card accent={TEAL} style={{ padding: "1.2rem 1.25rem", display: "flex", flexDirection: "column", gap: "0.75rem", alignSelf: "start" }}>
             <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: BLUE, lineHeight: 1.25 }}>Casos de Sucesso</div>
             <div style={{ display: "flex", flexDirection: "column", gap: "1.25rem", flex: 1, justifyContent: "center" }}>
               {successCases.map((r) => (
                 <div key={r.name} style={{ display: "flex", flexDirection: "column", gap: "0.7rem", padding: "0.9rem", borderRadius: "0.8rem", background: "rgba(255,255,255,0.035)", border: "1px solid rgba(255,255,255,0.09)" }}>
-                  <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "0.95rem", color: "#ffffff", lineHeight: 1.35, margin: 0 }}>{r.name}</div>
-                  <div style={{ fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6, margin: 0 }}>{r.note}</div>
+                  <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "0.9rem", color: "#ffffff", lineHeight: 1.35, margin: 0 }}>{r.name}</div>
+                  <div style={{ fontSize: "0.82rem", color: "#ffffff", lineHeight: 1.55, margin: 0 }}>{r.note}</div>
                   <div style={{ display: "flex", flexDirection: "column", gap: "0.25rem", padding: "0.65rem 0.75rem", borderRadius: "0.65rem", background: `${r.glow}12`, borderLeft: `3px solid ${r.color}` }}>
-                    <span style={{ fontFamily: FONT_DISPLAY, fontSize: "0.62rem", fontWeight: 800, letterSpacing: "0.1em", textTransform: "uppercase", color: "#ffffff" }}>{r.label}</span>
-                    <strong style={{ fontFamily: FONT_DISPLAY, fontSize: "1rem", lineHeight: 1.25, color: r.color }}>{r.highlight}</strong>
+                    <span style={{ fontFamily: FONT_DISPLAY, fontSize: "0.58rem", fontWeight: 800, letterSpacing: "0.1em", textTransform: "uppercase", color: "#ffffff" }}>{r.label}</span>
+                    <strong style={{ fontFamily: FONT_DISPLAY, fontSize: "0.9rem", lineHeight: 1.25, color: r.color }}>{r.highlight}</strong>
                   </div>
                 </div>
               ))}
