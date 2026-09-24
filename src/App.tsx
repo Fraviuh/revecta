@@ -118,112 +118,41 @@ function Chevron({ color }: { color: string }) {
   return <span style={{ color, marginTop: 2, flexShrink: 0 }}>›</span>;
 }
 
-function HeroNetwork() {
-  return (
-    <div aria-hidden="true" style={{ position: "absolute", inset: "-8% -10% -14%", overflow: "hidden", pointerEvents: "none", zIndex: 0 }}>
-      <div style={{ position: "absolute", width: "min(72vw, 680px)", height: "min(72vw, 680px)", left: "50%", top: "4%", transform: "translateX(-50%)", borderRadius: "50%", background: "radial-gradient(circle, rgba(59,158,255,0.22) 0%, rgba(0,212,170,0.1) 36%, transparent 70%)", filter: "blur(18px)" }} />
-      <svg viewBox="0 0 900 560" preserveAspectRatio="xMidYMid slice" style={{ width: "100%", height: "100%", opacity: 0.82 }}>
-        <defs>
-          <linearGradient id="hero-line-blue" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stopColor="#3B9EFF" />
-            <stop offset="1" stopColor="#00D4AA" />
-          </linearGradient>
-          <radialGradient id="hero-node-blue">
-            <stop offset="0" stopColor="#B9E7FF" />
-            <stop offset="0.35" stopColor="#3B9EFF" />
-            <stop offset="1" stopColor="#3B9EFF" stopOpacity="0" />
-          </radialGradient>
-          <radialGradient id="hero-node-teal">
-            <stop offset="0" stopColor="#C8FFF4" />
-            <stop offset="0.35" stopColor="#00D4AA" />
-            <stop offset="1" stopColor="#00D4AA" stopOpacity="0" />
-          </radialGradient>
-          <filter id="hero-glow" x="-100%" y="-100%" width="300%" height="300%">
-            <feGaussianBlur stdDeviation="4" result="blur" />
-            <feMerge>
-              <feMergeNode in="blur" />
-              <feMergeNode in="SourceGraphic" />
-            </feMerge>
-          </filter>
-        </defs>
-        <g fill="none" stroke="url(#hero-line-blue)" strokeWidth="1.2" opacity="0.45" filter="url(#hero-glow)">
-          <ellipse cx="450" cy="270" rx="310" ry="150" />
-          <ellipse cx="450" cy="270" rx="235" ry="112" transform="rotate(-24 450 270)" />
-          <ellipse cx="450" cy="270" rx="165" ry="78" transform="rotate(28 450 270)" />
-          <path d="M145 270 450 120 755 270 450 420Z" />
-          <path d="M260 150 640 390M640 150 260 390M450 120V420" />
-          <path d="M210 225 450 270 690 315M290 365 450 270 610 175" />
-        </g>
-        <g filter="url(#hero-glow)">
-          <circle cx="145" cy="270" r="22" fill="url(#hero-node-blue)" />
-          <circle cx="260" cy="150" r="16" fill="url(#hero-node-teal)" />
-          <circle cx="450" cy="120" r="25" fill="url(#hero-node-blue)" />
-          <circle cx="640" cy="150" r="17" fill="url(#hero-node-teal)" />
-          <circle cx="755" cy="270" r="22" fill="url(#hero-node-blue)" />
-          <circle cx="610" cy="175" r="11" fill="url(#hero-node-teal)" />
-          <circle cx="290" cy="365" r="12" fill="url(#hero-node-blue)" />
-          <circle cx="450" cy="270" r="34" fill="url(#hero-node-teal)" />
-          <circle cx="610" cy="365" r="14" fill="url(#hero-node-blue)" />
-          <circle cx="450" cy="420" r="22" fill="url(#hero-node-teal)" />
-        </g>
-        <g fill="none" stroke="#ffffff" strokeWidth="0.8" opacity="0.5">
-          <circle cx="450" cy="270" r="48" />
-          <circle cx="450" cy="270" r="72" strokeDasharray="2 8" />
-        </g>
-      </svg>
-    </div>
-  );
-}
-
-function TechIcon({ kind, color }: { kind: "finance" | "ai" | "grid" | "carbon" | "fleet"; color: string }) {
-  return (
-    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" style={{ color }} aria-hidden="true">
-      {kind === "finance" && <><rect x="3" y="5" width="18" height="14" rx="2" /><path d="M3 10h18M7 15h3" /><path d="M16 14v3M14.5 15.5h3" /></>}
-      {kind === "ai" && <><path d="m12 3 1.7 5.3L19 10l-5.3 1.7L12 17l-1.7-5.3L5 10l5.3-1.7L12 3Z" /><path d="m19 16 .7 2.3L22 19l-2.3.7L19 22l-.7-2.3L16 19l2.3-.7L19 16Z" /></>}
-      {kind === "grid" && <><circle cx="6" cy="12" r="2.5" /><circle cx="18" cy="6" r="2.5" /><circle cx="18" cy="18" r="2.5" /><path d="m8.3 10.8 7.4-3.6M8.3 13.2l7.4 3.6" /></>}
-      {kind === "carbon" && <><path d="M19.5 4.5C11 4.8 5.2 8 5 14.5c-.1 3.2 2.2 5 5 5 6.4 0 9.4-6 9.5-15Z" /><path d="M4 21c2.5-5.5 6.4-8.7 11.5-11" /></>}
-      {kind === "fleet" && <><path d="M3 7h11v10H3zM14 10h4l3 3v4h-7z" /><circle cx="7" cy="18" r="2" /><circle cx="18" cy="18" r="2" /><path d="M14 14h7" /></>}
-    </svg>
-  );
-}
-
 // ─── Slides ───────────────────────────────────────────────────────────────────
 
 function S1() {
   return (
-    <div style={{ position: "relative", width: "100%", maxWidth: 900, minHeight: 620, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", textAlign: "center", gap: "2rem", padding: "4rem 2.5rem 1.5rem", overflow: "hidden", borderRadius: "1.5rem", border: "1px solid rgba(59,158,255,0.14)", background: "radial-gradient(circle at 50% 18%, rgba(59,158,255,0.08), transparent 42%)" }}>
-      <HeroNetwork />
-      <div style={{ position: "relative", zIndex: 1, display: "flex", flexDirection: "column", alignItems: "center", gap: "1.8rem" }}>
-        <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.7rem" }}>
-          <h1 style={{ fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: "clamp(3.2rem,8vw,6.4rem)", letterSpacing: "-0.06em", margin: 0, lineHeight: 0.95, background: "linear-gradient(105deg, #ffffff 0%, #B9E7FF 28%, #3B9EFF 58%, #00D4AA 100%)", WebkitBackgroundClip: "text", backgroundClip: "text", color: "transparent", filter: "drop-shadow(0 0 24px rgba(59,158,255,0.35))" }}>
-            ReVecta
-          </h1>
-          <p style={{ margin: 0, fontSize: "0.95rem", color: "rgba(255,255,255,0.88)", fontFamily: FONT_DISPLAY, fontWeight: 600, letterSpacing: "0.01em", lineHeight: 1.6, maxWidth: 620 }}>
-            A Plataforma que une Mobilidade Elétrica e Inteligência Financeira — num só lugar.
-          </p>
-        </div>
-        <div style={{ width: "min(100%, 700px)", padding: "1.5rem 2rem", borderRadius: "1.2rem", background: "linear-gradient(135deg, rgba(59,158,255,0.13), rgba(0,212,170,0.07))", border: "1px solid rgba(144,221,255,0.3)", boxShadow: "0 18px 60px rgba(0,0,0,0.28), inset 0 1px 0 rgba(255,255,255,0.14), 0 0 28px rgba(59,158,255,0.1)", backdropFilter: "blur(18px)", textAlign: "left" }}>
-          <p style={{ margin: 0, fontSize: "0.95rem", color: "#ffffff", lineHeight: 1.7 }}>
-            Acabou a complexidade. A ReVecta transforma uma experiência elétrica fragmentada numa gestão simples, transparente e financeiramente inteligente — para condutores e empresas que não querem escolher entre sustentabilidade e eficiência.
-          </p>
-        </div>
-        <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "0.6rem", maxWidth: 760 }}>
-          {[
-            { label: "Embedded Finance", icon: "finance" as const, color: "#3B9EFF" },
-            { label: "Inteligência Artificial", icon: "ai" as const, color: "#A78BFA" },
-            { label: "Vehicle-to-Grid", icon: "grid" as const, color: "#00D4AA" },
-            { label: "Mercado de Carbono", icon: "carbon" as const, color: "#62D6A5" },
-            { label: "Frotas Elétricas", icon: "fleet" as const, color: "#6EC8FF" },
-          ].map((t) => (
-            <span key={t.label} style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", padding: "0.55rem 0.8rem", borderRadius: "999px", border: `1px solid ${t.color}55`, background: `linear-gradient(135deg, ${t.color}18, rgba(255,255,255,0.04))`, boxShadow: `0 0 16px ${t.color}18, inset 0 0 10px ${t.color}0D`, color: "#ffffff", fontFamily: FONT_DISPLAY, fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.03em", backdropFilter: "blur(10px)" }}>
-              <span style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", color: t.color, filter: `drop-shadow(0 0 5px ${t.color})` }}><TechIcon kind={t.icon} color={t.color} /></span>
-              {t.label}
-            </span>
-          ))}
-        </div>
-        <div style={{ width: "min(100%, 760px)", display: "flex", alignItems: "center", justifyContent: "center", gap: "0.8rem", paddingTop: "0.9rem", borderTop: "1px solid rgba(255,255,255,0.12)", color: "rgba(255,255,255,0.42)", fontFamily: FONT_DISPLAY, fontSize: "0.62rem", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase" }}>
-          <span>Pitch Deck 2026</span><span style={{ color: "rgba(59,158,255,0.7)" }}>•</span><span>Documento Confidencial</span><span style={{ color: "rgba(0,212,170,0.7)" }}>•</span><span>B2B &amp; B2C SaaS</span>
-        </div>
+    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center", gap: "2.5rem", maxWidth: 780 }}>
+      <div style={{ display: "flex", flexDirection: "column", gap: "2rem" }}>
+        <h1 style={{ fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: "clamp(3rem,7vw,5.5rem)", color: "#fff", letterSpacing: "-0.02em", margin: 0, lineHeight: 1.05 }}>
+          Re<span style={{ color: BLUE }}>Vecta</span>
+        </h1>
+        <p style={{ margin: 0, fontSize: "0.95rem", color: "#ffffff", fontFamily: FONT_DISPLAY, fontWeight: 600, letterSpacing: "-0.01em", lineHeight: 1.6 }}>
+          A Plataforma que une Mobilidade Elétrica e Inteligência Financeira — num só lugar.
+        </p>
+      </div>
+      <Card style={{ maxWidth: 620, width: "100%", boxSizing: "border-box", padding: "1.5rem 2.25rem", border: "1px solid rgba(59,158,255,0.2)", textAlign: "left" }}>
+        <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6 }}>
+          Acabou a complexidade. A ReVecta transforma uma experiência elétrica fragmentada numa gestão simples, transparente e financeiramente inteligente — para condutores e empresas que não querem escolher entre sustentabilidade e eficiência.
+        </p>
+      </Card>
+      <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "0.5rem" }}>
+        {[
+          { label: "Embedded Finance", color: BLUE },
+          { label: "Inteligência Artificial", color: BLUE },
+          { label: "Vehicle-to-Grid", color: BLUE },
+          { label: "Mercado de Carbono", color: BLUE },
+          { label: "Frotas Elétricas", color: BLUE },
+        ].map(t => (
+          <span key={t.label} style={{
+            fontSize: "0.72rem", fontWeight: 600, padding: "0.3rem 0.75rem",
+            borderRadius: "999px",
+            background: "rgba(59,158,255,0.1)",
+            border: "1px solid rgba(59,158,255,0.3)",
+            color: t.color,
+            fontFamily: FONT_DISPLAY,
+          }}>{t.label}</span>
+        ))}
       </div>
     </div>
   );
