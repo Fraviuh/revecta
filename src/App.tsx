@@ -371,7 +371,7 @@ function S6() {
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1.25rem", alignItems: "stretch" }}>
         <Card accent={BLUE} style={{ padding: "1.4rem 1.5rem", display: "flex", flexDirection: "column", gap: "0.9rem", height: "100%" }}>
           <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: BLUE, lineHeight: 1.25 }}>Investigação Qualitativa</div>
-          <div style={{ display: "flex", flexDirection: "column", gap: "0.25rem", flex: 1, justifyContent: "space-between" }}>
+          <div style={{ display: "flex", flexDirection: "column", gap: 0, flex: 1, justifyContent: "flex-start" }}>
             {[
               { label: "Entrevistas Semi-Estruturadas", value: "20" },
               { label: "Período de recolha", value: "13 a 20 Jul 2026" },
@@ -379,7 +379,7 @@ function S6() {
               { label: "Amostra — Homens", value: "63,2%" },
               { label: "Experiência média com VE", value: "2 anos e 10 meses" },
             ].map((s) => (
-              <div key={s.label} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: "0.75rem", padding: "0.25rem 0" }}>
+              <div key={s.label} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: "0.75rem", padding: 0 }}>
                 <span style={{ fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6 }}>{s.label}</span>
                 <span style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: "#ffffff", whiteSpace: "nowrap" }}>{s.value}</span>
               </div>
