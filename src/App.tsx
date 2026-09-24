@@ -371,7 +371,7 @@ function S6() {
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1.25rem", alignItems: "stretch" }}>
         <Card accent={BLUE} style={{ padding: "1.4rem 1.5rem", display: "flex", flexDirection: "column", gap: "0.9rem", height: "100%" }}>
           <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: BLUE, lineHeight: 1.25 }}>Investigação Qualitativa</div>
-          <div style={{ display: "flex", flexDirection: "column", gap: 0, flex: 1, justifyContent: "flex-start" }}>
+          <div style={{ display: "flex", flexDirection: "column", gap: "2rem", flex: 1, justifyContent: "flex-start" }}>
             {[
               { label: "Entrevistas Semi-Estruturadas", value: "20" },
               { label: "Período de recolha", value: "13 a 20 Jul 2026" },
