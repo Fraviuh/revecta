@@ -596,7 +596,7 @@ function S9() {
           </Card>
         ))}
       </div>
-      <Card style={{ padding: "1.25rem 1.5rem", display: "flex", gap: "1rem", alignItems: "flex-start" }}>
+      <Card style={{ padding: "1.25rem 1.5rem", display: "flex", gap: "1rem", alignItems: "flex-start", border: "1px solid rgba(59,158,255,0.2)", boxShadow: "0 0 30px rgba(59,158,255,0.07)" }}>
         <span style={{ fontSize: "1.5rem" }}>🎯</span>
         <div>
           <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: "1rem", color: "#fff", marginBottom: "2.5rem" }}>ICP Inicial</div>
