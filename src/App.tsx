@@ -340,10 +340,6 @@ function S5() {
 }
 
 function S6() {
-  const surveyStats = [
-    { label: "Período de recolha", value: "13 a 20 Jul 2026" },
-    { label: "Experiência média com VE", value: "2 anos e 10 meses" },
-  ];
   const successCases = [
     {
       name: "Projeto Galp / Nissan (Portugal)",
@@ -362,9 +358,6 @@ function S6() {
       glow: "#A78BFA",
     },
   ];
-  const donutCircumference = 2 * Math.PI * 46;
-  const womenDash = donutCircumference * 0.368;
-  const menDash = donutCircumference * 0.632;
 
   return (
     <div style={{ width: "100%", maxWidth: "920px", display: "flex", flexDirection: "column", gap: "2rem", color: "#ffffff" }}>
@@ -378,26 +371,15 @@ function S6() {
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1.25rem", alignItems: "stretch" }}>
         <Card accent={BLUE} style={{ padding: "1.4rem 1.5rem", display: "flex", flexDirection: "column", gap: "0.9rem", height: "100%" }}>
           <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: BLUE, lineHeight: 1.25 }}>Investigação Qualitativa</div>
-          <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "1.5rem", padding: "0.5rem 0 1rem" }}>
-            <div style={{ position: "relative", width: 148, height: 148, flexShrink: 0 }}>
-              <svg width="148" height="148" viewBox="0 0 120 120" role="img" aria-label="Amostra: 36,8% mulheres e 63,2% homens" style={{ transform: "rotate(-90deg)" }}>
-                <circle cx="60" cy="60" r="46" fill="none" stroke="rgba(255,255,255,0.08)" strokeWidth="12" />
-                <circle cx="60" cy="60" r="46" fill="none" stroke={BLUE} strokeWidth="12" strokeDasharray={`${womenDash} ${donutCircumference - womenDash}`} strokeLinecap="butt" />
-                <circle cx="60" cy="60" r="46" fill="none" stroke={TEAL} strokeWidth="12" strokeDasharray={`${menDash} ${donutCircumference - menDash}`} strokeDashoffset={-womenDash} strokeLinecap="butt" />
-              </svg>
-              <div style={{ position: "absolute", inset: 0, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
-                <span style={{ fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: "2.7rem", lineHeight: 0.9, color: "#fff", textShadow: `0 0 18px ${BLUE}88` }}>20</span>
-                <span style={{ fontSize: "0.58rem", color: "rgba(255,255,255,0.55)", textTransform: "uppercase", letterSpacing: "0.08em" }}>entrevistas</span>
-              </div>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "0.8rem" }}>
-              <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}><span style={{ width: 9, height: 9, borderRadius: "50%", background: BLUE, boxShadow: `0 0 10px ${BLUE}` }} /><span style={{ fontSize: "0.85rem", color: "#ffffff" }}>Mulheres <strong style={{ color: BLUE }}>36,8%</strong></span></div>
-              <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}><span style={{ width: 9, height: 9, borderRadius: "50%", background: TEAL, boxShadow: `0 0 10px ${TEAL}` }} /><span style={{ fontSize: "0.85rem", color: "#ffffff" }}>Homens <strong style={{ color: TEAL }}>63,2%</strong></span></div>
-            </div>
-          </div>
-          <div style={{ display: "flex", flexDirection: "column", gap: "0.55rem", flex: 1, justifyContent: "flex-end" }}>
-            {surveyStats.map((s) => (
-              <div key={s.label} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: "0.75rem", padding: "0.55rem 0", borderTop: "1px solid rgba(255,255,255,0.08)" }}>
+          <div style={{ display: "flex", flexDirection: "column", gap: "0.55rem", flex: 1, justifyContent: "space-between" }}>
+            {[
+              { label: "Entrevistas Semi-Estruturadas", value: "20" },
+              { label: "Período de recolha", value: "13 a 20 Jul 2026" },
+              { label: "Amostra — Mulheres", value: "36,8%" },
+              { label: "Amostra — Homens", value: "63,2%" },
+              { label: "Experiência média com VE", value: "2 anos e 10 meses" },
+            ].map((s) => (
+              <div key={s.label} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: "0.75rem", padding: "0.55rem 0" }}>
                 <span style={{ fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6 }}>{s.label}</span>
                 <span style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: "#ffffff", whiteSpace: "nowrap" }}>{s.value}</span>
               </div>
@@ -413,7 +395,7 @@ function S6() {
                   <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "0.95rem", color: "#ffffff", lineHeight: 1.35, margin: 0 }}>{r.name}</div>
                   <div style={{ fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6, margin: 0 }}>{r.note}</div>
                   <div style={{ display: "flex", flexDirection: "column", gap: "0.25rem", padding: "0.65rem 0.75rem", borderRadius: "0.65rem", background: `${r.glow}12`, borderLeft: `3px solid ${r.color}` }}>
-                    <span style={{ fontFamily: FONT_DISPLAY, fontSize: "0.62rem", fontWeight: 800, letterSpacing: "0.1em", textTransform: "uppercase", color: "rgba(255,255,255,0.58)" }}>{r.label}</span>
+                    <span style={{ fontFamily: FONT_DISPLAY, fontSize: "0.62rem", fontWeight: 800, letterSpacing: "0.1em", textTransform: "uppercase", color: "#ffffff" }}>{r.label}</span>
                     <strong style={{ fontFamily: FONT_DISPLAY, fontSize: "1rem", lineHeight: 1.25, color: r.color }}>{r.highlight}</strong>
                   </div>
                 </div>
