@@ -312,8 +312,10 @@ function S5() {
             <div style={{ fontSize: "0.72rem", fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase", color: m.color, fontFamily: FONT_DISPLAY }}>{m.label}</div>
             <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: "1.65rem", color: "#fff" }}>{m.value}</div>
             <div style={{ fontSize: "0.75rem", color: m.color, fontWeight: 600, fontFamily: FONT_DISPLAY }}>{m.sub}</div>
-            <div style={{ textAlign: "left" }}>
-              <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6, whiteSpace: "pre-line", textAlign: "left" }}>{m.desc}</p>
+            <div style={{ display: "flex", flexDirection: "column", gap: "1rem", textAlign: "left" }}>
+              {m.desc.split("\n").map((line) => (
+                <div key={`${m.label}-${line}`} style={{ fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6 }}>{line}</div>
+              ))}
             </div>
           </Card>
         ))}
