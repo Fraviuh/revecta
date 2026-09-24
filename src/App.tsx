@@ -242,7 +242,7 @@ function S4() {
         <Card accent={BLUE} style={{ padding: "1.1rem", display: "flex", flexDirection: "column", gap: "0.25rem" }}>
           <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: BLUE, textTransform: "uppercase", letterSpacing: "0.08em" }}>B2C — Condutor</div>
           {b2c.map((f) => (
-            <div key={f.title} style={{ display: "flex", flexDirection: "column", gap: "2rem" }}>
+            <div key={f.title} style={{ display: "flex", flexDirection: "column", gap: 0 }}>
               <div style={{ fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6 }}>{f.title}</div>
               <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6 }}>{f.desc}</p>
             </div>
@@ -253,7 +253,7 @@ function S4() {
         <Card accent={TEAL} style={{ padding: "1.1rem", display: "flex", flexDirection: "column", gap: "0.25rem" }}>
           <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: TEAL, textTransform: "uppercase", letterSpacing: "0.08em" }}>B2B — Gestor de Frota</div>
           {b2b.map((f) => (
-            <div key={f.title} style={{ display: "flex", flexDirection: "column", gap: "2rem" }}>
+            <div key={f.title} style={{ display: "flex", flexDirection: "column", gap: 0 }}>
               <div style={{ fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6 }}>{f.title}</div>
               <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6 }}>{f.desc}</p>
             </div>
