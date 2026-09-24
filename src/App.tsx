@@ -239,7 +239,7 @@ function S4() {
 
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem" }}>
         {/* B2C */}
-        <Card accent={BLUE} style={{ padding: "1.1rem", display: "flex", flexDirection: "column", gap: 0 }}>
+        <Card accent={BLUE} style={{ padding: "1.1rem", display: "flex", flexDirection: "column", gap: "1rem" }}>
           <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: BLUE, textTransform: "uppercase", letterSpacing: "0.08em" }}>B2C — Condutor</div>
           {b2c.map((f) => (
             <div key={f.title} style={{ display: "flex", flexDirection: "column", gap: 0 }}>
@@ -250,7 +250,7 @@ function S4() {
         </Card>
 
         {/* B2B */}
-        <Card accent={TEAL} style={{ padding: "1.1rem", display: "flex", flexDirection: "column", gap: 0 }}>
+        <Card accent={TEAL} style={{ padding: "1.1rem", display: "flex", flexDirection: "column", gap: "1rem" }}>
           <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: TEAL, textTransform: "uppercase", letterSpacing: "0.08em" }}>B2B — Gestor de Frota</div>
           {b2b.map((f) => (
             <div key={f.title} style={{ display: "flex", flexDirection: "column", gap: 0 }}>
