@@ -541,13 +541,13 @@ function S8() {
           {advantages.map((a) => (
             <Card key={a} style={{ padding: "0.65rem 1rem", display: "flex", alignItems: "center", gap: "0.6rem" }}>
               <Tick color={TEAL} />
-              <span style={{ fontSize: "0.88rem", color: "#ffffff", wordSpacing: "2px" }}>{a}</span>
+              <span style={{ fontSize: "0.88rem", color: "#ffffff", wordSpacing: "1.5px" }}>{a}</span>
             </Card>
           ))}
 
           <Card style={{ padding: "0.65rem 1rem", display: "flex", flexDirection: "column", gap: "0.35rem" }}>
             <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: TEAL }}>O Nosso Posicionamento</div>
-            <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6, wordSpacing: "2px" }}>
+            <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6, wordSpacing: "1.5px" }}>
               Enquanto os líderes do setor se especializam num domínio específico, a ReVecta procura integrar a experiência da mobilidade elétrica numa única camada operacional.
             </p>
           </Card>
