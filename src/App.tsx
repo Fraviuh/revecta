@@ -803,7 +803,7 @@ function BlankSlide() {
 
 function S12() {
   return (
-    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center", gap: "1.5rem", maxWidth: 640 }}>
+    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center", gap: "2.5rem", maxWidth: 780 }}>
       <div>
         <Badge color={TEAL}>12 — Fecho</Badge>
         <h2 style={{ fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: "clamp(1.6rem,4vw,2.8rem)", color: "#fff", margin: "0.75rem 0 0", letterSpacing: "-0.02em", lineHeight: 1.15 }}>
@@ -811,9 +811,9 @@ function S12() {
           <br /><span style={{ color: TEAL }}>Rentabiliza-a.</span>
         </h2>
       </div>
-      <p style={{ fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6, maxWidth: 500, margin: 0 }}>        Junte-se a nós para redefinir o paradigma da mobilidade na Ibéria, unindo Finanças, Energia e Sustentabilidade de forma lucrativa e inteligente.
+      <p style={{ fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6, margin: 0 }}>        Junte-se a nós para redefinir o paradigma da mobilidade na Ibéria, unindo Finanças, Energia e Sustentabilidade de forma lucrativa e inteligente.
       </p>
-      <Card style={{ padding: "0.85rem 1.75rem", border: "1px solid rgba(0,212,170,0.2)", boxShadow: "0 0 30px rgba(0,212,170,0.07)", textAlign: "left", boxSizing: "border-box" }}>
+      <Card style={{ maxWidth: 620, width: "100%", boxSizing: "border-box", padding: "1.5rem 2.25rem", border: "1px solid rgba(0,212,170,0.2)", textAlign: "left" }}>
         <p style={{ margin: 0, fontSize: "0.8rem", color: "rgba(255,255,255,0.5)" }}>
           <span style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, color: "#fff" }}>Re</span><span style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, color: TEAL }}>Vecta</span>
           {" "}— <span style={{ color: "#fff" }}>A Plataforma Integrada de Mobilidade Elétrica e Gestão Financeira</span>
