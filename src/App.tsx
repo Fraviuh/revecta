@@ -816,7 +816,7 @@ function S12() {
       <Card style={{ padding: "0.85rem 1.75rem", border: "1px solid rgba(0,212,170,0.2)", boxShadow: "0 0 30px rgba(0,212,170,0.07)", textAlign: "left", boxSizing: "border-box" }}>
         <p style={{ margin: 0, fontSize: "0.8rem", color: "rgba(255,255,255,0.5)" }}>
           <span style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, color: "#fff" }}>Re</span><span style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, color: TEAL }}>Vecta</span>
-          {" "}— A Plataforma Integrada de Mobilidade Elétrica e Gestão Financeira
+          {" "}— <span style={{ color: "#fff" }}>A Plataforma Integrada de Mobilidade Elétrica e Gestão Financeira</span>
         </p>
       </Card>
     </div>
