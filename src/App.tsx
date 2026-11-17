@@ -535,17 +535,17 @@ function S8() {
           </div>
         </Card>
         <div style={{ display: "flex", flexDirection: "column", gap: "2rem" }}>
-          <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: TEAL, letterSpacing: "-0.01em", marginBottom: "0.6rem" }}>
+          <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: TEAL, letterSpacing: "-0.01em", marginBottom: "0.35rem" }}>
             Análise de Mercado
           </div>
           {advantages.map((a) => (
-            <Card key={a} style={{ padding: "0.65rem 1rem", display: "flex", alignItems: "center", gap: "0.6rem" }}>
+            <Card key={a} style={{ padding: "0.65rem 1rem", display: "flex", alignItems: "center", gap: "0.35rem" }}>
               <Tick color={TEAL} />
               <span style={{ fontSize: "0.88rem", color: "#ffffff", wordSpacing: "1.5px" }}>{a}</span>
             </Card>
           ))}
 
-          <Card style={{ padding: "0.65rem 1rem", display: "flex", flexDirection: "column", gap: "0.35rem" }}>
+          <Card style={{ padding: "0.65rem 1rem", display: "flex", flexDirection: "column", gap: "0.2rem" }}>
             <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: TEAL }}>O Nosso Posicionamento</div>
             <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6, wordSpacing: "1.5px" }}>
               Enquanto os líderes do setor se especializam num domínio específico, a ReVecta procura integrar a experiência da mobilidade elétrica numa única camada operacional.
