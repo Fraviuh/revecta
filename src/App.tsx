@@ -493,7 +493,7 @@ function S8() {
   ];
 
   const advantages = [
-    "Especialização crescente das plataformas",
+    "Especialização crescente das plataformas.",
     "Dados dispersos entre múltiplos sistemas.",
     "Operações distribuídas por diferentes fornecedores.",
   ];
