@@ -813,20 +813,6 @@ function S12() {
       </div>
       <p style={{ fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6, maxWidth: 500, margin: 0 }}>        Junte-se a nós para redefinir o paradigma da mobilidade na Ibéria, unindo Finanças, Energia e Sustentabilidade de forma lucrativa e inteligente.
       </p>
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem", width: "100%" }}>
-        <Card style={{ padding: "1.1rem", display: "flex", flexDirection: "column", alignItems: "center", gap: "1rem" }}>
-          <span style={{ fontSize: "1.5rem" }}>✉️</span>
-          <div style={{ fontSize: "0.62rem", fontWeight: 600, color: "rgba(255,255,255,0.35)", fontFamily: FONT_DISPLAY, textTransform: "uppercase", letterSpacing: "0.1em" }}>Email</div>
-          <div style={{ fontSize: "0.78rem", color: BLUE }}>hello@revecta.pt</div>
-        </Card>
-        {/* Sem URL de protótipo definida ainda — card informativo, não um link.
-            Quando existir o link (Figma / TestFlight / vídeo demo), trocar por <a href={URL}>. */}
-        <div style={{ borderRadius: "1rem", background: "linear-gradient(135deg,rgba(0,212,170,0.15),rgba(59,158,255,0.1))", border: "1px solid rgba(0,212,170,0.35)", padding: "1.1rem", display: "flex", flexDirection: "column", alignItems: "center", gap: "0.75rem", boxShadow: "0 0 24px rgba(0,212,170,0.12)" }}>
-          <span style={{ fontSize: "1.5rem" }}>▶</span>
-          <div style={{ fontSize: "0.62rem", fontWeight: 600, color: TEAL, fontFamily: FONT_DISPLAY, textTransform: "uppercase", letterSpacing: "0.1em" }}>Ver Protótipo</div>
-          <div style={{ fontSize: "0.72rem", color: "#ffffff", fontWeight: 500 }}>Explorar o MVP →</div>
-        </div>
-      </div>
       <Card style={{ padding: "0.85rem 1.75rem", border: "1px solid rgba(0,212,170,0.2)", boxShadow: "0 0 30px rgba(0,212,170,0.07)", textAlign: "left", boxSizing: "border-box" }}>
         <p style={{ margin: 0, fontSize: "0.8rem", color: "rgba(255,255,255,0.5)" }}>
           <span style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, color: "#fff" }}>ReVecta</span>
