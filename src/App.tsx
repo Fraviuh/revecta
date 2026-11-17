@@ -184,7 +184,7 @@ function S2() {
   ];
 
   return (
-    <div style={{ width: "100%", maxWidth: "1000px", display: "flex", flexDirection: "column", alignItems: "center", gap: "1.5rem", color: "#ffffff" }}>
+    <div style={{ width: "100%", maxWidth: "1000px", display: "flex", flexDirection: "column", gap: "1.5rem", color: "#ffffff" }}>
       <div style={{ textAlign: "center" }}>
         <Badge color={BLUE}>02 — Problema B2B2C</Badge>
         <h2 style={{ fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: "clamp(1.6rem,4vw,2.8rem)", color: "#fff", margin: "0.75rem 0 0.5rem", letterSpacing: "-0.02em", lineHeight: 1.15 }}>
@@ -199,9 +199,9 @@ function S2() {
             <div style={{ fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.12em", color: item.color, fontFamily: FONT_DISPLAY, textTransform: "uppercase" }}>Barreira {String(i + 1).padStart(2, "0")}</div>
             <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: "1.65rem", color: "#fff", lineHeight: 1.1 }}>{item.metric}</div>
             <div style={{ fontSize: "0.75rem", color: item.color, fontWeight: 600, fontFamily: FONT_DISPLAY }}>{item.metricLabel}</div>
-            <div style={{ textAlign: "center", display: "flex", flexDirection: "column", alignItems: "center", gap: "0.45rem" }}>
-              <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: "#fff", marginBottom: "0.45rem", textAlign: "center" }}>{item.title}</div>
-              <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6, textAlign: "center" }}>{item.quote}</p>
+            <div>
+              <div style={{ fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: "1rem", color: "#fff", marginBottom: "0.45rem" }}>{item.title}</div>
+              <p style={{ margin: 0, fontSize: "0.88rem", color: "#ffffff", lineHeight: 1.6 }}>{item.quote}</p>
             </div>
           </Card>
         ))}
